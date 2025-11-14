@@ -1,0 +1,48 @@
+services:
+  edmo:
+    build:
+      context: .
+      dockerfile: ServerVNext/EDMOFrontend/Dockerfile
+    ports:
+      - "8080:8080"
+      - "2121:2121/udp"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+    volumes:
+      - ./Plugins:/app/Plugins
+    networks:
+      - edmo-network
+
+  # Mock EDMO Robot - Simulates hardware for testing
+  mock-edmo:
+    build:
+      context: .
+      dockerfile: ServerVNext/EDMOMockSimulator/Dockerfile
+    environment:
+      - ROBOT_NAME=Snake1
+      - OSCILLATOR_COUNT=4
+      - UDP_PORT=2121
+    depends_on:
+      - edmo
+    networks:
+      - edmo-network
+
+  # Optional: Second mock robot
+  mock-edmo2:
+    build:
+      context: .
+      dockerfile: ServerVNext/EDMOMockSimulator/Dockerfile
+    environment:
+      - ROBOT_NAME=Snake2
+      - OSCILLATOR_COUNT=6
+      - UDP_PORT=2121
+    depends_on:
+      - edmo
+    networks:
+      - edmo-network
+    profiles:
+      - multi-robot
+
+networks:
+  edmo-network:
+    driver: bridge
