@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.Communication
+  commentId: N:ServerCore.Communication
+  id: ServerCore.Communication
+  children:
+  - ServerCore.Communication.ConnectionStatus
+  - ServerCore.Communication.ICommunicationChannel
+  - ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+  - ServerCore.Communication.ICommunicationManager
+  - ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+  - ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+  langs:
+  - csharp
+  - vb
+  name: ServerCore.Communication
+  nameWithType: ServerCore.Communication
+  fullName: ServerCore.Communication
+  type: Namespace
+  assemblies:
+  - ServerCore
+references:
+- uid: ServerCore.Communication.ConnectionStatus
+  commentId: T:ServerCore.Communication.ConnectionStatus
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ConnectionStatus.html
+  name: ConnectionStatus
+  nameWithType: ConnectionStatus
+  fullName: ServerCore.Communication.ConnectionStatus
+- uid: ServerCore.Communication.ICommunicationChannel
+  commentId: T:ServerCore.Communication.ICommunicationChannel
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationChannel.html
+  name: ICommunicationChannel
+  nameWithType: ICommunicationChannel
+  fullName: ServerCore.Communication.ICommunicationChannel
+- uid: ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+  commentId: T:ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationChannel.html
+  name: ICommunicationChannel.DataReceivedAction
+  nameWithType: ICommunicationChannel.DataReceivedAction
+  fullName: ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationChannel
+    name: ICommunicationChannel
+    href: ServerCore.Communication.ICommunicationChannel.html
+  - name: .
+  - uid: ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+    name: DataReceivedAction
+    href: ServerCore.Communication.ICommunicationChannel.DataReceivedAction.html
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationChannel
+    name: ICommunicationChannel
+    href: ServerCore.Communication.ICommunicationChannel.html
+  - name: .
+  - uid: ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+    name: DataReceivedAction
+    href: ServerCore.Communication.ICommunicationChannel.DataReceivedAction.html
+- uid: ServerCore.Communication.ICommunicationManager
+  commentId: T:ServerCore.Communication.ICommunicationManager
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationManager.html
+  name: ICommunicationManager
+  nameWithType: ICommunicationManager
+  fullName: ServerCore.Communication.ICommunicationManager
+- uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+  commentId: T:ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationManager.html
+  name: ICommunicationManager.CommunicationChannelEstablishedAction
+  nameWithType: ICommunicationManager.CommunicationChannelEstablishedAction
+  fullName: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationManager
+    name: ICommunicationManager
+    href: ServerCore.Communication.ICommunicationManager.html
+  - name: .
+  - uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+    name: CommunicationChannelEstablishedAction
+    href: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction.html
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationManager
+    name: ICommunicationManager
+    href: ServerCore.Communication.ICommunicationManager.html
+  - name: .
+  - uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+    name: CommunicationChannelEstablishedAction
+    href: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction.html
+- uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+  commentId: T:ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationManager.html
+  name: ICommunicationManager.CommunicationChannelLostAction
+  nameWithType: ICommunicationManager.CommunicationChannelLostAction
+  fullName: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationManager
+    name: ICommunicationManager
+    href: ServerCore.Communication.ICommunicationManager.html
+  - name: .
+  - uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+    name: CommunicationChannelLostAction
+    href: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction.html
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationManager
+    name: ICommunicationManager
+    href: ServerCore.Communication.ICommunicationManager.html
+  - name: .
+  - uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+    name: CommunicationChannelLostAction
+    href: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction.html
+- uid: ServerCore.Communication
+  commentId: N:ServerCore.Communication
+  href: ServerCore.html
+  name: ServerCore.Communication
+  nameWithType: ServerCore.Communication
+  fullName: ServerCore.Communication
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html

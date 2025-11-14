@@ -1,0 +1,724 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.EDMO.Communication.EDMOPacket
+  commentId: T:ServerCore.EDMO.Communication.EDMOPacket
+  id: EDMOPacket
+  parent: ServerCore.EDMO.Communication
+  children:
+  - ServerCore.EDMO.Communication.EDMOPacket.EscapePacket(System.ReadOnlySpan{System.Byte})
+  - ServerCore.EDMO.Communication.EDMOPacket.FOOTER
+  - ServerCore.EDMO.Communication.EDMOPacket.HEADER
+  - ServerCore.EDMO.Communication.EDMOPacket.Parse``1(System.ReadOnlySpan{System.Byte})
+  - ServerCore.EDMO.Communication.EDMOPacket.UnescapePacket(System.ReadOnlySpan{System.Byte})
+  langs:
+  - csharp
+  - vb
+  name: EDMOPacket
+  nameWithType: EDMOPacket
+  fullName: ServerCore.EDMO.Communication.EDMOPacket
+  type: Class
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOPacket.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: EDMOPacket
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOPacket.cs
+    startLine: 12
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: A class containing helper methods for packet related operations.
+  example: []
+  syntax:
+    content: public static class EDMOPacket
+    content.vb: Public Module EDMOPacket
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ServerCore.EDMO.Communication.EDMOPacket.HEADER
+  commentId: F:ServerCore.EDMO.Communication.EDMOPacket.HEADER
+  id: HEADER
+  parent: ServerCore.EDMO.Communication.EDMOPacket
+  langs:
+  - csharp
+  - vb
+  name: HEADER
+  nameWithType: EDMOPacket.HEADER
+  fullName: ServerCore.EDMO.Communication.EDMOPacket.HEADER
+  type: Field
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOPacket.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: HEADER
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOPacket.cs
+    startLine: 17
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: The standard packet header of EDMO communication
+  example: []
+  syntax:
+    content: public static readonly byte[] HEADER
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared ReadOnly HEADER As Byte()
+- uid: ServerCore.EDMO.Communication.EDMOPacket.FOOTER
+  commentId: F:ServerCore.EDMO.Communication.EDMOPacket.FOOTER
+  id: FOOTER
+  parent: ServerCore.EDMO.Communication.EDMOPacket
+  langs:
+  - csharp
+  - vb
+  name: FOOTER
+  nameWithType: EDMOPacket.FOOTER
+  fullName: ServerCore.EDMO.Communication.EDMOPacket.FOOTER
+  type: Field
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOPacket.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: FOOTER
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOPacket.cs
+    startLine: 22
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: The standard packet footer of an EDMO communication
+  example: []
+  syntax:
+    content: public static readonly byte[] FOOTER
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared ReadOnly FOOTER As Byte()
+- uid: ServerCore.EDMO.Communication.EDMOPacket.UnescapePacket(System.ReadOnlySpan{System.Byte})
+  commentId: M:ServerCore.EDMO.Communication.EDMOPacket.UnescapePacket(System.ReadOnlySpan{System.Byte})
+  id: UnescapePacket(System.ReadOnlySpan{System.Byte})
+  parent: ServerCore.EDMO.Communication.EDMOPacket
+  langs:
+  - csharp
+  - vb
+  name: UnescapePacket(ReadOnlySpan<byte>)
+  nameWithType: EDMOPacket.UnescapePacket(ReadOnlySpan<byte>)
+  fullName: ServerCore.EDMO.Communication.EDMOPacket.UnescapePacket(System.ReadOnlySpan<byte>)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOPacket.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: UnescapePacket
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOPacket.cs
+    startLine: 33
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: Unescape an array of bytes, returning it into a parseable form.
+  remarks: <p>Unescaping an unescaped payload doesn't imply an identity operation. Attempts to do so may mangle the payload in an irrecoverable way.</p>
+  example: []
+  syntax:
+    content: public static byte[] UnescapePacket(ReadOnlySpan<byte> bytes)
+    parameters:
+    - id: bytes
+      type: System.ReadOnlySpan{System.Byte}
+      description: The escaped payload
+    return:
+      type: System.Byte[]
+      description: The original payload
+    content.vb: Public Shared Function UnescapePacket(bytes As ReadOnlySpan(Of Byte)) As Byte()
+  overload: ServerCore.EDMO.Communication.EDMOPacket.UnescapePacket*
+  seealso:
+  - linkId: ServerCore.EDMO.Communication.EDMOPacket.EscapePacket(System.ReadOnlySpan{System.Byte})
+    commentId: M:ServerCore.EDMO.Communication.EDMOPacket.EscapePacket(System.ReadOnlySpan{System.Byte})
+  nameWithType.vb: EDMOPacket.UnescapePacket(ReadOnlySpan(Of Byte))
+  fullName.vb: ServerCore.EDMO.Communication.EDMOPacket.UnescapePacket(System.ReadOnlySpan(Of Byte))
+  name.vb: UnescapePacket(ReadOnlySpan(Of Byte))
+- uid: ServerCore.EDMO.Communication.EDMOPacket.EscapePacket(System.ReadOnlySpan{System.Byte})
+  commentId: M:ServerCore.EDMO.Communication.EDMOPacket.EscapePacket(System.ReadOnlySpan{System.Byte})
+  id: EscapePacket(System.ReadOnlySpan{System.Byte})
+  parent: ServerCore.EDMO.Communication.EDMOPacket
+  langs:
+  - csharp
+  - vb
+  name: EscapePacket(ReadOnlySpan<byte>)
+  nameWithType: EDMOPacket.EscapePacket(ReadOnlySpan<byte>)
+  fullName: ServerCore.EDMO.Communication.EDMOPacket.EscapePacket(System.ReadOnlySpan<byte>)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOPacket.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: EscapePacket
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOPacket.cs
+    startLine: 66
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: Escape an array of bytes. Escaping any occurrence of <xref href="ServerCore.EDMO.Communication.EDMOPacket.HEADER" data-throw-if-not-resolved="false"></xref> and <xref href="ServerCore.EDMO.Communication.EDMOPacket.FOOTER" data-throw-if-not-resolved="false"></xref>, so that the payload doesn't incorrectly signal the start of end of a packet.
+  remarks: >-
+    Escaping an escaped payload implies an identity operation, and the return value would be equivalent to the input value.
+
+    This is because after the first escape, the payload is guaranteed not to contain <xref href="ServerCore.EDMO.Communication.EDMOPacket.HEADER" data-throw-if-not-resolved="false"></xref> or <xref href="ServerCore.EDMO.Communication.EDMOPacket.FOOTER" data-throw-if-not-resolved="false"></xref>, and the operation does nothing.
+  example: []
+  syntax:
+    content: public static byte[] EscapePacket(ReadOnlySpan<byte> bytes)
+    parameters:
+    - id: bytes
+      type: System.ReadOnlySpan{System.Byte}
+      description: The unescaped payload.
+    return:
+      type: System.Byte[]
+      description: The payload, escaped.
+    content.vb: Public Shared Function EscapePacket(bytes As ReadOnlySpan(Of Byte)) As Byte()
+  overload: ServerCore.EDMO.Communication.EDMOPacket.EscapePacket*
+  seealso:
+  - linkId: ServerCore.EDMO.Communication.EDMOPacket.UnescapePacket(System.ReadOnlySpan{System.Byte})
+    commentId: M:ServerCore.EDMO.Communication.EDMOPacket.UnescapePacket(System.ReadOnlySpan{System.Byte})
+  nameWithType.vb: EDMOPacket.EscapePacket(ReadOnlySpan(Of Byte))
+  fullName.vb: ServerCore.EDMO.Communication.EDMOPacket.EscapePacket(System.ReadOnlySpan(Of Byte))
+  name.vb: EscapePacket(ReadOnlySpan(Of Byte))
+- uid: ServerCore.EDMO.Communication.EDMOPacket.Parse``1(System.ReadOnlySpan{System.Byte})
+  commentId: M:ServerCore.EDMO.Communication.EDMOPacket.Parse``1(System.ReadOnlySpan{System.Byte})
+  id: Parse``1(System.ReadOnlySpan{System.Byte})
+  parent: ServerCore.EDMO.Communication.EDMOPacket
+  langs:
+  - csharp
+  - vb
+  name: Parse<T>(ReadOnlySpan<byte>)
+  nameWithType: EDMOPacket.Parse<T>(ReadOnlySpan<byte>)
+  fullName: ServerCore.EDMO.Communication.EDMOPacket.Parse<T>(System.ReadOnlySpan<byte>)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOPacket.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Parse
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOPacket.cs
+    startLine: 102
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: Takes an unescaped payload, and attempts to cast it into a struct. Taking into account struct layouts.
+  example: []
+  syntax:
+    content: 'public static T Parse<T>(ReadOnlySpan<byte> bytes) where T : unmanaged'
+    parameters:
+    - id: bytes
+      type: System.ReadOnlySpan{System.Byte}
+      description: The original payload, unescaped
+    typeParameters:
+    - id: T
+      description: An unmanaged struct that describes the layout of the payload
+    return:
+      type: '{T}'
+      description: A struct that contains the payload of the data
+    content.vb: Public Shared Function Parse(Of T As Structure)(bytes As ReadOnlySpan(Of Byte)) As T
+  overload: ServerCore.EDMO.Communication.EDMOPacket.Parse*
+  exceptions:
+  - type: System.IO.InvalidDataException
+    commentId: T:System.IO.InvalidDataException
+    description: The payload length doesn't match the size of <code>T</code>
+  nameWithType.vb: EDMOPacket.Parse(Of T)(ReadOnlySpan(Of Byte))
+  fullName.vb: ServerCore.EDMO.Communication.EDMOPacket.Parse(Of T)(System.ReadOnlySpan(Of Byte))
+  name.vb: Parse(Of T)(ReadOnlySpan(Of Byte))
+references:
+- uid: ServerCore.EDMO.Communication
+  commentId: N:ServerCore.EDMO.Communication
+  href: ServerCore.html
+  name: ServerCore.EDMO.Communication
+  nameWithType: ServerCore.EDMO.Communication
+  fullName: ServerCore.EDMO.Communication
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: ServerCore.EDMO.Communication.EDMOPacket.EscapePacket(System.ReadOnlySpan{System.Byte})
+  commentId: M:ServerCore.EDMO.Communication.EDMOPacket.EscapePacket(System.ReadOnlySpan{System.Byte})
+  isExternal: true
+  href: ServerCore.EDMO.Communication.EDMOPacket.html#ServerCore_EDMO_Communication_EDMOPacket_EscapePacket_System_ReadOnlySpan_System_Byte__
+  name: EscapePacket(ReadOnlySpan<byte>)
+  nameWithType: EDMOPacket.EscapePacket(ReadOnlySpan<byte>)
+  fullName: ServerCore.EDMO.Communication.EDMOPacket.EscapePacket(System.ReadOnlySpan<byte>)
+  nameWithType.vb: EDMOPacket.EscapePacket(ReadOnlySpan(Of Byte))
+  fullName.vb: ServerCore.EDMO.Communication.EDMOPacket.EscapePacket(System.ReadOnlySpan(Of Byte))
+  name.vb: EscapePacket(ReadOnlySpan(Of Byte))
+  spec.csharp:
+  - uid: ServerCore.EDMO.Communication.EDMOPacket.EscapePacket(System.ReadOnlySpan{System.Byte})
+    name: EscapePacket
+    href: ServerCore.EDMO.Communication.EDMOPacket.html#ServerCore_EDMO_Communication_EDMOPacket_EscapePacket_System_ReadOnlySpan_System_Byte__
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: ServerCore.EDMO.Communication.EDMOPacket.EscapePacket(System.ReadOnlySpan{System.Byte})
+    name: EscapePacket
+    href: ServerCore.EDMO.Communication.EDMOPacket.html#ServerCore_EDMO_Communication_EDMOPacket_EscapePacket_System_ReadOnlySpan_System_Byte__
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: )
+- uid: ServerCore.EDMO.Communication.EDMOPacket.UnescapePacket*
+  commentId: Overload:ServerCore.EDMO.Communication.EDMOPacket.UnescapePacket
+  href: ServerCore.EDMO.Communication.EDMOPacket.html#ServerCore_EDMO_Communication_EDMOPacket_UnescapePacket_System_ReadOnlySpan_System_Byte__
+  name: UnescapePacket
+  nameWithType: EDMOPacket.UnescapePacket
+  fullName: ServerCore.EDMO.Communication.EDMOPacket.UnescapePacket
+- uid: System.ReadOnlySpan{System.Byte}
+  commentId: T:System.ReadOnlySpan{System.Byte}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<byte>
+  nameWithType: ReadOnlySpan<byte>
+  fullName: System.ReadOnlySpan<byte>
+  nameWithType.vb: ReadOnlySpan(Of Byte)
+  fullName.vb: System.ReadOnlySpan(Of Byte)
+  name.vb: ReadOnlySpan(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: ServerCore.EDMO.Communication.EDMOPacket.UnescapePacket(System.ReadOnlySpan{System.Byte})
+  commentId: M:ServerCore.EDMO.Communication.EDMOPacket.UnescapePacket(System.ReadOnlySpan{System.Byte})
+  isExternal: true
+  href: ServerCore.EDMO.Communication.EDMOPacket.html#ServerCore_EDMO_Communication_EDMOPacket_UnescapePacket_System_ReadOnlySpan_System_Byte__
+  name: UnescapePacket(ReadOnlySpan<byte>)
+  nameWithType: EDMOPacket.UnescapePacket(ReadOnlySpan<byte>)
+  fullName: ServerCore.EDMO.Communication.EDMOPacket.UnescapePacket(System.ReadOnlySpan<byte>)
+  nameWithType.vb: EDMOPacket.UnescapePacket(ReadOnlySpan(Of Byte))
+  fullName.vb: ServerCore.EDMO.Communication.EDMOPacket.UnescapePacket(System.ReadOnlySpan(Of Byte))
+  name.vb: UnescapePacket(ReadOnlySpan(Of Byte))
+  spec.csharp:
+  - uid: ServerCore.EDMO.Communication.EDMOPacket.UnescapePacket(System.ReadOnlySpan{System.Byte})
+    name: UnescapePacket
+    href: ServerCore.EDMO.Communication.EDMOPacket.html#ServerCore_EDMO_Communication_EDMOPacket_UnescapePacket_System_ReadOnlySpan_System_Byte__
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: ServerCore.EDMO.Communication.EDMOPacket.UnescapePacket(System.ReadOnlySpan{System.Byte})
+    name: UnescapePacket
+    href: ServerCore.EDMO.Communication.EDMOPacket.html#ServerCore_EDMO_Communication_EDMOPacket_UnescapePacket_System_ReadOnlySpan_System_Byte__
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: )
+- uid: ServerCore.EDMO.Communication.EDMOPacket.HEADER
+  commentId: F:ServerCore.EDMO.Communication.EDMOPacket.HEADER
+  href: ServerCore.EDMO.Communication.EDMOPacket.html#ServerCore_EDMO_Communication_EDMOPacket_HEADER
+  name: HEADER
+  nameWithType: EDMOPacket.HEADER
+  fullName: ServerCore.EDMO.Communication.EDMOPacket.HEADER
+- uid: ServerCore.EDMO.Communication.EDMOPacket.FOOTER
+  commentId: F:ServerCore.EDMO.Communication.EDMOPacket.FOOTER
+  href: ServerCore.EDMO.Communication.EDMOPacket.html#ServerCore_EDMO_Communication_EDMOPacket_FOOTER
+  name: FOOTER
+  nameWithType: EDMOPacket.FOOTER
+  fullName: ServerCore.EDMO.Communication.EDMOPacket.FOOTER
+- uid: ServerCore.EDMO.Communication.EDMOPacket.EscapePacket*
+  commentId: Overload:ServerCore.EDMO.Communication.EDMOPacket.EscapePacket
+  href: ServerCore.EDMO.Communication.EDMOPacket.html#ServerCore_EDMO_Communication_EDMOPacket_EscapePacket_System_ReadOnlySpan_System_Byte__
+  name: EscapePacket
+  nameWithType: EDMOPacket.EscapePacket
+  fullName: ServerCore.EDMO.Communication.EDMOPacket.EscapePacket
+- uid: System.IO.InvalidDataException
+  commentId: T:System.IO.InvalidDataException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.invaliddataexception
+  name: InvalidDataException
+  nameWithType: InvalidDataException
+  fullName: System.IO.InvalidDataException
+- uid: ServerCore.EDMO.Communication.EDMOPacket.Parse*
+  commentId: Overload:ServerCore.EDMO.Communication.EDMOPacket.Parse
+  href: ServerCore.EDMO.Communication.EDMOPacket.html#ServerCore_EDMO_Communication_EDMOPacket_Parse__1_System_ReadOnlySpan_System_Byte__
+  name: Parse
+  nameWithType: EDMOPacket.Parse
+  fullName: ServerCore.EDMO.Communication.EDMOPacket.Parse
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

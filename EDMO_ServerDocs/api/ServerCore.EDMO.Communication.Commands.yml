@@ -1,0 +1,90 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.EDMO.Communication.Commands
+  commentId: N:ServerCore.EDMO.Communication.Commands
+  id: ServerCore.EDMO.Communication.Commands
+  children:
+  - ServerCore.EDMO.Communication.Commands.IdentificationCommand
+  - ServerCore.EDMO.Communication.Commands.OscillatorParams
+  - ServerCore.EDMO.Communication.Commands.SessionEndCommand
+  - ServerCore.EDMO.Communication.Commands.SessionStartCommand
+  - ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand
+  langs:
+  - csharp
+  - vb
+  name: ServerCore.EDMO.Communication.Commands
+  nameWithType: ServerCore.EDMO.Communication.Commands
+  fullName: ServerCore.EDMO.Communication.Commands
+  type: Namespace
+  assemblies:
+  - ServerCore
+references:
+- uid: ServerCore.EDMO.Communication.Commands.IdentificationCommand
+  commentId: T:ServerCore.EDMO.Communication.Commands.IdentificationCommand
+  href: ServerCore.EDMO.Communication.Commands.IdentificationCommand.html
+  name: IdentificationCommand
+  nameWithType: IdentificationCommand
+  fullName: ServerCore.EDMO.Communication.Commands.IdentificationCommand
+- uid: ServerCore.EDMO.Communication.Commands.SessionEndCommand
+  commentId: T:ServerCore.EDMO.Communication.Commands.SessionEndCommand
+  href: ServerCore.EDMO.Communication.Commands.SessionEndCommand.html
+  name: SessionEndCommand
+  nameWithType: SessionEndCommand
+  fullName: ServerCore.EDMO.Communication.Commands.SessionEndCommand
+- uid: ServerCore.EDMO.Communication.Commands.SessionStartCommand
+  commentId: T:ServerCore.EDMO.Communication.Commands.SessionStartCommand
+  href: ServerCore.EDMO.Communication.Commands.SessionStartCommand.html
+  name: SessionStartCommand
+  nameWithType: SessionStartCommand
+  fullName: ServerCore.EDMO.Communication.Commands.SessionStartCommand
+- uid: ServerCore.EDMO.Communication.Commands.OscillatorParams
+  commentId: T:ServerCore.EDMO.Communication.Commands.OscillatorParams
+  parent: ServerCore.EDMO.Communication.Commands
+  href: ServerCore.EDMO.Communication.Commands.OscillatorParams.html
+  name: OscillatorParams
+  nameWithType: OscillatorParams
+  fullName: ServerCore.EDMO.Communication.Commands.OscillatorParams
+- uid: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand
+  commentId: T:ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand
+  href: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.html
+  name: UpdateOscillatorCommand
+  nameWithType: UpdateOscillatorCommand
+  fullName: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand
+- uid: ServerCore.EDMO.Communication.Commands
+  commentId: N:ServerCore.EDMO.Communication.Commands
+  href: ServerCore.html
+  name: ServerCore.EDMO.Communication.Commands
+  nameWithType: ServerCore.EDMO.Communication.Commands
+  fullName: ServerCore.EDMO.Communication.Commands
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.Commands
+    name: Commands
+    href: ServerCore.EDMO.Communication.Commands.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.Commands
+    name: Commands
+    href: ServerCore.EDMO.Communication.Commands.html

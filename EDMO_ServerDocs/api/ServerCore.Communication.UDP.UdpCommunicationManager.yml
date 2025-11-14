@@ -1,0 +1,776 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.Communication.UDP.UdpCommunicationManager
+  commentId: T:ServerCore.Communication.UDP.UdpCommunicationManager
+  id: UdpCommunicationManager
+  parent: ServerCore.Communication.UDP
+  children:
+  - ServerCore.Communication.UDP.UdpCommunicationManager.#ctor(System.Int32)
+  - ServerCore.Communication.UDP.UdpCommunicationManager.CommunicationChannelEstablished
+  - ServerCore.Communication.UDP.UdpCommunicationManager.CommunicationChannelLost
+  - ServerCore.Communication.UDP.UdpCommunicationManager.Dispose
+  - ServerCore.Communication.UDP.UdpCommunicationManager.PollMessage
+  - ServerCore.Communication.UDP.UdpCommunicationManager.Start
+  - ServerCore.Communication.UDP.UdpCommunicationManager.Stop
+  langs:
+  - csharp
+  - vb
+  name: UdpCommunicationManager
+  nameWithType: UdpCommunicationManager
+  fullName: ServerCore.Communication.UDP.UdpCommunicationManager
+  type: Class
+  source:
+    remote:
+      path: ServerCore/Communication/UDP/UdpCommunicationManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: UdpCommunicationManager
+    path: ../ServerVNext/ServerCore/Communication/UDP/UdpCommunicationManager.cs
+    startLine: 27
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.UDP
+  summary: >-
+    A abstraction for searching and keeping track of <xref href="ServerCore.Communication.ICommunicationChannel" data-throw-if-not-resolved="false"></xref>s.
+
+    <br />
+
+    Searching and management happens in the background, parallel to existing code.
+
+     <br />
+     This implementation works with UDP broadcasts as the underlying communication protocol, with <xref href="ServerCore.Communication.UDP.UdpCommunicationChannel" data-throw-if-not-resolved="false"></xref> as the <xref href="ServerCore.Communication.ICommunicationChannel" data-throw-if-not-resolved="false"></xref> implementation.
+
+     All supported network interfaces will participate in the search procedure. The available network interfaces is queried during construction of the communication manager. It will not acknowledge new interfaces after than point.
+     If a network interface is lost, the communication manager will simply discard it. Reconnection is not supported.
+  remarks: In order to ensure all channels are received properly, it is essential that users of this class assigns <xref href="ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablished" data-throw-if-not-resolved="false"></xref> <i>before</i> calling <xref href="ServerCore.Communication.ICommunicationManager.Start" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public sealed class UdpCommunicationManager : ICommunicationManager, IDisposable'
+    content.vb: Public NotInheritable Class UdpCommunicationManager Implements ICommunicationManager, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - ServerCore.Communication.ICommunicationManager
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ServerCore.Communication.UDP.UdpCommunicationManager.CommunicationChannelEstablished
+  commentId: P:ServerCore.Communication.UDP.UdpCommunicationManager.CommunicationChannelEstablished
+  id: CommunicationChannelEstablished
+  parent: ServerCore.Communication.UDP.UdpCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: CommunicationChannelEstablished
+  nameWithType: UdpCommunicationManager.CommunicationChannelEstablished
+  fullName: ServerCore.Communication.UDP.UdpCommunicationManager.CommunicationChannelEstablished
+  type: Property
+  source:
+    remote:
+      path: ServerCore/Communication/UDP/UdpCommunicationManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: CommunicationChannelEstablished
+    path: ../ServerVNext/ServerCore/Communication/UDP/UdpCommunicationManager.cs
+    startLine: 30
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.UDP
+  summary: An event which is raised when a communication channel is established
+  example: []
+  syntax:
+    content: public ICommunicationManager.CommunicationChannelEstablishedAction? CommunicationChannelEstablished { get; set; }
+    parameters: []
+    return:
+      type: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+    content.vb: Public Property CommunicationChannelEstablished As ICommunicationManager.CommunicationChannelEstablishedAction
+  overload: ServerCore.Communication.UDP.UdpCommunicationManager.CommunicationChannelEstablished*
+  implements:
+  - ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablished
+- uid: ServerCore.Communication.UDP.UdpCommunicationManager.CommunicationChannelLost
+  commentId: P:ServerCore.Communication.UDP.UdpCommunicationManager.CommunicationChannelLost
+  id: CommunicationChannelLost
+  parent: ServerCore.Communication.UDP.UdpCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: CommunicationChannelLost
+  nameWithType: UdpCommunicationManager.CommunicationChannelLost
+  fullName: ServerCore.Communication.UDP.UdpCommunicationManager.CommunicationChannelLost
+  type: Property
+  source:
+    remote:
+      path: ServerCore/Communication/UDP/UdpCommunicationManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: CommunicationChannelLost
+    path: ../ServerVNext/ServerCore/Communication/UDP/UdpCommunicationManager.cs
+    startLine: 33
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.UDP
+  summary: An event which is raised when a communication channel is lost.
+  example: []
+  syntax:
+    content: public ICommunicationManager.CommunicationChannelLostAction? CommunicationChannelLost { get; set; }
+    parameters: []
+    return:
+      type: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+    content.vb: Public Property CommunicationChannelLost As ICommunicationManager.CommunicationChannelLostAction
+  overload: ServerCore.Communication.UDP.UdpCommunicationManager.CommunicationChannelLost*
+  implements:
+  - ServerCore.Communication.ICommunicationManager.CommunicationChannelLost
+- uid: ServerCore.Communication.UDP.UdpCommunicationManager.PollMessage
+  commentId: P:ServerCore.Communication.UDP.UdpCommunicationManager.PollMessage
+  id: PollMessage
+  parent: ServerCore.Communication.UDP.UdpCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: PollMessage
+  nameWithType: UdpCommunicationManager.PollMessage
+  fullName: ServerCore.Communication.UDP.UdpCommunicationManager.PollMessage
+  type: Property
+  source:
+    remote:
+      path: ServerCore/Communication/UDP/UdpCommunicationManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: PollMessage
+    path: ../ServerVNext/ServerCore/Communication/UDP/UdpCommunicationManager.cs
+    startLine: 44
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.UDP
+  summary: The message sent when polling for listeners. If set to <code>null</code>, polling does not occur, and the manager instance will only listen for external messages.
+  example: []
+  syntax:
+    content: public string? PollMessage { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PollMessage As String
+  overload: ServerCore.Communication.UDP.UdpCommunicationManager.PollMessage*
+- uid: ServerCore.Communication.UDP.UdpCommunicationManager.#ctor(System.Int32)
+  commentId: M:ServerCore.Communication.UDP.UdpCommunicationManager.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: ServerCore.Communication.UDP.UdpCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: UdpCommunicationManager(int)
+  nameWithType: UdpCommunicationManager.UdpCommunicationManager(int)
+  fullName: ServerCore.Communication.UDP.UdpCommunicationManager.UdpCommunicationManager(int)
+  type: Constructor
+  source:
+    remote:
+      path: ServerCore/Communication/UDP/UdpCommunicationManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: .ctor
+    path: ../ServerVNext/ServerCore/Communication/UDP/UdpCommunicationManager.cs
+    startLine: 48
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.UDP
+  summary: >-
+    A abstraction for searching and keeping track of <xref href="ServerCore.Communication.ICommunicationChannel" data-throw-if-not-resolved="false"></xref>s.
+
+    <br />
+
+    Searching and management happens in the background, parallel to existing code.
+
+     <br />
+     This implementation works with UDP broadcasts as the underlying communication protocol, with <xref href="ServerCore.Communication.UDP.UdpCommunicationChannel" data-throw-if-not-resolved="false"></xref> as the <xref href="ServerCore.Communication.ICommunicationChannel" data-throw-if-not-resolved="false"></xref> implementation.
+
+     All supported network interfaces will participate in the search procedure. The available network interfaces is queried during construction of the communication manager. It will not acknowledge new interfaces after than point.
+     If a network interface is lost, the communication manager will simply discard it. Reconnection is not supported.
+  remarks: In order to ensure all channels are received properly, it is essential that users of this class assigns <xref href="ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablished" data-throw-if-not-resolved="false"></xref> <i>before</i> calling <xref href="ServerCore.Communication.ICommunicationManager.Start" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public UdpCommunicationManager(int port)
+    parameters:
+    - id: port
+      type: System.Int32
+      description: The port number to communicate through
+    content.vb: Public Sub New(port As Integer)
+  overload: ServerCore.Communication.UDP.UdpCommunicationManager.#ctor*
+  nameWithType.vb: UdpCommunicationManager.New(Integer)
+  fullName.vb: ServerCore.Communication.UDP.UdpCommunicationManager.New(Integer)
+  name.vb: New(Integer)
+- uid: ServerCore.Communication.UDP.UdpCommunicationManager.Start
+  commentId: M:ServerCore.Communication.UDP.UdpCommunicationManager.Start
+  id: Start
+  parent: ServerCore.Communication.UDP.UdpCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: UdpCommunicationManager.Start()
+  fullName: ServerCore.Communication.UDP.UdpCommunicationManager.Start()
+  type: Method
+  source:
+    remote:
+      path: ServerCore/Communication/UDP/UdpCommunicationManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Start
+    path: ../ServerVNext/ServerCore/Communication/UDP/UdpCommunicationManager.cs
+    startLine: 81
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.UDP
+  summary: Starts this communication manager. This communication manager will search for and attempt connections asynchronously.
+  example: []
+  syntax:
+    content: public void Start()
+    content.vb: Public Sub Start()
+  overload: ServerCore.Communication.UDP.UdpCommunicationManager.Start*
+  implements:
+  - ServerCore.Communication.ICommunicationManager.Start
+- uid: ServerCore.Communication.UDP.UdpCommunicationManager.Stop
+  commentId: M:ServerCore.Communication.UDP.UdpCommunicationManager.Stop
+  id: Stop
+  parent: ServerCore.Communication.UDP.UdpCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: UdpCommunicationManager.Stop()
+  fullName: ServerCore.Communication.UDP.UdpCommunicationManager.Stop()
+  type: Method
+  source:
+    remote:
+      path: ServerCore/Communication/UDP/UdpCommunicationManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Stop
+    path: ../ServerVNext/ServerCore/Communication/UDP/UdpCommunicationManager.cs
+    startLine: 89
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.UDP
+  summary: Stops this communication manager. This communication manager will no longer search for communication channels.
+  example: []
+  syntax:
+    content: public void Stop()
+    content.vb: Public Sub [Stop]()
+  overload: ServerCore.Communication.UDP.UdpCommunicationManager.Stop*
+  implements:
+  - ServerCore.Communication.ICommunicationManager.Stop
+- uid: ServerCore.Communication.UDP.UdpCommunicationManager.Dispose
+  commentId: M:ServerCore.Communication.UDP.UdpCommunicationManager.Dispose
+  id: Dispose
+  parent: ServerCore.Communication.UDP.UdpCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: UdpCommunicationManager.Dispose()
+  fullName: ServerCore.Communication.UDP.UdpCommunicationManager.Dispose()
+  type: Method
+  source:
+    remote:
+      path: ServerCore/Communication/UDP/UdpCommunicationManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Dispose
+    path: ../ServerVNext/ServerCore/Communication/UDP/UdpCommunicationManager.cs
+    startLine: 196
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.UDP
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: ServerCore.Communication.UDP.UdpCommunicationManager.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: ServerCore.Communication.ICommunicationChannel
+  commentId: T:ServerCore.Communication.ICommunicationChannel
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationChannel.html
+  name: ICommunicationChannel
+  nameWithType: ICommunicationChannel
+  fullName: ServerCore.Communication.ICommunicationChannel
+- uid: ServerCore.Communication.UDP.UdpCommunicationChannel
+  commentId: T:ServerCore.Communication.UDP.UdpCommunicationChannel
+  href: ServerCore.Communication.UDP.UdpCommunicationChannel.html
+  name: UdpCommunicationChannel
+  nameWithType: UdpCommunicationChannel
+  fullName: ServerCore.Communication.UDP.UdpCommunicationChannel
+- uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablished
+  commentId: P:ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablished
+  parent: ServerCore.Communication.ICommunicationManager
+  href: ServerCore.Communication.ICommunicationManager.html#ServerCore_Communication_ICommunicationManager_CommunicationChannelEstablished
+  name: CommunicationChannelEstablished
+  nameWithType: ICommunicationManager.CommunicationChannelEstablished
+  fullName: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablished
+- uid: ServerCore.Communication.ICommunicationManager.Start
+  commentId: M:ServerCore.Communication.ICommunicationManager.Start
+  parent: ServerCore.Communication.ICommunicationManager
+  href: ServerCore.Communication.ICommunicationManager.html#ServerCore_Communication_ICommunicationManager_Start
+  name: Start()
+  nameWithType: ICommunicationManager.Start()
+  fullName: ServerCore.Communication.ICommunicationManager.Start()
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationManager.Start
+    name: Start
+    href: ServerCore.Communication.ICommunicationManager.html#ServerCore_Communication_ICommunicationManager_Start
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationManager.Start
+    name: Start
+    href: ServerCore.Communication.ICommunicationManager.html#ServerCore_Communication_ICommunicationManager_Start
+  - name: (
+  - name: )
+- uid: ServerCore.Communication.UDP
+  commentId: N:ServerCore.Communication.UDP
+  href: ServerCore.html
+  name: ServerCore.Communication.UDP
+  nameWithType: ServerCore.Communication.UDP
+  fullName: ServerCore.Communication.UDP
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+  - name: .
+  - uid: ServerCore.Communication.UDP
+    name: UDP
+    href: ServerCore.Communication.UDP.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+  - name: .
+  - uid: ServerCore.Communication.UDP
+    name: UDP
+    href: ServerCore.Communication.UDP.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ServerCore.Communication.ICommunicationManager
+  commentId: T:ServerCore.Communication.ICommunicationManager
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationManager.html
+  name: ICommunicationManager
+  nameWithType: ICommunicationManager
+  fullName: ServerCore.Communication.ICommunicationManager
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: ServerCore.Communication
+  commentId: N:ServerCore.Communication
+  href: ServerCore.html
+  name: ServerCore.Communication
+  nameWithType: ServerCore.Communication
+  fullName: ServerCore.Communication
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ServerCore.Communication.UDP.UdpCommunicationManager.CommunicationChannelEstablished*
+  commentId: Overload:ServerCore.Communication.UDP.UdpCommunicationManager.CommunicationChannelEstablished
+  href: ServerCore.Communication.UDP.UdpCommunicationManager.html#ServerCore_Communication_UDP_UdpCommunicationManager_CommunicationChannelEstablished
+  name: CommunicationChannelEstablished
+  nameWithType: UdpCommunicationManager.CommunicationChannelEstablished
+  fullName: ServerCore.Communication.UDP.UdpCommunicationManager.CommunicationChannelEstablished
+- uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+  commentId: T:ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationManager.html
+  name: ICommunicationManager.CommunicationChannelEstablishedAction
+  nameWithType: ICommunicationManager.CommunicationChannelEstablishedAction
+  fullName: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationManager
+    name: ICommunicationManager
+    href: ServerCore.Communication.ICommunicationManager.html
+  - name: .
+  - uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+    name: CommunicationChannelEstablishedAction
+    href: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction.html
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationManager
+    name: ICommunicationManager
+    href: ServerCore.Communication.ICommunicationManager.html
+  - name: .
+  - uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+    name: CommunicationChannelEstablishedAction
+    href: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction.html
+- uid: ServerCore.Communication.UDP.UdpCommunicationManager.CommunicationChannelLost*
+  commentId: Overload:ServerCore.Communication.UDP.UdpCommunicationManager.CommunicationChannelLost
+  href: ServerCore.Communication.UDP.UdpCommunicationManager.html#ServerCore_Communication_UDP_UdpCommunicationManager_CommunicationChannelLost
+  name: CommunicationChannelLost
+  nameWithType: UdpCommunicationManager.CommunicationChannelLost
+  fullName: ServerCore.Communication.UDP.UdpCommunicationManager.CommunicationChannelLost
+- uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelLost
+  commentId: P:ServerCore.Communication.ICommunicationManager.CommunicationChannelLost
+  parent: ServerCore.Communication.ICommunicationManager
+  href: ServerCore.Communication.ICommunicationManager.html#ServerCore_Communication_ICommunicationManager_CommunicationChannelLost
+  name: CommunicationChannelLost
+  nameWithType: ICommunicationManager.CommunicationChannelLost
+  fullName: ServerCore.Communication.ICommunicationManager.CommunicationChannelLost
+- uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+  commentId: T:ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationManager.html
+  name: ICommunicationManager.CommunicationChannelLostAction
+  nameWithType: ICommunicationManager.CommunicationChannelLostAction
+  fullName: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationManager
+    name: ICommunicationManager
+    href: ServerCore.Communication.ICommunicationManager.html
+  - name: .
+  - uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+    name: CommunicationChannelLostAction
+    href: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction.html
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationManager
+    name: ICommunicationManager
+    href: ServerCore.Communication.ICommunicationManager.html
+  - name: .
+  - uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+    name: CommunicationChannelLostAction
+    href: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction.html
+- uid: ServerCore.Communication.UDP.UdpCommunicationManager.PollMessage*
+  commentId: Overload:ServerCore.Communication.UDP.UdpCommunicationManager.PollMessage
+  href: ServerCore.Communication.UDP.UdpCommunicationManager.html#ServerCore_Communication_UDP_UdpCommunicationManager_PollMessage
+  name: PollMessage
+  nameWithType: UdpCommunicationManager.PollMessage
+  fullName: ServerCore.Communication.UDP.UdpCommunicationManager.PollMessage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ServerCore.Communication.UDP.UdpCommunicationManager.#ctor*
+  commentId: Overload:ServerCore.Communication.UDP.UdpCommunicationManager.#ctor
+  href: ServerCore.Communication.UDP.UdpCommunicationManager.html#ServerCore_Communication_UDP_UdpCommunicationManager__ctor_System_Int32_
+  name: UdpCommunicationManager
+  nameWithType: UdpCommunicationManager.UdpCommunicationManager
+  fullName: ServerCore.Communication.UDP.UdpCommunicationManager.UdpCommunicationManager
+  nameWithType.vb: UdpCommunicationManager.New
+  fullName.vb: ServerCore.Communication.UDP.UdpCommunicationManager.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ServerCore.Communication.UDP.UdpCommunicationManager.Start*
+  commentId: Overload:ServerCore.Communication.UDP.UdpCommunicationManager.Start
+  href: ServerCore.Communication.UDP.UdpCommunicationManager.html#ServerCore_Communication_UDP_UdpCommunicationManager_Start
+  name: Start
+  nameWithType: UdpCommunicationManager.Start
+  fullName: ServerCore.Communication.UDP.UdpCommunicationManager.Start
+- uid: ServerCore.Communication.UDP.UdpCommunicationManager.Stop*
+  commentId: Overload:ServerCore.Communication.UDP.UdpCommunicationManager.Stop
+  href: ServerCore.Communication.UDP.UdpCommunicationManager.html#ServerCore_Communication_UDP_UdpCommunicationManager_Stop
+  name: Stop
+  nameWithType: UdpCommunicationManager.Stop
+  fullName: ServerCore.Communication.UDP.UdpCommunicationManager.Stop
+- uid: ServerCore.Communication.ICommunicationManager.Stop
+  commentId: M:ServerCore.Communication.ICommunicationManager.Stop
+  parent: ServerCore.Communication.ICommunicationManager
+  href: ServerCore.Communication.ICommunicationManager.html#ServerCore_Communication_ICommunicationManager_Stop
+  name: Stop()
+  nameWithType: ICommunicationManager.Stop()
+  fullName: ServerCore.Communication.ICommunicationManager.Stop()
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationManager.Stop
+    name: Stop
+    href: ServerCore.Communication.ICommunicationManager.html#ServerCore_Communication_ICommunicationManager_Stop
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationManager.Stop
+    name: Stop
+    href: ServerCore.Communication.ICommunicationManager.html#ServerCore_Communication_ICommunicationManager_Stop
+  - name: (
+  - name: )
+- uid: ServerCore.Communication.UDP.UdpCommunicationManager.Dispose*
+  commentId: Overload:ServerCore.Communication.UDP.UdpCommunicationManager.Dispose
+  href: ServerCore.Communication.UDP.UdpCommunicationManager.html#ServerCore_Communication_UDP_UdpCommunicationManager_Dispose
+  name: Dispose
+  nameWithType: UdpCommunicationManager.Dispose
+  fullName: ServerCore.Communication.UDP.UdpCommunicationManager.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

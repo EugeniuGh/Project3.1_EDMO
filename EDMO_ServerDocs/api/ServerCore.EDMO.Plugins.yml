@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.EDMO.Plugins
+  commentId: N:ServerCore.EDMO.Plugins
+  id: ServerCore.EDMO.Plugins
+  children:
+  - ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: ServerCore.EDMO.Plugins
+  nameWithType: ServerCore.EDMO.Plugins
+  fullName: ServerCore.EDMO.Plugins
+  type: Namespace
+  assemblies:
+  - ServerCore
+references:
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin
+  commentId: T:ServerCore.EDMO.Plugins.EDMOPlugin
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html
+  name: EDMOPlugin
+  nameWithType: EDMOPlugin
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin

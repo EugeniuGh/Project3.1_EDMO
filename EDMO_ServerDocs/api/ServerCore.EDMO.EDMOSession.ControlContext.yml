@@ -1,0 +1,1263 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.EDMO.EDMOSession.ControlContext
+  commentId: T:ServerCore.EDMO.EDMOSession.ControlContext
+  id: EDMOSession.ControlContext
+  parent: ServerCore.EDMO
+  children:
+  - ServerCore.EDMO.EDMOSession.ControlContext.#ctor(ServerCore.EDMO.EDMOSession,System.Int32,System.String)
+  - ServerCore.EDMO.EDMOSession.ControlContext.Amplitude
+  - ServerCore.EDMO.EDMOSession.ControlContext.AssignedHueOf(System.Int32)
+  - ServerCore.EDMO.EDMOSession.ControlContext.ControllerIdentifier
+  - ServerCore.EDMO.EDMOSession.ControlContext.Dispose
+  - ServerCore.EDMO.EDMOSession.ControlContext.ExternalRelationChanged
+  - ServerCore.EDMO.EDMOSession.ControlContext.Frequency
+  - ServerCore.EDMO.EDMOSession.ControlContext.Index
+  - ServerCore.EDMO.EDMOSession.ControlContext.ObjectiveGroups
+  - ServerCore.EDMO.EDMOSession.ControlContext.Offset
+  - ServerCore.EDMO.EDMOSession.ControlContext.OscillatorDataReceived
+  - ServerCore.EDMO.EDMOSession.ControlContext.OscillatorParams
+  - ServerCore.EDMO.EDMOSession.ControlContext.ParamsUpdatedExternally
+  - ServerCore.EDMO.EDMOSession.ControlContext.PhaseShift
+  - ServerCore.EDMO.EDMOSession.ControlContext.PlayerListUpdated
+  - ServerCore.EDMO.EDMOSession.ControlContext.Players
+  - ServerCore.EDMO.EDMOSession.ControlContext.ResetValues
+  langs:
+  - csharp
+  - vb
+  name: EDMOSession.ControlContext
+  nameWithType: EDMOSession.ControlContext
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext
+  type: Class
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession_ControlContext.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: ControlContext
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession_ControlContext.cs
+    startLine: 14
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: A context that provides methods to acquire information about a session, and methods to control an oscillator.
+  example: []
+  syntax:
+    content: 'public sealed class EDMOSession.ControlContext : IDisposable'
+    content.vb: Public NotInheritable Class EDMOSession.ControlContext Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.#ctor(ServerCore.EDMO.EDMOSession,System.Int32,System.String)
+  commentId: M:ServerCore.EDMO.EDMOSession.ControlContext.#ctor(ServerCore.EDMO.EDMOSession,System.Int32,System.String)
+  id: '#ctor(ServerCore.EDMO.EDMOSession,System.Int32,System.String)'
+  parent: ServerCore.EDMO.EDMOSession.ControlContext
+  langs:
+  - csharp
+  - vb
+  name: ControlContext(EDMOSession, int, string)
+  nameWithType: EDMOSession.ControlContext.ControlContext(EDMOSession, int, string)
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.ControlContext(ServerCore.EDMO.EDMOSession, int, string)
+  type: Constructor
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession_ControlContext.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: .ctor
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession_ControlContext.cs
+    startLine: 20
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: A context that provides methods to acquire information about a session, and methods to control an oscillator.
+  example: []
+  syntax:
+    content: public ControlContext(EDMOSession session, int index, string identifier)
+    parameters:
+    - id: session
+      type: ServerCore.EDMO.EDMOSession
+      description: The session this context is tied to
+    - id: index
+      type: System.Int32
+      description: The index of the oscillator to be controlled through this context
+    - id: identifier
+      type: System.String
+      description: The identifier of this context, usually the name of the user controlling this.
+    content.vb: Public Sub New(session As EDMOSession, index As Integer, identifier As String)
+  overload: ServerCore.EDMO.EDMOSession.ControlContext.#ctor*
+  nameWithType.vb: EDMOSession.ControlContext.New(EDMOSession, Integer, String)
+  fullName.vb: ServerCore.EDMO.EDMOSession.ControlContext.New(ServerCore.EDMO.EDMOSession, Integer, String)
+  name.vb: New(EDMOSession, Integer, String)
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.Index
+  commentId: F:ServerCore.EDMO.EDMOSession.ControlContext.Index
+  id: Index
+  parent: ServerCore.EDMO.EDMOSession.ControlContext
+  langs:
+  - csharp
+  - vb
+  name: Index
+  nameWithType: EDMOSession.ControlContext.Index
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.Index
+  type: Field
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession_ControlContext.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Index
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession_ControlContext.cs
+    startLine: 32
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: The index of the oscillator to be controlled through this context
+  example: []
+  syntax:
+    content: public readonly int Index
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Index As Integer
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.ControllerIdentifier
+  commentId: F:ServerCore.EDMO.EDMOSession.ControlContext.ControllerIdentifier
+  id: ControllerIdentifier
+  parent: ServerCore.EDMO.EDMOSession.ControlContext
+  langs:
+  - csharp
+  - vb
+  name: ControllerIdentifier
+  nameWithType: EDMOSession.ControlContext.ControllerIdentifier
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.ControllerIdentifier
+  type: Field
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession_ControlContext.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: ControllerIdentifier
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession_ControlContext.cs
+    startLine: 37
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: The identifier of this context, usually the name of the user controlling this.
+  example: []
+  syntax:
+    content: public readonly string ControllerIdentifier
+    return:
+      type: System.String
+    content.vb: Public ReadOnly ControllerIdentifier As String
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.AssignedHueOf(System.Int32)
+  commentId: M:ServerCore.EDMO.EDMOSession.ControlContext.AssignedHueOf(System.Int32)
+  id: AssignedHueOf(System.Int32)
+  parent: ServerCore.EDMO.EDMOSession.ControlContext
+  langs:
+  - csharp
+  - vb
+  name: AssignedHueOf(int)
+  nameWithType: EDMOSession.ControlContext.AssignedHueOf(int)
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.AssignedHueOf(int)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession_ControlContext.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: AssignedHueOf
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession_ControlContext.cs
+    startLine: 44
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: Gets the colour hue of a specific oscillator.
+  example: []
+  syntax:
+    content: public ushort AssignedHueOf(int oscillatorIndex)
+    parameters:
+    - id: oscillatorIndex
+      type: System.Int32
+      description: The target oscillator's index
+    return:
+      type: System.UInt16
+      description: A hue value in the range of [0,360)
+    content.vb: Public Function AssignedHueOf(oscillatorIndex As Integer) As UShort
+  overload: ServerCore.EDMO.EDMOSession.ControlContext.AssignedHueOf*
+  nameWithType.vb: EDMOSession.ControlContext.AssignedHueOf(Integer)
+  fullName.vb: ServerCore.EDMO.EDMOSession.ControlContext.AssignedHueOf(Integer)
+  name.vb: AssignedHueOf(Integer)
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.ObjectiveGroups
+  commentId: P:ServerCore.EDMO.EDMOSession.ControlContext.ObjectiveGroups
+  id: ObjectiveGroups
+  parent: ServerCore.EDMO.EDMOSession.ControlContext
+  langs:
+  - csharp
+  - vb
+  name: ObjectiveGroups
+  nameWithType: EDMOSession.ControlContext.ObjectiveGroups
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.ObjectiveGroups
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession_ControlContext.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: ObjectiveGroups
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession_ControlContext.cs
+    startLine: 49
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: An enumerator containing all objective groups in this session.
+  example: []
+  syntax:
+    content: public IEnumerable<EDMOObjectiveGroup> ObjectiveGroups { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{ServerCore.EDMO.Objectives.EDMOObjectiveGroup}
+    content.vb: Public ReadOnly Property ObjectiveGroups As IEnumerable(Of EDMOObjectiveGroup)
+  overload: ServerCore.EDMO.EDMOSession.ControlContext.ObjectiveGroups*
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.ParamsUpdatedExternally
+  commentId: P:ServerCore.EDMO.EDMOSession.ControlContext.ParamsUpdatedExternally
+  id: ParamsUpdatedExternally
+  parent: ServerCore.EDMO.EDMOSession.ControlContext
+  langs:
+  - csharp
+  - vb
+  name: ParamsUpdatedExternally
+  nameWithType: EDMOSession.ControlContext.ParamsUpdatedExternally
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.ParamsUpdatedExternally
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession_ControlContext.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: ParamsUpdatedExternally
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession_ControlContext.cs
+    startLine: 54
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: An event that is raised when parameters for this context's oscillator is modified externally, requiring revalidation by the consumer.
+  example: []
+  syntax:
+    content: public Action? ParamsUpdatedExternally { get; set; }
+    parameters: []
+    return:
+      type: System.Action
+    content.vb: Public Property ParamsUpdatedExternally As Action
+  overload: ServerCore.EDMO.EDMOSession.ControlContext.ParamsUpdatedExternally*
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.ExternalRelationChanged
+  commentId: P:ServerCore.EDMO.EDMOSession.ControlContext.ExternalRelationChanged
+  id: ExternalRelationChanged
+  parent: ServerCore.EDMO.EDMOSession.ControlContext
+  langs:
+  - csharp
+  - vb
+  name: ExternalRelationChanged
+  nameWithType: EDMOSession.ControlContext.ExternalRelationChanged
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.ExternalRelationChanged
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession_ControlContext.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: ExternalRelationChanged
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession_ControlContext.cs
+    startLine: 59
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: An event that is raised when the phase shift of another oscillator is updated, requiring potential revalidation.
+  example: []
+  syntax:
+    content: public Action? ExternalRelationChanged { get; set; }
+    parameters: []
+    return:
+      type: System.Action
+    content.vb: Public Property ExternalRelationChanged As Action
+  overload: ServerCore.EDMO.EDMOSession.ControlContext.ExternalRelationChanged*
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.OscillatorDataReceived
+  commentId: P:ServerCore.EDMO.EDMOSession.ControlContext.OscillatorDataReceived
+  id: OscillatorDataReceived
+  parent: ServerCore.EDMO.EDMOSession.ControlContext
+  langs:
+  - csharp
+  - vb
+  name: OscillatorDataReceived
+  nameWithType: EDMOSession.ControlContext.OscillatorDataReceived
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.OscillatorDataReceived
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession_ControlContext.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: OscillatorDataReceived
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession_ControlContext.cs
+    startLine: 64
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: An event that is raised when a packet associated with this context's oscillator is received.
+  example: []
+  syntax:
+    content: public Action<OscillatorDataPacket>? OscillatorDataReceived { get; set; }
+    parameters: []
+    return:
+      type: System.Action{ServerCore.EDMO.Communication.Packets.OscillatorDataPacket}
+    content.vb: Public Property OscillatorDataReceived As Action(Of OscillatorDataPacket)
+  overload: ServerCore.EDMO.EDMOSession.ControlContext.OscillatorDataReceived*
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.Players
+  commentId: P:ServerCore.EDMO.EDMOSession.ControlContext.Players
+  id: Players
+  parent: ServerCore.EDMO.EDMOSession.ControlContext
+  langs:
+  - csharp
+  - vb
+  name: Players
+  nameWithType: EDMOSession.ControlContext.Players
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.Players
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession_ControlContext.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Players
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession_ControlContext.cs
+    startLine: 69
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: The list of users, along with their index.
+  example: []
+  syntax:
+    content: public IEnumerable<(int Index, string Name)> Players { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Int32,System.String}}
+    content.vb: Public ReadOnly Property Players As IEnumerable(Of (Index As Integer, Name As String))
+  overload: ServerCore.EDMO.EDMOSession.ControlContext.Players*
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.PlayerListUpdated
+  commentId: P:ServerCore.EDMO.EDMOSession.ControlContext.PlayerListUpdated
+  id: PlayerListUpdated
+  parent: ServerCore.EDMO.EDMOSession.ControlContext
+  langs:
+  - csharp
+  - vb
+  name: PlayerListUpdated
+  nameWithType: EDMOSession.ControlContext.PlayerListUpdated
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.PlayerListUpdated
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession_ControlContext.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: PlayerListUpdated
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession_ControlContext.cs
+    startLine: 75
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: An even that is raised when the player list is changed.
+  example: []
+  syntax:
+    content: public Action? PlayerListUpdated { get; set; }
+    parameters: []
+    return:
+      type: System.Action
+    content.vb: Public Property PlayerListUpdated As Action
+  overload: ServerCore.EDMO.EDMOSession.ControlContext.PlayerListUpdated*
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.OscillatorParams
+  commentId: P:ServerCore.EDMO.EDMOSession.ControlContext.OscillatorParams
+  id: OscillatorParams
+  parent: ServerCore.EDMO.EDMOSession.ControlContext
+  langs:
+  - csharp
+  - vb
+  name: OscillatorParams
+  nameWithType: EDMOSession.ControlContext.OscillatorParams
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.OscillatorParams
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession_ControlContext.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: OscillatorParams
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession_ControlContext.cs
+    startLine: 80
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: The list of parameters used by all oscillators in the session.
+  example: []
+  syntax:
+    content: public OscillatorParams[] OscillatorParams { get; }
+    parameters: []
+    return:
+      type: ServerCore.EDMO.Communication.Commands.OscillatorParams[]
+    content.vb: Public ReadOnly Property OscillatorParams As OscillatorParams()
+  overload: ServerCore.EDMO.EDMOSession.ControlContext.OscillatorParams*
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.Amplitude
+  commentId: P:ServerCore.EDMO.EDMOSession.ControlContext.Amplitude
+  id: Amplitude
+  parent: ServerCore.EDMO.EDMOSession.ControlContext
+  langs:
+  - csharp
+  - vb
+  name: Amplitude
+  nameWithType: EDMOSession.ControlContext.Amplitude
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.Amplitude
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession_ControlContext.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Amplitude
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession_ControlContext.cs
+    startLine: 87
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: Get/Set the amplitude of the oscillator associated with this context
+  example: []
+  syntax:
+    content: public float Amplitude { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Amplitude As Single
+  overload: ServerCore.EDMO.EDMOSession.ControlContext.Amplitude*
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.Frequency
+  commentId: P:ServerCore.EDMO.EDMOSession.ControlContext.Frequency
+  id: Frequency
+  parent: ServerCore.EDMO.EDMOSession.ControlContext
+  langs:
+  - csharp
+  - vb
+  name: Frequency
+  nameWithType: EDMOSession.ControlContext.Frequency
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.Frequency
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession_ControlContext.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Frequency
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession_ControlContext.cs
+    startLine: 105
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: Get/Set the frequency of the oscillator associated with this context
+  example: []
+  syntax:
+    content: public float Frequency { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Frequency As Single
+  overload: ServerCore.EDMO.EDMOSession.ControlContext.Frequency*
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.Offset
+  commentId: P:ServerCore.EDMO.EDMOSession.ControlContext.Offset
+  id: Offset
+  parent: ServerCore.EDMO.EDMOSession.ControlContext
+  langs:
+  - csharp
+  - vb
+  name: Offset
+  nameWithType: EDMOSession.ControlContext.Offset
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.Offset
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession_ControlContext.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Offset
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession_ControlContext.cs
+    startLine: 126
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: Get/Set the offset of the oscillator associated with this context
+  example: []
+  syntax:
+    content: public float Offset { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Offset As Single
+  overload: ServerCore.EDMO.EDMOSession.ControlContext.Offset*
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.PhaseShift
+  commentId: P:ServerCore.EDMO.EDMOSession.ControlContext.PhaseShift
+  id: PhaseShift
+  parent: ServerCore.EDMO.EDMOSession.ControlContext
+  langs:
+  - csharp
+  - vb
+  name: PhaseShift
+  nameWithType: EDMOSession.ControlContext.PhaseShift
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.PhaseShift
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession_ControlContext.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: PhaseShift
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession_ControlContext.cs
+    startLine: 144
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: Get/Set the phase shift of the oscillator associated with this context
+  example: []
+  syntax:
+    content: public float PhaseShift { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property PhaseShift As Single
+  overload: ServerCore.EDMO.EDMOSession.ControlContext.PhaseShift*
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.ResetValues
+  commentId: M:ServerCore.EDMO.EDMOSession.ControlContext.ResetValues
+  id: ResetValues
+  parent: ServerCore.EDMO.EDMOSession.ControlContext
+  langs:
+  - csharp
+  - vb
+  name: ResetValues()
+  nameWithType: EDMOSession.ControlContext.ResetValues()
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.ResetValues()
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession_ControlContext.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: ResetValues
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession_ControlContext.cs
+    startLine: 169
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: Reset the parameters of the oscillator associated with this context to their default values.
+  example: []
+  syntax:
+    content: public void ResetValues()
+    content.vb: Public Sub ResetValues()
+  overload: ServerCore.EDMO.EDMOSession.ControlContext.ResetValues*
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.Dispose
+  commentId: M:ServerCore.EDMO.EDMOSession.ControlContext.Dispose
+  id: Dispose
+  parent: ServerCore.EDMO.EDMOSession.ControlContext
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: EDMOSession.ControlContext.Dispose()
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.Dispose()
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession_ControlContext.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Dispose
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession_ControlContext.cs
+    startLine: 180
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: ServerCore.EDMO.EDMOSession.ControlContext.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: ServerCore.EDMO
+  commentId: N:ServerCore.EDMO
+  href: ServerCore.html
+  name: ServerCore.EDMO
+  nameWithType: ServerCore.EDMO
+  fullName: ServerCore.EDMO
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.#ctor*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.ControlContext.#ctor
+  href: ServerCore.EDMO.EDMOSession.ControlContext.html#ServerCore_EDMO_EDMOSession_ControlContext__ctor_ServerCore_EDMO_EDMOSession_System_Int32_System_String_
+  name: ControlContext
+  nameWithType: EDMOSession.ControlContext.ControlContext
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.ControlContext
+  nameWithType.vb: EDMOSession.ControlContext.New
+  fullName.vb: ServerCore.EDMO.EDMOSession.ControlContext.New
+  name.vb: New
+- uid: ServerCore.EDMO.EDMOSession
+  commentId: T:ServerCore.EDMO.EDMOSession
+  parent: ServerCore.EDMO
+  href: ServerCore.EDMO.EDMOSession.html
+  name: EDMOSession
+  nameWithType: EDMOSession
+  fullName: ServerCore.EDMO.EDMOSession
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.AssignedHueOf*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.ControlContext.AssignedHueOf
+  href: ServerCore.EDMO.EDMOSession.ControlContext.html#ServerCore_EDMO_EDMOSession_ControlContext_AssignedHueOf_System_Int32_
+  name: AssignedHueOf
+  nameWithType: EDMOSession.ControlContext.AssignedHueOf
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.AssignedHueOf
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort
+  nameWithType: ushort
+  fullName: ushort
+  nameWithType.vb: UShort
+  fullName.vb: UShort
+  name.vb: UShort
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.ObjectiveGroups*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.ControlContext.ObjectiveGroups
+  href: ServerCore.EDMO.EDMOSession.ControlContext.html#ServerCore_EDMO_EDMOSession_ControlContext_ObjectiveGroups
+  name: ObjectiveGroups
+  nameWithType: EDMOSession.ControlContext.ObjectiveGroups
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.ObjectiveGroups
+- uid: System.Collections.Generic.IEnumerable{ServerCore.EDMO.Objectives.EDMOObjectiveGroup}
+  commentId: T:System.Collections.Generic.IEnumerable{ServerCore.EDMO.Objectives.EDMOObjectiveGroup}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EDMOObjectiveGroup>
+  nameWithType: IEnumerable<EDMOObjectiveGroup>
+  fullName: System.Collections.Generic.IEnumerable<ServerCore.EDMO.Objectives.EDMOObjectiveGroup>
+  nameWithType.vb: IEnumerable(Of EDMOObjectiveGroup)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of ServerCore.EDMO.Objectives.EDMOObjectiveGroup)
+  name.vb: IEnumerable(Of EDMOObjectiveGroup)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: ServerCore.EDMO.Objectives.EDMOObjectiveGroup
+    name: EDMOObjectiveGroup
+    href: ServerCore.EDMO.Objectives.EDMOObjectiveGroup.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ServerCore.EDMO.Objectives.EDMOObjectiveGroup
+    name: EDMOObjectiveGroup
+    href: ServerCore.EDMO.Objectives.EDMOObjectiveGroup.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.ParamsUpdatedExternally*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.ControlContext.ParamsUpdatedExternally
+  href: ServerCore.EDMO.EDMOSession.ControlContext.html#ServerCore_EDMO_EDMOSession_ControlContext_ParamsUpdatedExternally
+  name: ParamsUpdatedExternally
+  nameWithType: EDMOSession.ControlContext.ParamsUpdatedExternally
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.ParamsUpdatedExternally
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.ExternalRelationChanged*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.ControlContext.ExternalRelationChanged
+  href: ServerCore.EDMO.EDMOSession.ControlContext.html#ServerCore_EDMO_EDMOSession_ControlContext_ExternalRelationChanged
+  name: ExternalRelationChanged
+  nameWithType: EDMOSession.ControlContext.ExternalRelationChanged
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.ExternalRelationChanged
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.OscillatorDataReceived*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.ControlContext.OscillatorDataReceived
+  href: ServerCore.EDMO.EDMOSession.ControlContext.html#ServerCore_EDMO_EDMOSession_ControlContext_OscillatorDataReceived
+  name: OscillatorDataReceived
+  nameWithType: EDMOSession.ControlContext.OscillatorDataReceived
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.OscillatorDataReceived
+- uid: System.Action{ServerCore.EDMO.Communication.Packets.OscillatorDataPacket}
+  commentId: T:System.Action{ServerCore.EDMO.Communication.Packets.OscillatorDataPacket}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<OscillatorDataPacket>
+  nameWithType: Action<OscillatorDataPacket>
+  fullName: System.Action<ServerCore.EDMO.Communication.Packets.OscillatorDataPacket>
+  nameWithType.vb: Action(Of OscillatorDataPacket)
+  fullName.vb: System.Action(Of ServerCore.EDMO.Communication.Packets.OscillatorDataPacket)
+  name.vb: Action(Of OscillatorDataPacket)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: ServerCore.EDMO.Communication.Packets.OscillatorDataPacket
+    name: OscillatorDataPacket
+    href: ServerCore.EDMO.Communication.Packets.OscillatorDataPacket.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ServerCore.EDMO.Communication.Packets.OscillatorDataPacket
+    name: OscillatorDataPacket
+    href: ServerCore.EDMO.Communication.Packets.OscillatorDataPacket.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.Players*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.ControlContext.Players
+  href: ServerCore.EDMO.EDMOSession.ControlContext.html#ServerCore_EDMO_EDMOSession_ControlContext_Players
+  name: Players
+  nameWithType: EDMOSession.ControlContext.Players
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.Players
+- uid: System.Collections.Generic.IEnumerable{System.ValueTuple{System.Int32,System.String}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.ValueTuple{System.Int32,System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<(int Index, string Name)>
+  nameWithType: IEnumerable<(int Index, string Name)>
+  fullName: System.Collections.Generic.IEnumerable<(int Index, string Name)>
+  nameWithType.vb: IEnumerable(Of (Index As Integer, Name As String))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of (Index As Integer, Name As String))
+  name.vb: IEnumerable(Of (Index As Integer, Name As String))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.String}.Index
+    name: Index
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.string-.index
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.String}.Name
+    name: Name
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.string-.name
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.Int32,System.String}.Index
+    name: Index
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.string-.index
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Int32,System.String}.Name
+    name: Name
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.int32,system.string-.name
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.PlayerListUpdated*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.ControlContext.PlayerListUpdated
+  href: ServerCore.EDMO.EDMOSession.ControlContext.html#ServerCore_EDMO_EDMOSession_ControlContext_PlayerListUpdated
+  name: PlayerListUpdated
+  nameWithType: EDMOSession.ControlContext.PlayerListUpdated
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.PlayerListUpdated
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.OscillatorParams*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.ControlContext.OscillatorParams
+  href: ServerCore.EDMO.EDMOSession.ControlContext.html#ServerCore_EDMO_EDMOSession_ControlContext_OscillatorParams
+  name: OscillatorParams
+  nameWithType: EDMOSession.ControlContext.OscillatorParams
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.OscillatorParams
+- uid: ServerCore.EDMO.Communication.Commands.OscillatorParams[]
+  isExternal: true
+  href: ServerCore.EDMO.Communication.Commands.OscillatorParams.html
+  name: OscillatorParams[]
+  nameWithType: OscillatorParams[]
+  fullName: ServerCore.EDMO.Communication.Commands.OscillatorParams[]
+  nameWithType.vb: OscillatorParams()
+  fullName.vb: ServerCore.EDMO.Communication.Commands.OscillatorParams()
+  name.vb: OscillatorParams()
+  spec.csharp:
+  - uid: ServerCore.EDMO.Communication.Commands.OscillatorParams
+    name: OscillatorParams
+    href: ServerCore.EDMO.Communication.Commands.OscillatorParams.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: ServerCore.EDMO.Communication.Commands.OscillatorParams
+    name: OscillatorParams
+    href: ServerCore.EDMO.Communication.Commands.OscillatorParams.html
+  - name: (
+  - name: )
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.Amplitude*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.ControlContext.Amplitude
+  href: ServerCore.EDMO.EDMOSession.ControlContext.html#ServerCore_EDMO_EDMOSession_ControlContext_Amplitude
+  name: Amplitude
+  nameWithType: EDMOSession.ControlContext.Amplitude
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.Amplitude
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.Frequency*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.ControlContext.Frequency
+  href: ServerCore.EDMO.EDMOSession.ControlContext.html#ServerCore_EDMO_EDMOSession_ControlContext_Frequency
+  name: Frequency
+  nameWithType: EDMOSession.ControlContext.Frequency
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.Frequency
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.Offset*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.ControlContext.Offset
+  href: ServerCore.EDMO.EDMOSession.ControlContext.html#ServerCore_EDMO_EDMOSession_ControlContext_Offset
+  name: Offset
+  nameWithType: EDMOSession.ControlContext.Offset
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.Offset
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.PhaseShift*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.ControlContext.PhaseShift
+  href: ServerCore.EDMO.EDMOSession.ControlContext.html#ServerCore_EDMO_EDMOSession_ControlContext_PhaseShift
+  name: PhaseShift
+  nameWithType: EDMOSession.ControlContext.PhaseShift
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.PhaseShift
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.ResetValues*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.ControlContext.ResetValues
+  href: ServerCore.EDMO.EDMOSession.ControlContext.html#ServerCore_EDMO_EDMOSession_ControlContext_ResetValues
+  name: ResetValues
+  nameWithType: EDMOSession.ControlContext.ResetValues
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.ResetValues
+- uid: ServerCore.EDMO.EDMOSession.ControlContext.Dispose*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.ControlContext.Dispose
+  href: ServerCore.EDMO.EDMOSession.ControlContext.html#ServerCore_EDMO_EDMOSession_ControlContext_Dispose
+  name: Dispose
+  nameWithType: EDMOSession.ControlContext.Dispose
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

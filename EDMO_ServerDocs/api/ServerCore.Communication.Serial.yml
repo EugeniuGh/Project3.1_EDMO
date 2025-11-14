@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.Communication.Serial
+  commentId: N:ServerCore.Communication.Serial
+  id: ServerCore.Communication.Serial
+  children:
+  - ServerCore.Communication.Serial.SerialCommunicationChannel
+  - ServerCore.Communication.Serial.SerialCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: ServerCore.Communication.Serial
+  nameWithType: ServerCore.Communication.Serial
+  fullName: ServerCore.Communication.Serial
+  type: Namespace
+  assemblies:
+  - ServerCore
+references:
+- uid: ServerCore.Communication.Serial.SerialCommunicationChannel
+  commentId: T:ServerCore.Communication.Serial.SerialCommunicationChannel
+  href: ServerCore.Communication.Serial.SerialCommunicationChannel.html
+  name: SerialCommunicationChannel
+  nameWithType: SerialCommunicationChannel
+  fullName: ServerCore.Communication.Serial.SerialCommunicationChannel
+- uid: ServerCore.Communication.Serial.SerialCommunicationManager
+  commentId: T:ServerCore.Communication.Serial.SerialCommunicationManager
+  href: ServerCore.Communication.Serial.SerialCommunicationManager.html
+  name: SerialCommunicationManager
+  nameWithType: SerialCommunicationManager
+  fullName: ServerCore.Communication.Serial.SerialCommunicationManager

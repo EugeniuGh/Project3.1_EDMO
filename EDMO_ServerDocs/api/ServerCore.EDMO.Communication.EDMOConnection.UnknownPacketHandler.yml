@@ -1,0 +1,143 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketHandler
+  commentId: T:ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketHandler
+  id: EDMOConnection.UnknownPacketHandler
+  parent: ServerCore.EDMO.Communication
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: EDMOConnection.UnknownPacketHandler
+  nameWithType: EDMOConnection.UnknownPacketHandler
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketHandler
+  type: Delegate
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOConnection.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: UnknownPacketHandler
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOConnection.cs
+    startLine: 316
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: Describes a handler for unknown packets received from this EDMO connection.
+  example: []
+  syntax:
+    content: public delegate void EDMOConnection.UnknownPacketHandler(EDMOConnection connection, ReadOnlySpan<byte> dataBytes)
+    parameters:
+    - id: connection
+      type: ServerCore.EDMO.Communication.EDMOConnection
+    - id: dataBytes
+      type: System.ReadOnlySpan{System.Byte}
+    content.vb: Public Delegate Sub EDMOConnection.UnknownPacketHandler(connection As EDMOConnection, dataBytes As ReadOnlySpan(Of Byte))
+references:
+- uid: ServerCore.EDMO.Communication
+  commentId: N:ServerCore.EDMO.Communication
+  href: ServerCore.html
+  name: ServerCore.EDMO.Communication
+  nameWithType: ServerCore.EDMO.Communication
+  fullName: ServerCore.EDMO.Communication
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+- uid: ServerCore.EDMO.Communication.EDMOConnection
+  commentId: T:ServerCore.EDMO.Communication.EDMOConnection
+  parent: ServerCore.EDMO.Communication
+  href: ServerCore.EDMO.Communication.EDMOConnection.html
+  name: EDMOConnection
+  nameWithType: EDMOConnection
+  fullName: ServerCore.EDMO.Communication.EDMOConnection
+- uid: System.ReadOnlySpan{System.Byte}
+  commentId: T:System.ReadOnlySpan{System.Byte}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<byte>
+  nameWithType: ReadOnlySpan<byte>
+  fullName: System.ReadOnlySpan<byte>
+  nameWithType.vb: ReadOnlySpan(Of Byte)
+  fullName.vb: System.ReadOnlySpan(Of Byte)
+  name.vb: ReadOnlySpan(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

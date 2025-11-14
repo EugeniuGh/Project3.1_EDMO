@@ -1,0 +1,1381 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin
+  commentId: T:ServerCore.EDMO.Plugins.EDMOPlugin
+  id: EDMOPlugin
+  parent: ServerCore.EDMO.Plugins
+  children:
+  - ServerCore.EDMO.Plugins.EDMOPlugin.#ctor(ServerCore.EDMO.EDMOSession)
+  - ServerCore.EDMO.Plugins.EDMOPlugin.AmplitudeChangedByUser(System.Int32,System.Single)
+  - ServerCore.EDMO.Plugins.EDMOPlugin.Dispose
+  - ServerCore.EDMO.Plugins.EDMOPlugin.Dispose(System.Boolean)
+  - ServerCore.EDMO.Plugins.EDMOPlugin.FrequencyChangedByUser(System.Int32,System.Single)
+  - ServerCore.EDMO.Plugins.EDMOPlugin.ImuDataReceived(ServerCore.EDMO.Communication.Packets.IMUDataPacket)
+  - ServerCore.EDMO.Plugins.EDMOPlugin.ObjectiveGroups
+  - ServerCore.EDMO.Plugins.EDMOPlugin.OffsetChangedByUser(System.Int32,System.Single)
+  - ServerCore.EDMO.Plugins.EDMOPlugin.OscillatorDataReceived(ServerCore.EDMO.Communication.Packets.OscillatorDataPacket)
+  - ServerCore.EDMO.Plugins.EDMOPlugin.PhaseShiftChangedByUser(System.Int32,System.Single)
+  - ServerCore.EDMO.Plugins.EDMOPlugin.PluginName
+  - ServerCore.EDMO.Plugins.EDMOPlugin.SessionEnded
+  - ServerCore.EDMO.Plugins.EDMOPlugin.SessionStarted
+  - ServerCore.EDMO.Plugins.EDMOPlugin.SetAmplitude(System.Int32,System.Single)
+  - ServerCore.EDMO.Plugins.EDMOPlugin.SetFrequency(System.Single)
+  - ServerCore.EDMO.Plugins.EDMOPlugin.SetOffset(System.Int32,System.Single)
+  - ServerCore.EDMO.Plugins.EDMOPlugin.SetPhaseShift(System.Int32,System.Single)
+  - ServerCore.EDMO.Plugins.EDMOPlugin.Update
+  - ServerCore.EDMO.Plugins.EDMOPlugin.UserJoined(System.Int32,System.String)
+  - ServerCore.EDMO.Plugins.EDMOPlugin.UserLeft(System.Int32,System.String)
+  - ServerCore.EDMO.Plugins.EDMOPlugin.session
+  langs:
+  - csharp
+  - vb
+  name: EDMOPlugin
+  nameWithType: EDMOPlugin
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin
+  type: Class
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: EDMOPlugin
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 13
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: >-
+    A type that serves as a base class for all plugins. Plugins can be used to extend the functionality of an <xref href="ServerCore.EDMO.EDMOSession" data-throw-if-not-resolved="false"></xref>.
+
+    <br />
+
+    Plugins can observe data to provide analysis, manipulate oscillator parameters on behalf of users, or some other custom functionality.
+  example: []
+  syntax:
+    content: 'public abstract class EDMOPlugin : IDisposable'
+    content.vb: Public MustInherit Class EDMOPlugin Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.#ctor(ServerCore.EDMO.EDMOSession)
+  commentId: M:ServerCore.EDMO.Plugins.EDMOPlugin.#ctor(ServerCore.EDMO.EDMOSession)
+  id: '#ctor(ServerCore.EDMO.EDMOSession)'
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: EDMOPlugin(EDMOSession)
+  nameWithType: EDMOPlugin.EDMOPlugin(EDMOSession)
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.EDMOPlugin(ServerCore.EDMO.EDMOSession)
+  type: Constructor
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: .ctor
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 13
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: >-
+    A type that serves as a base class for all plugins. Plugins can be used to extend the functionality of an <xref href="ServerCore.EDMO.EDMOSession" data-throw-if-not-resolved="false"></xref>.
+
+    <br />
+
+    Plugins can observe data to provide analysis, manipulate oscillator parameters on behalf of users, or some other custom functionality.
+  example: []
+  syntax:
+    content: protected EDMOPlugin(EDMOSession session)
+    parameters:
+    - id: session
+      type: ServerCore.EDMO.EDMOSession
+      description: The host session
+    content.vb: Protected Sub New(session As EDMOSession)
+  overload: ServerCore.EDMO.Plugins.EDMOPlugin.#ctor*
+  nameWithType.vb: EDMOPlugin.New(EDMOSession)
+  fullName.vb: ServerCore.EDMO.Plugins.EDMOPlugin.New(ServerCore.EDMO.EDMOSession)
+  name.vb: New(EDMOSession)
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.session
+  commentId: F:ServerCore.EDMO.Plugins.EDMOPlugin.session
+  id: session
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: session
+  nameWithType: EDMOPlugin.session
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.session
+  type: Field
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: session
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 18
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: The host session
+  example: []
+  syntax:
+    content: protected EDMOSession session
+    return:
+      type: ServerCore.EDMO.EDMOSession
+    content.vb: Protected session As EDMOSession
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.PluginName
+  commentId: P:ServerCore.EDMO.Plugins.EDMOPlugin.PluginName
+  id: PluginName
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: PluginName
+  nameWithType: EDMOPlugin.PluginName
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.PluginName
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: PluginName
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 24
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: The name of this plugin
+  example: []
+  syntax:
+    content: public abstract string PluginName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public MustOverride ReadOnly Property PluginName As String
+  overload: ServerCore.EDMO.Plugins.EDMOPlugin.PluginName*
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.ObjectiveGroups
+  commentId: P:ServerCore.EDMO.Plugins.EDMOPlugin.ObjectiveGroups
+  id: ObjectiveGroups
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: ObjectiveGroups
+  nameWithType: EDMOPlugin.ObjectiveGroups
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.ObjectiveGroups
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: ObjectiveGroups
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 32
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: The <xref href="ServerCore.EDMO.Objectives.EDMOObjectiveGroup" data-throw-if-not-resolved="false"></xref>s provided by this plugin.
+  example: []
+  syntax:
+    content: public EDMOObjectiveGroup[] ObjectiveGroups { get; protected set; }
+    parameters: []
+    return:
+      type: ServerCore.EDMO.Objectives.EDMOObjectiveGroup[]
+    content.vb: Public Property ObjectiveGroups As EDMOObjectiveGroup()
+  overload: ServerCore.EDMO.Plugins.EDMOPlugin.ObjectiveGroups*
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.SessionStarted
+  commentId: M:ServerCore.EDMO.Plugins.EDMOPlugin.SessionStarted
+  id: SessionStarted
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: SessionStarted()
+  nameWithType: EDMOPlugin.SessionStarted()
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.SessionStarted()
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: SessionStarted
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 37
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: Called when the session is created/started.
+  example: []
+  syntax:
+    content: public virtual void SessionStarted()
+    content.vb: Public Overridable Sub SessionStarted()
+  overload: ServerCore.EDMO.Plugins.EDMOPlugin.SessionStarted*
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.UserJoined(System.Int32,System.String)
+  commentId: M:ServerCore.EDMO.Plugins.EDMOPlugin.UserJoined(System.Int32,System.String)
+  id: UserJoined(System.Int32,System.String)
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: UserJoined(int, string)
+  nameWithType: EDMOPlugin.UserJoined(int, string)
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.UserJoined(int, string)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: UserJoined
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 44
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: Called when a user joins the session.
+  example: []
+  syntax:
+    content: public virtual void UserJoined(int index, string userName)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the user
+    - id: userName
+      type: System.String
+      description: The name of the user
+    content.vb: Public Overridable Sub UserJoined(index As Integer, userName As String)
+  overload: ServerCore.EDMO.Plugins.EDMOPlugin.UserJoined*
+  nameWithType.vb: EDMOPlugin.UserJoined(Integer, String)
+  fullName.vb: ServerCore.EDMO.Plugins.EDMOPlugin.UserJoined(Integer, String)
+  name.vb: UserJoined(Integer, String)
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.UserLeft(System.Int32,System.String)
+  commentId: M:ServerCore.EDMO.Plugins.EDMOPlugin.UserLeft(System.Int32,System.String)
+  id: UserLeft(System.Int32,System.String)
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: UserLeft(int, string)
+  nameWithType: EDMOPlugin.UserLeft(int, string)
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.UserLeft(int, string)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: UserLeft
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 51
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: Called when a user leaves the session.
+  example: []
+  syntax:
+    content: public virtual void UserLeft(int index, string userName)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the user
+    - id: userName
+      type: System.String
+      description: The name of the user
+    content.vb: Public Overridable Sub UserLeft(index As Integer, userName As String)
+  overload: ServerCore.EDMO.Plugins.EDMOPlugin.UserLeft*
+  nameWithType.vb: EDMOPlugin.UserLeft(Integer, String)
+  fullName.vb: ServerCore.EDMO.Plugins.EDMOPlugin.UserLeft(Integer, String)
+  name.vb: UserLeft(Integer, String)
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.ImuDataReceived(ServerCore.EDMO.Communication.Packets.IMUDataPacket)
+  commentId: M:ServerCore.EDMO.Plugins.EDMOPlugin.ImuDataReceived(ServerCore.EDMO.Communication.Packets.IMUDataPacket)
+  id: ImuDataReceived(ServerCore.EDMO.Communication.Packets.IMUDataPacket)
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: ImuDataReceived(IMUDataPacket)
+  nameWithType: EDMOPlugin.ImuDataReceived(IMUDataPacket)
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.ImuDataReceived(ServerCore.EDMO.Communication.Packets.IMUDataPacket)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: ImuDataReceived
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 57
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: Called when IMU data is received from the EDMO robot.
+  example: []
+  syntax:
+    content: public virtual void ImuDataReceived(IMUDataPacket imuData)
+    parameters:
+    - id: imuData
+      type: ServerCore.EDMO.Communication.Packets.IMUDataPacket
+      description: The imu data
+    content.vb: Public Overridable Sub ImuDataReceived(imuData As IMUDataPacket)
+  overload: ServerCore.EDMO.Plugins.EDMOPlugin.ImuDataReceived*
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.OscillatorDataReceived(ServerCore.EDMO.Communication.Packets.OscillatorDataPacket)
+  commentId: M:ServerCore.EDMO.Plugins.EDMOPlugin.OscillatorDataReceived(ServerCore.EDMO.Communication.Packets.OscillatorDataPacket)
+  id: OscillatorDataReceived(ServerCore.EDMO.Communication.Packets.OscillatorDataPacket)
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: OscillatorDataReceived(OscillatorDataPacket)
+  nameWithType: EDMOPlugin.OscillatorDataReceived(OscillatorDataPacket)
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.OscillatorDataReceived(ServerCore.EDMO.Communication.Packets.OscillatorDataPacket)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: OscillatorDataReceived
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 63
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: Called when oscillator state data is received from the EDMO robot.
+  example: []
+  syntax:
+    content: public virtual void OscillatorDataReceived(OscillatorDataPacket oscillatorDataPacket)
+    parameters:
+    - id: oscillatorDataPacket
+      type: ServerCore.EDMO.Communication.Packets.OscillatorDataPacket
+      description: The current state of a single oscillator
+    content.vb: Public Overridable Sub OscillatorDataReceived(oscillatorDataPacket As OscillatorDataPacket)
+  overload: ServerCore.EDMO.Plugins.EDMOPlugin.OscillatorDataReceived*
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.FrequencyChangedByUser(System.Int32,System.Single)
+  commentId: M:ServerCore.EDMO.Plugins.EDMOPlugin.FrequencyChangedByUser(System.Int32,System.Single)
+  id: FrequencyChangedByUser(System.Int32,System.Single)
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: FrequencyChangedByUser(int, float)
+  nameWithType: EDMOPlugin.FrequencyChangedByUser(int, float)
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.FrequencyChangedByUser(int, float)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: FrequencyChangedByUser
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 70
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: Called when a user changes the frequency of their oscillator.
+  example: []
+  syntax:
+    content: public virtual void FrequencyChangedByUser(int userIndex, float freq)
+    parameters:
+    - id: userIndex
+      type: System.Int32
+      description: The index of the user that changed the value
+    - id: freq
+      type: System.Single
+      description: The new frequency value
+    content.vb: Public Overridable Sub FrequencyChangedByUser(userIndex As Integer, freq As Single)
+  overload: ServerCore.EDMO.Plugins.EDMOPlugin.FrequencyChangedByUser*
+  nameWithType.vb: EDMOPlugin.FrequencyChangedByUser(Integer, Single)
+  fullName.vb: ServerCore.EDMO.Plugins.EDMOPlugin.FrequencyChangedByUser(Integer, Single)
+  name.vb: FrequencyChangedByUser(Integer, Single)
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.AmplitudeChangedByUser(System.Int32,System.Single)
+  commentId: M:ServerCore.EDMO.Plugins.EDMOPlugin.AmplitudeChangedByUser(System.Int32,System.Single)
+  id: AmplitudeChangedByUser(System.Int32,System.Single)
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: AmplitudeChangedByUser(int, float)
+  nameWithType: EDMOPlugin.AmplitudeChangedByUser(int, float)
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.AmplitudeChangedByUser(int, float)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: AmplitudeChangedByUser
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 77
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: Called when a user changes the amplitude  of their oscillator.
+  example: []
+  syntax:
+    content: public virtual void AmplitudeChangedByUser(int userIndex, float amp)
+    parameters:
+    - id: userIndex
+      type: System.Int32
+      description: The index of the user that changed the value
+    - id: amp
+      type: System.Single
+      description: The new amplitude value
+    content.vb: Public Overridable Sub AmplitudeChangedByUser(userIndex As Integer, amp As Single)
+  overload: ServerCore.EDMO.Plugins.EDMOPlugin.AmplitudeChangedByUser*
+  nameWithType.vb: EDMOPlugin.AmplitudeChangedByUser(Integer, Single)
+  fullName.vb: ServerCore.EDMO.Plugins.EDMOPlugin.AmplitudeChangedByUser(Integer, Single)
+  name.vb: AmplitudeChangedByUser(Integer, Single)
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.OffsetChangedByUser(System.Int32,System.Single)
+  commentId: M:ServerCore.EDMO.Plugins.EDMOPlugin.OffsetChangedByUser(System.Int32,System.Single)
+  id: OffsetChangedByUser(System.Int32,System.Single)
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: OffsetChangedByUser(int, float)
+  nameWithType: EDMOPlugin.OffsetChangedByUser(int, float)
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.OffsetChangedByUser(int, float)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: OffsetChangedByUser
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 84
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: Called when a user changes the offset  of their oscillator.
+  example: []
+  syntax:
+    content: public virtual void OffsetChangedByUser(int userIndex, float off)
+    parameters:
+    - id: userIndex
+      type: System.Int32
+      description: The index of the user that changed the value
+    - id: off
+      type: System.Single
+      description: The new offset value
+    content.vb: Public Overridable Sub OffsetChangedByUser(userIndex As Integer, off As Single)
+  overload: ServerCore.EDMO.Plugins.EDMOPlugin.OffsetChangedByUser*
+  nameWithType.vb: EDMOPlugin.OffsetChangedByUser(Integer, Single)
+  fullName.vb: ServerCore.EDMO.Plugins.EDMOPlugin.OffsetChangedByUser(Integer, Single)
+  name.vb: OffsetChangedByUser(Integer, Single)
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.PhaseShiftChangedByUser(System.Int32,System.Single)
+  commentId: M:ServerCore.EDMO.Plugins.EDMOPlugin.PhaseShiftChangedByUser(System.Int32,System.Single)
+  id: PhaseShiftChangedByUser(System.Int32,System.Single)
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: PhaseShiftChangedByUser(int, float)
+  nameWithType: EDMOPlugin.PhaseShiftChangedByUser(int, float)
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.PhaseShiftChangedByUser(int, float)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: PhaseShiftChangedByUser
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 91
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: Called when a user changes the phase shift  of their oscillator.
+  example: []
+  syntax:
+    content: public virtual void PhaseShiftChangedByUser(int userIndex, float phs)
+    parameters:
+    - id: userIndex
+      type: System.Int32
+      description: The index of the user that changed the value
+    - id: phs
+      type: System.Single
+      description: The new phase shift value
+    content.vb: Public Overridable Sub PhaseShiftChangedByUser(userIndex As Integer, phs As Single)
+  overload: ServerCore.EDMO.Plugins.EDMOPlugin.PhaseShiftChangedByUser*
+  nameWithType.vb: EDMOPlugin.PhaseShiftChangedByUser(Integer, Single)
+  fullName.vb: ServerCore.EDMO.Plugins.EDMOPlugin.PhaseShiftChangedByUser(Integer, Single)
+  name.vb: PhaseShiftChangedByUser(Integer, Single)
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.SetFrequency(System.Single)
+  commentId: M:ServerCore.EDMO.Plugins.EDMOPlugin.SetFrequency(System.Single)
+  id: SetFrequency(System.Single)
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: SetFrequency(float)
+  nameWithType: EDMOPlugin.SetFrequency(float)
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.SetFrequency(float)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: SetFrequency
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 102
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: Sets the frequency of <i>all</i> oscillators.
+  example: []
+  syntax:
+    content: protected void SetFrequency(float freq)
+    parameters:
+    - id: freq
+      type: System.Single
+      description: The target frequency.
+    content.vb: Protected Sub SetFrequency(freq As Single)
+  overload: ServerCore.EDMO.Plugins.EDMOPlugin.SetFrequency*
+  nameWithType.vb: EDMOPlugin.SetFrequency(Single)
+  fullName.vb: ServerCore.EDMO.Plugins.EDMOPlugin.SetFrequency(Single)
+  name.vb: SetFrequency(Single)
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.SetAmplitude(System.Int32,System.Single)
+  commentId: M:ServerCore.EDMO.Plugins.EDMOPlugin.SetAmplitude(System.Int32,System.Single)
+  id: SetAmplitude(System.Int32,System.Single)
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: SetAmplitude(int, float)
+  nameWithType: EDMOPlugin.SetAmplitude(int, float)
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.SetAmplitude(int, float)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: SetAmplitude
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 127
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: Sets the amplitude of the oscillator with a specific index.
+  example: []
+  syntax:
+    content: protected void SetAmplitude(int index, float amp)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the target oscillator
+    - id: amp
+      type: System.Single
+      description: The target amplitude value
+    content.vb: Protected Sub SetAmplitude(index As Integer, amp As Single)
+  overload: ServerCore.EDMO.Plugins.EDMOPlugin.SetAmplitude*
+  nameWithType.vb: EDMOPlugin.SetAmplitude(Integer, Single)
+  fullName.vb: ServerCore.EDMO.Plugins.EDMOPlugin.SetAmplitude(Integer, Single)
+  name.vb: SetAmplitude(Integer, Single)
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.SetOffset(System.Int32,System.Single)
+  commentId: M:ServerCore.EDMO.Plugins.EDMOPlugin.SetOffset(System.Int32,System.Single)
+  id: SetOffset(System.Int32,System.Single)
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: SetOffset(int, float)
+  nameWithType: EDMOPlugin.SetOffset(int, float)
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.SetOffset(int, float)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: SetOffset
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 149
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: Sets the offset of the oscillator with a specific index.
+  example: []
+  syntax:
+    content: protected void SetOffset(int index, float off)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the target oscillator
+    - id: off
+      type: System.Single
+      description: The target offset value
+    content.vb: Protected Sub SetOffset(index As Integer, off As Single)
+  overload: ServerCore.EDMO.Plugins.EDMOPlugin.SetOffset*
+  nameWithType.vb: EDMOPlugin.SetOffset(Integer, Single)
+  fullName.vb: ServerCore.EDMO.Plugins.EDMOPlugin.SetOffset(Integer, Single)
+  name.vb: SetOffset(Integer, Single)
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.SetPhaseShift(System.Int32,System.Single)
+  commentId: M:ServerCore.EDMO.Plugins.EDMOPlugin.SetPhaseShift(System.Int32,System.Single)
+  id: SetPhaseShift(System.Int32,System.Single)
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: SetPhaseShift(int, float)
+  nameWithType: EDMOPlugin.SetPhaseShift(int, float)
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.SetPhaseShift(int, float)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: SetPhaseShift
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 170
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: Sets the phase shift of the oscillator with a specific index.
+  example: []
+  syntax:
+    content: protected void SetPhaseShift(int index, float phs)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the target oscillator
+    - id: phs
+      type: System.Single
+      description: The target phase shift value
+    content.vb: Protected Sub SetPhaseShift(index As Integer, phs As Single)
+  overload: ServerCore.EDMO.Plugins.EDMOPlugin.SetPhaseShift*
+  nameWithType.vb: EDMOPlugin.SetPhaseShift(Integer, Single)
+  fullName.vb: ServerCore.EDMO.Plugins.EDMOPlugin.SetPhaseShift(Integer, Single)
+  name.vb: SetPhaseShift(Integer, Single)
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.Update
+  commentId: M:ServerCore.EDMO.Plugins.EDMOPlugin.Update
+  id: Update
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: EDMOPlugin.Update()
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.Update()
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Update
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 196
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: Called when the EDMO robot is updated.
+  remarks: Use this as a way to perform periodic updates. If continuous updates are needed in parallel, consider using a background task.
+  example: []
+  syntax:
+    content: public virtual void Update()
+    content.vb: Public Overridable Sub Update()
+  overload: ServerCore.EDMO.Plugins.EDMOPlugin.Update*
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.SessionEnded
+  commentId: M:ServerCore.EDMO.Plugins.EDMOPlugin.SessionEnded
+  id: SessionEnded
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: SessionEnded()
+  nameWithType: EDMOPlugin.SessionEnded()
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.SessionEnded()
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: SessionEnded
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 204
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: Called when the session ends.
+  remarks: Use this to end plugin functionality and perform last moment procedures.
+  example: []
+  syntax:
+    content: public virtual void SessionEnded()
+    content.vb: Public Overridable Sub SessionEnded()
+  overload: ServerCore.EDMO.Plugins.EDMOPlugin.SessionEnded*
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.Dispose(System.Boolean)
+  commentId: M:ServerCore.EDMO.Plugins.EDMOPlugin.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: EDMOPlugin.Dispose(bool)
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.Dispose(bool)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Dispose
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 214
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  remarks: >-
+    Avoid using this method to perform critical tasks. This method should only be used to perform resource cleanups.
+
+    <br />
+
+    For last second jobs that should happen when the session ends, override <xref href="ServerCore.EDMO.Plugins.EDMOPlugin.SessionEnded" data-throw-if-not-resolved="false"></xref> instead.
+  example: []
+  syntax:
+    content: protected virtual void Dispose(bool isDisposing)
+    parameters:
+    - id: isDisposing
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Dispose(isDisposing As Boolean)
+  overload: ServerCore.EDMO.Plugins.EDMOPlugin.Dispose*
+  nameWithType.vb: EDMOPlugin.Dispose(Boolean)
+  fullName.vb: ServerCore.EDMO.Plugins.EDMOPlugin.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.Dispose
+  commentId: M:ServerCore.EDMO.Plugins.EDMOPlugin.Dispose
+  id: Dispose
+  parent: ServerCore.EDMO.Plugins.EDMOPlugin
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: EDMOPlugin.Dispose()
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.Dispose()
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/EDMOPlugin.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Dispose
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/EDMOPlugin.cs
+    startLine: 217
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: ServerCore.EDMO.Plugins.EDMOPlugin.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: ServerCore.EDMO.EDMOSession
+  commentId: T:ServerCore.EDMO.EDMOSession
+  parent: ServerCore.EDMO
+  href: ServerCore.EDMO.EDMOSession.html
+  name: EDMOSession
+  nameWithType: EDMOSession
+  fullName: ServerCore.EDMO.EDMOSession
+- uid: ServerCore.EDMO.Plugins
+  commentId: N:ServerCore.EDMO.Plugins
+  href: ServerCore.html
+  name: ServerCore.EDMO.Plugins
+  nameWithType: ServerCore.EDMO.Plugins
+  fullName: ServerCore.EDMO.Plugins
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Plugins
+    name: Plugins
+    href: ServerCore.EDMO.Plugins.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Plugins
+    name: Plugins
+    href: ServerCore.EDMO.Plugins.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: ServerCore.EDMO
+  commentId: N:ServerCore.EDMO
+  href: ServerCore.html
+  name: ServerCore.EDMO
+  nameWithType: ServerCore.EDMO
+  fullName: ServerCore.EDMO
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.#ctor*
+  commentId: Overload:ServerCore.EDMO.Plugins.EDMOPlugin.#ctor
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin__ctor_ServerCore_EDMO_EDMOSession_
+  name: EDMOPlugin
+  nameWithType: EDMOPlugin.EDMOPlugin
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.EDMOPlugin
+  nameWithType.vb: EDMOPlugin.New
+  fullName.vb: ServerCore.EDMO.Plugins.EDMOPlugin.New
+  name.vb: New
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.PluginName*
+  commentId: Overload:ServerCore.EDMO.Plugins.EDMOPlugin.PluginName
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_PluginName
+  name: PluginName
+  nameWithType: EDMOPlugin.PluginName
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.PluginName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ServerCore.EDMO.Objectives.EDMOObjectiveGroup
+  commentId: T:ServerCore.EDMO.Objectives.EDMOObjectiveGroup
+  href: ServerCore.EDMO.Objectives.EDMOObjectiveGroup.html
+  name: EDMOObjectiveGroup
+  nameWithType: EDMOObjectiveGroup
+  fullName: ServerCore.EDMO.Objectives.EDMOObjectiveGroup
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.ObjectiveGroups*
+  commentId: Overload:ServerCore.EDMO.Plugins.EDMOPlugin.ObjectiveGroups
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_ObjectiveGroups
+  name: ObjectiveGroups
+  nameWithType: EDMOPlugin.ObjectiveGroups
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.ObjectiveGroups
+- uid: ServerCore.EDMO.Objectives.EDMOObjectiveGroup[]
+  isExternal: true
+  href: ServerCore.EDMO.Objectives.EDMOObjectiveGroup.html
+  name: EDMOObjectiveGroup[]
+  nameWithType: EDMOObjectiveGroup[]
+  fullName: ServerCore.EDMO.Objectives.EDMOObjectiveGroup[]
+  nameWithType.vb: EDMOObjectiveGroup()
+  fullName.vb: ServerCore.EDMO.Objectives.EDMOObjectiveGroup()
+  name.vb: EDMOObjectiveGroup()
+  spec.csharp:
+  - uid: ServerCore.EDMO.Objectives.EDMOObjectiveGroup
+    name: EDMOObjectiveGroup
+    href: ServerCore.EDMO.Objectives.EDMOObjectiveGroup.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: ServerCore.EDMO.Objectives.EDMOObjectiveGroup
+    name: EDMOObjectiveGroup
+    href: ServerCore.EDMO.Objectives.EDMOObjectiveGroup.html
+  - name: (
+  - name: )
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.SessionStarted*
+  commentId: Overload:ServerCore.EDMO.Plugins.EDMOPlugin.SessionStarted
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_SessionStarted
+  name: SessionStarted
+  nameWithType: EDMOPlugin.SessionStarted
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.SessionStarted
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.UserJoined*
+  commentId: Overload:ServerCore.EDMO.Plugins.EDMOPlugin.UserJoined
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_UserJoined_System_Int32_System_String_
+  name: UserJoined
+  nameWithType: EDMOPlugin.UserJoined
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.UserJoined
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.UserLeft*
+  commentId: Overload:ServerCore.EDMO.Plugins.EDMOPlugin.UserLeft
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_UserLeft_System_Int32_System_String_
+  name: UserLeft
+  nameWithType: EDMOPlugin.UserLeft
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.UserLeft
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.ImuDataReceived*
+  commentId: Overload:ServerCore.EDMO.Plugins.EDMOPlugin.ImuDataReceived
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_ImuDataReceived_ServerCore_EDMO_Communication_Packets_IMUDataPacket_
+  name: ImuDataReceived
+  nameWithType: EDMOPlugin.ImuDataReceived
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.ImuDataReceived
+- uid: ServerCore.EDMO.Communication.Packets.IMUDataPacket
+  commentId: T:ServerCore.EDMO.Communication.Packets.IMUDataPacket
+  parent: ServerCore.EDMO.Communication.Packets
+  href: ServerCore.EDMO.Communication.Packets.IMUDataPacket.html
+  name: IMUDataPacket
+  nameWithType: IMUDataPacket
+  fullName: ServerCore.EDMO.Communication.Packets.IMUDataPacket
+- uid: ServerCore.EDMO.Communication.Packets
+  commentId: N:ServerCore.EDMO.Communication.Packets
+  href: ServerCore.html
+  name: ServerCore.EDMO.Communication.Packets
+  nameWithType: ServerCore.EDMO.Communication.Packets
+  fullName: ServerCore.EDMO.Communication.Packets
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.Packets
+    name: Packets
+    href: ServerCore.EDMO.Communication.Packets.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.Packets
+    name: Packets
+    href: ServerCore.EDMO.Communication.Packets.html
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.OscillatorDataReceived*
+  commentId: Overload:ServerCore.EDMO.Plugins.EDMOPlugin.OscillatorDataReceived
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_OscillatorDataReceived_ServerCore_EDMO_Communication_Packets_OscillatorDataPacket_
+  name: OscillatorDataReceived
+  nameWithType: EDMOPlugin.OscillatorDataReceived
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.OscillatorDataReceived
+- uid: ServerCore.EDMO.Communication.Packets.OscillatorDataPacket
+  commentId: T:ServerCore.EDMO.Communication.Packets.OscillatorDataPacket
+  parent: ServerCore.EDMO.Communication.Packets
+  href: ServerCore.EDMO.Communication.Packets.OscillatorDataPacket.html
+  name: OscillatorDataPacket
+  nameWithType: OscillatorDataPacket
+  fullName: ServerCore.EDMO.Communication.Packets.OscillatorDataPacket
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.FrequencyChangedByUser*
+  commentId: Overload:ServerCore.EDMO.Plugins.EDMOPlugin.FrequencyChangedByUser
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_FrequencyChangedByUser_System_Int32_System_Single_
+  name: FrequencyChangedByUser
+  nameWithType: EDMOPlugin.FrequencyChangedByUser
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.FrequencyChangedByUser
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.AmplitudeChangedByUser*
+  commentId: Overload:ServerCore.EDMO.Plugins.EDMOPlugin.AmplitudeChangedByUser
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_AmplitudeChangedByUser_System_Int32_System_Single_
+  name: AmplitudeChangedByUser
+  nameWithType: EDMOPlugin.AmplitudeChangedByUser
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.AmplitudeChangedByUser
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.OffsetChangedByUser*
+  commentId: Overload:ServerCore.EDMO.Plugins.EDMOPlugin.OffsetChangedByUser
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_OffsetChangedByUser_System_Int32_System_Single_
+  name: OffsetChangedByUser
+  nameWithType: EDMOPlugin.OffsetChangedByUser
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.OffsetChangedByUser
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.PhaseShiftChangedByUser*
+  commentId: Overload:ServerCore.EDMO.Plugins.EDMOPlugin.PhaseShiftChangedByUser
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_PhaseShiftChangedByUser_System_Int32_System_Single_
+  name: PhaseShiftChangedByUser
+  nameWithType: EDMOPlugin.PhaseShiftChangedByUser
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.PhaseShiftChangedByUser
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.SetFrequency*
+  commentId: Overload:ServerCore.EDMO.Plugins.EDMOPlugin.SetFrequency
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_SetFrequency_System_Single_
+  name: SetFrequency
+  nameWithType: EDMOPlugin.SetFrequency
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.SetFrequency
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.SetAmplitude*
+  commentId: Overload:ServerCore.EDMO.Plugins.EDMOPlugin.SetAmplitude
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_SetAmplitude_System_Int32_System_Single_
+  name: SetAmplitude
+  nameWithType: EDMOPlugin.SetAmplitude
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.SetAmplitude
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.SetOffset*
+  commentId: Overload:ServerCore.EDMO.Plugins.EDMOPlugin.SetOffset
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_SetOffset_System_Int32_System_Single_
+  name: SetOffset
+  nameWithType: EDMOPlugin.SetOffset
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.SetOffset
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.SetPhaseShift*
+  commentId: Overload:ServerCore.EDMO.Plugins.EDMOPlugin.SetPhaseShift
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_SetPhaseShift_System_Int32_System_Single_
+  name: SetPhaseShift
+  nameWithType: EDMOPlugin.SetPhaseShift
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.SetPhaseShift
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.Update*
+  commentId: Overload:ServerCore.EDMO.Plugins.EDMOPlugin.Update
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_Update
+  name: Update
+  nameWithType: EDMOPlugin.Update
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.Update
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.SessionEnded*
+  commentId: Overload:ServerCore.EDMO.Plugins.EDMOPlugin.SessionEnded
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_SessionEnded
+  name: SessionEnded
+  nameWithType: EDMOPlugin.SessionEnded
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.SessionEnded
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.SessionEnded
+  commentId: M:ServerCore.EDMO.Plugins.EDMOPlugin.SessionEnded
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_SessionEnded
+  name: SessionEnded()
+  nameWithType: EDMOPlugin.SessionEnded()
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.SessionEnded()
+  spec.csharp:
+  - uid: ServerCore.EDMO.Plugins.EDMOPlugin.SessionEnded
+    name: SessionEnded
+    href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_SessionEnded
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ServerCore.EDMO.Plugins.EDMOPlugin.SessionEnded
+    name: SessionEnded
+    href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_SessionEnded
+  - name: (
+  - name: )
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin.Dispose*
+  commentId: Overload:ServerCore.EDMO.Plugins.EDMOPlugin.Dispose
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html#ServerCore_EDMO_Plugins_EDMOPlugin_Dispose_System_Boolean_
+  name: Dispose
+  nameWithType: EDMOPlugin.Dispose
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin.Dispose
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

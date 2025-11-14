@@ -1,0 +1,118 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.EDMO.Communication.EDMOConnection.TimePacketHandler
+  commentId: T:ServerCore.EDMO.Communication.EDMOConnection.TimePacketHandler
+  id: EDMOConnection.TimePacketHandler
+  parent: ServerCore.EDMO.Communication
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: EDMOConnection.TimePacketHandler
+  nameWithType: EDMOConnection.TimePacketHandler
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.TimePacketHandler
+  type: Delegate
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOConnection.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: TimePacketHandler
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOConnection.cs
+    startLine: 311
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: Describes a handler for time synchronisation packets received from this EDMO connection.
+  example: []
+  syntax:
+    content: public delegate void EDMOConnection.TimePacketHandler(EDMOConnection connection, in TimePacket timestamp)
+    parameters:
+    - id: connection
+      type: ServerCore.EDMO.Communication.EDMOConnection
+    - id: timestamp
+      type: ServerCore.EDMO.Communication.Packets.TimePacket
+    content.vb: Public Delegate Sub EDMOConnection.TimePacketHandler(connection As EDMOConnection, timestamp As TimePacket)
+references:
+- uid: ServerCore.EDMO.Communication
+  commentId: N:ServerCore.EDMO.Communication
+  href: ServerCore.html
+  name: ServerCore.EDMO.Communication
+  nameWithType: ServerCore.EDMO.Communication
+  fullName: ServerCore.EDMO.Communication
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+- uid: ServerCore.EDMO.Communication.EDMOConnection
+  commentId: T:ServerCore.EDMO.Communication.EDMOConnection
+  parent: ServerCore.EDMO.Communication
+  href: ServerCore.EDMO.Communication.EDMOConnection.html
+  name: EDMOConnection
+  nameWithType: EDMOConnection
+  fullName: ServerCore.EDMO.Communication.EDMOConnection
+- uid: ServerCore.EDMO.Communication.Packets.TimePacket
+  commentId: T:ServerCore.EDMO.Communication.Packets.TimePacket
+  parent: ServerCore.EDMO.Communication.Packets
+  href: ServerCore.EDMO.Communication.Packets.TimePacket.html
+  name: TimePacket
+  nameWithType: TimePacket
+  fullName: ServerCore.EDMO.Communication.Packets.TimePacket
+- uid: ServerCore.EDMO.Communication.Packets
+  commentId: N:ServerCore.EDMO.Communication.Packets
+  href: ServerCore.html
+  name: ServerCore.EDMO.Communication.Packets
+  nameWithType: ServerCore.EDMO.Communication.Packets
+  fullName: ServerCore.EDMO.Communication.Packets
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.Packets
+    name: Packets
+    href: ServerCore.EDMO.Communication.Packets.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.Packets
+    name: Packets
+    href: ServerCore.EDMO.Communication.Packets.html

@@ -1,0 +1,604 @@
+### YamlMime:ManagedReference
+items:
+- uid: EDMOFrontend.Components.LocalisationProvider
+  commentId: T:EDMOFrontend.Components.LocalisationProvider
+  id: LocalisationProvider
+  parent: EDMOFrontend.Components
+  children:
+  - EDMOFrontend.Components.LocalisationProvider.#ctor
+  - EDMOFrontend.Components.LocalisationProvider.AvailableLocales
+  - EDMOFrontend.Components.LocalisationProvider.GetLocalisedString(System.String,System.String,System.String,System.ReadOnlySpan{System.Object})
+  langs:
+  - csharp
+  - vb
+  name: LocalisationProvider
+  nameWithType: LocalisationProvider
+  fullName: EDMOFrontend.Components.LocalisationProvider
+  type: Class
+  source:
+    remote:
+      path: EDMOFrontend/Services/LocalisationProvider.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: LocalisationProvider
+    path: ../ServerVNext/EDMOFrontend/Services/LocalisationProvider.cs
+    startLine: 7
+  assemblies:
+  - EDMOFrontend
+  namespace: EDMOFrontend.Components
+  syntax:
+    content: public class LocalisationProvider
+    content.vb: Public Class LocalisationProvider
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: EDMOFrontend.Components.LocalisationProvider.AvailableLocales
+  commentId: F:EDMOFrontend.Components.LocalisationProvider.AvailableLocales
+  id: AvailableLocales
+  parent: EDMOFrontend.Components.LocalisationProvider
+  langs:
+  - csharp
+  - vb
+  name: AvailableLocales
+  nameWithType: LocalisationProvider.AvailableLocales
+  fullName: EDMOFrontend.Components.LocalisationProvider.AvailableLocales
+  type: Field
+  source:
+    remote:
+      path: EDMOFrontend/Services/LocalisationProvider.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: AvailableLocales
+    path: ../ServerVNext/EDMOFrontend/Services/LocalisationProvider.cs
+    startLine: 11
+  assemblies:
+  - EDMOFrontend
+  namespace: EDMOFrontend.Components
+  syntax:
+    content: public readonly IReadOnlyDictionary<string, string> AvailableLocales
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+    content.vb: Public ReadOnly AvailableLocales As IReadOnlyDictionary(Of String, String)
+- uid: EDMOFrontend.Components.LocalisationProvider.#ctor
+  commentId: M:EDMOFrontend.Components.LocalisationProvider.#ctor
+  id: '#ctor'
+  parent: EDMOFrontend.Components.LocalisationProvider
+  langs:
+  - csharp
+  - vb
+  name: LocalisationProvider()
+  nameWithType: LocalisationProvider.LocalisationProvider()
+  fullName: EDMOFrontend.Components.LocalisationProvider.LocalisationProvider()
+  type: Constructor
+  source:
+    remote:
+      path: EDMOFrontend/Services/LocalisationProvider.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: .ctor
+    path: ../ServerVNext/EDMOFrontend/Services/LocalisationProvider.cs
+    startLine: 13
+  assemblies:
+  - EDMOFrontend
+  namespace: EDMOFrontend.Components
+  syntax:
+    content: public LocalisationProvider()
+    content.vb: Public Sub New()
+  overload: EDMOFrontend.Components.LocalisationProvider.#ctor*
+  nameWithType.vb: LocalisationProvider.New()
+  fullName.vb: EDMOFrontend.Components.LocalisationProvider.New()
+  name.vb: New()
+- uid: EDMOFrontend.Components.LocalisationProvider.GetLocalisedString(System.String,System.String,System.String,System.ReadOnlySpan{System.Object})
+  commentId: M:EDMOFrontend.Components.LocalisationProvider.GetLocalisedString(System.String,System.String,System.String,System.ReadOnlySpan{System.Object})
+  id: GetLocalisedString(System.String,System.String,System.String,System.ReadOnlySpan{System.Object})
+  parent: EDMOFrontend.Components.LocalisationProvider
+  langs:
+  - csharp
+  - vb
+  name: GetLocalisedString(string, string, string, params ReadOnlySpan<object?>)
+  nameWithType: LocalisationProvider.GetLocalisedString(string, string, string, params ReadOnlySpan<object?>)
+  fullName: EDMOFrontend.Components.LocalisationProvider.GetLocalisedString(string, string, string, params System.ReadOnlySpan<object?>)
+  type: Method
+  source:
+    remote:
+      path: EDMOFrontend/Services/LocalisationProvider.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: GetLocalisedString
+    path: ../ServerVNext/EDMOFrontend/Services/LocalisationProvider.cs
+    startLine: 33
+  assemblies:
+  - EDMOFrontend
+  namespace: EDMOFrontend.Components
+  syntax:
+    content: public string? GetLocalisedString(string bankKey, string textKey, string locale, params ReadOnlySpan<object?> args)
+    parameters:
+    - id: bankKey
+      type: System.String
+    - id: textKey
+      type: System.String
+    - id: locale
+      type: System.String
+    - id: args
+      type: System.ReadOnlySpan{System.Object}
+    return:
+      type: System.String
+    content.vb: Public Function GetLocalisedString(bankKey As String, textKey As String, locale As String, args As ReadOnlySpan(Of Object)) As String
+  overload: EDMOFrontend.Components.LocalisationProvider.GetLocalisedString*
+  nameWithType.vb: LocalisationProvider.GetLocalisedString(String, String, String, ReadOnlySpan(Of Object))
+  fullName.vb: EDMOFrontend.Components.LocalisationProvider.GetLocalisedString(String, String, String, System.ReadOnlySpan(Of Object))
+  name.vb: GetLocalisedString(String, String, String, ReadOnlySpan(Of Object))
+references:
+- uid: EDMOFrontend.Components
+  commentId: N:EDMOFrontend.Components
+  href: EDMOFrontend.html
+  name: EDMOFrontend.Components
+  nameWithType: EDMOFrontend.Components
+  fullName: EDMOFrontend.Components
+  spec.csharp:
+  - uid: EDMOFrontend
+    name: EDMOFrontend
+    href: EDMOFrontend.html
+  - name: .
+  - uid: EDMOFrontend.Components
+    name: Components
+    href: EDMOFrontend.Components.html
+  spec.vb:
+  - uid: EDMOFrontend
+    name: EDMOFrontend
+    href: EDMOFrontend.html
+  - name: .
+  - uid: EDMOFrontend.Components
+    name: Components
+    href: EDMOFrontend.Components.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, string>
+  nameWithType: IReadOnlyDictionary<string, string>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, string>
+  nameWithType.vb: IReadOnlyDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, String)
+  name.vb: IReadOnlyDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: EDMOFrontend.Components.LocalisationProvider.#ctor*
+  commentId: Overload:EDMOFrontend.Components.LocalisationProvider.#ctor
+  href: EDMOFrontend.Components.LocalisationProvider.html#EDMOFrontend_Components_LocalisationProvider__ctor
+  name: LocalisationProvider
+  nameWithType: LocalisationProvider.LocalisationProvider
+  fullName: EDMOFrontend.Components.LocalisationProvider.LocalisationProvider
+  nameWithType.vb: LocalisationProvider.New
+  fullName.vb: EDMOFrontend.Components.LocalisationProvider.New
+  name.vb: New
+- uid: EDMOFrontend.Components.LocalisationProvider.GetLocalisedString*
+  commentId: Overload:EDMOFrontend.Components.LocalisationProvider.GetLocalisedString
+  href: EDMOFrontend.Components.LocalisationProvider.html#EDMOFrontend_Components_LocalisationProvider_GetLocalisedString_System_String_System_String_System_String_System_ReadOnlySpan_System_Object__
+  name: GetLocalisedString
+  nameWithType: LocalisationProvider.GetLocalisedString
+  fullName: EDMOFrontend.Components.LocalisationProvider.GetLocalisedString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ReadOnlySpan{System.Object}
+  commentId: T:System.ReadOnlySpan{System.Object}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<object>
+  nameWithType: ReadOnlySpan<object>
+  fullName: System.ReadOnlySpan<object>
+  nameWithType.vb: ReadOnlySpan(Of Object)
+  fullName.vb: System.ReadOnlySpan(Of Object)
+  name.vb: ReadOnlySpan(Of Object)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

@@ -1,0 +1,228 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.EDMO.Communication
+  commentId: N:ServerCore.EDMO.Communication
+  id: ServerCore.EDMO.Communication
+  children:
+  - ServerCore.EDMO.Communication.EDMOConnection
+  - ServerCore.EDMO.Communication.EDMOConnection.ImuDataPacketHandler
+  - ServerCore.EDMO.Communication.EDMOConnection.OscillatorDataPacketHandler
+  - ServerCore.EDMO.Communication.EDMOConnection.TimePacketHandler
+  - ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketHandler
+  - ServerCore.EDMO.Communication.EDMOConnectionManager
+  - ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionEstablishedHandler
+  - ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionLostHandler
+  - ServerCore.EDMO.Communication.EDMOPacket
+  - ServerCore.EDMO.Communication.EDMOPacketType
+  - ServerCore.EDMO.Communication.FusedEDMOConnection
+  langs:
+  - csharp
+  - vb
+  name: ServerCore.EDMO.Communication
+  nameWithType: ServerCore.EDMO.Communication
+  fullName: ServerCore.EDMO.Communication
+  type: Namespace
+  assemblies:
+  - ServerCore
+references:
+- uid: ServerCore.EDMO.Communication.EDMOConnection
+  commentId: T:ServerCore.EDMO.Communication.EDMOConnection
+  parent: ServerCore.EDMO.Communication
+  href: ServerCore.EDMO.Communication.EDMOConnection.html
+  name: EDMOConnection
+  nameWithType: EDMOConnection
+  fullName: ServerCore.EDMO.Communication.EDMOConnection
+- uid: ServerCore.EDMO.Communication.EDMOConnection.OscillatorDataPacketHandler
+  commentId: T:ServerCore.EDMO.Communication.EDMOConnection.OscillatorDataPacketHandler
+  parent: ServerCore.EDMO.Communication
+  href: ServerCore.EDMO.Communication.EDMOConnection.html
+  name: EDMOConnection.OscillatorDataPacketHandler
+  nameWithType: EDMOConnection.OscillatorDataPacketHandler
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.OscillatorDataPacketHandler
+  spec.csharp:
+  - uid: ServerCore.EDMO.Communication.EDMOConnection
+    name: EDMOConnection
+    href: ServerCore.EDMO.Communication.EDMOConnection.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.EDMOConnection.OscillatorDataPacketHandler
+    name: OscillatorDataPacketHandler
+    href: ServerCore.EDMO.Communication.EDMOConnection.OscillatorDataPacketHandler.html
+  spec.vb:
+  - uid: ServerCore.EDMO.Communication.EDMOConnection
+    name: EDMOConnection
+    href: ServerCore.EDMO.Communication.EDMOConnection.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.EDMOConnection.OscillatorDataPacketHandler
+    name: OscillatorDataPacketHandler
+    href: ServerCore.EDMO.Communication.EDMOConnection.OscillatorDataPacketHandler.html
+- uid: ServerCore.EDMO.Communication.EDMOConnection.ImuDataPacketHandler
+  commentId: T:ServerCore.EDMO.Communication.EDMOConnection.ImuDataPacketHandler
+  parent: ServerCore.EDMO.Communication
+  href: ServerCore.EDMO.Communication.EDMOConnection.html
+  name: EDMOConnection.ImuDataPacketHandler
+  nameWithType: EDMOConnection.ImuDataPacketHandler
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.ImuDataPacketHandler
+  spec.csharp:
+  - uid: ServerCore.EDMO.Communication.EDMOConnection
+    name: EDMOConnection
+    href: ServerCore.EDMO.Communication.EDMOConnection.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.EDMOConnection.ImuDataPacketHandler
+    name: ImuDataPacketHandler
+    href: ServerCore.EDMO.Communication.EDMOConnection.ImuDataPacketHandler.html
+  spec.vb:
+  - uid: ServerCore.EDMO.Communication.EDMOConnection
+    name: EDMOConnection
+    href: ServerCore.EDMO.Communication.EDMOConnection.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.EDMOConnection.ImuDataPacketHandler
+    name: ImuDataPacketHandler
+    href: ServerCore.EDMO.Communication.EDMOConnection.ImuDataPacketHandler.html
+- uid: ServerCore.EDMO.Communication.EDMOConnection.TimePacketHandler
+  commentId: T:ServerCore.EDMO.Communication.EDMOConnection.TimePacketHandler
+  parent: ServerCore.EDMO.Communication
+  href: ServerCore.EDMO.Communication.EDMOConnection.html
+  name: EDMOConnection.TimePacketHandler
+  nameWithType: EDMOConnection.TimePacketHandler
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.TimePacketHandler
+  spec.csharp:
+  - uid: ServerCore.EDMO.Communication.EDMOConnection
+    name: EDMOConnection
+    href: ServerCore.EDMO.Communication.EDMOConnection.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.EDMOConnection.TimePacketHandler
+    name: TimePacketHandler
+    href: ServerCore.EDMO.Communication.EDMOConnection.TimePacketHandler.html
+  spec.vb:
+  - uid: ServerCore.EDMO.Communication.EDMOConnection
+    name: EDMOConnection
+    href: ServerCore.EDMO.Communication.EDMOConnection.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.EDMOConnection.TimePacketHandler
+    name: TimePacketHandler
+    href: ServerCore.EDMO.Communication.EDMOConnection.TimePacketHandler.html
+- uid: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketHandler
+  commentId: T:ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketHandler
+  parent: ServerCore.EDMO.Communication
+  href: ServerCore.EDMO.Communication.EDMOConnection.html
+  name: EDMOConnection.UnknownPacketHandler
+  nameWithType: EDMOConnection.UnknownPacketHandler
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketHandler
+  spec.csharp:
+  - uid: ServerCore.EDMO.Communication.EDMOConnection
+    name: EDMOConnection
+    href: ServerCore.EDMO.Communication.EDMOConnection.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketHandler
+    name: UnknownPacketHandler
+    href: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketHandler.html
+  spec.vb:
+  - uid: ServerCore.EDMO.Communication.EDMOConnection
+    name: EDMOConnection
+    href: ServerCore.EDMO.Communication.EDMOConnection.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketHandler
+    name: UnknownPacketHandler
+    href: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketHandler.html
+- uid: ServerCore.EDMO.Communication.EDMOConnectionManager
+  commentId: T:ServerCore.EDMO.Communication.EDMOConnectionManager
+  href: ServerCore.EDMO.Communication.EDMOConnectionManager.html
+  name: EDMOConnectionManager
+  nameWithType: EDMOConnectionManager
+  fullName: ServerCore.EDMO.Communication.EDMOConnectionManager
+- uid: ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionEstablishedHandler
+  commentId: T:ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionEstablishedHandler
+  parent: ServerCore.EDMO.Communication
+  href: ServerCore.EDMO.Communication.EDMOConnectionManager.html
+  name: EDMOConnectionManager.EDMOConnectionEstablishedHandler
+  nameWithType: EDMOConnectionManager.EDMOConnectionEstablishedHandler
+  fullName: ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionEstablishedHandler
+  spec.csharp:
+  - uid: ServerCore.EDMO.Communication.EDMOConnectionManager
+    name: EDMOConnectionManager
+    href: ServerCore.EDMO.Communication.EDMOConnectionManager.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionEstablishedHandler
+    name: EDMOConnectionEstablishedHandler
+    href: ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionEstablishedHandler.html
+  spec.vb:
+  - uid: ServerCore.EDMO.Communication.EDMOConnectionManager
+    name: EDMOConnectionManager
+    href: ServerCore.EDMO.Communication.EDMOConnectionManager.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionEstablishedHandler
+    name: EDMOConnectionEstablishedHandler
+    href: ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionEstablishedHandler.html
+- uid: ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionLostHandler
+  commentId: T:ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionLostHandler
+  parent: ServerCore.EDMO.Communication
+  href: ServerCore.EDMO.Communication.EDMOConnectionManager.html
+  name: EDMOConnectionManager.EDMOConnectionLostHandler
+  nameWithType: EDMOConnectionManager.EDMOConnectionLostHandler
+  fullName: ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionLostHandler
+  spec.csharp:
+  - uid: ServerCore.EDMO.Communication.EDMOConnectionManager
+    name: EDMOConnectionManager
+    href: ServerCore.EDMO.Communication.EDMOConnectionManager.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionLostHandler
+    name: EDMOConnectionLostHandler
+    href: ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionLostHandler.html
+  spec.vb:
+  - uid: ServerCore.EDMO.Communication.EDMOConnectionManager
+    name: EDMOConnectionManager
+    href: ServerCore.EDMO.Communication.EDMOConnectionManager.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionLostHandler
+    name: EDMOConnectionLostHandler
+    href: ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionLostHandler.html
+- uid: ServerCore.EDMO.Communication.EDMOPacket
+  commentId: T:ServerCore.EDMO.Communication.EDMOPacket
+  href: ServerCore.EDMO.Communication.EDMOPacket.html
+  name: EDMOPacket
+  nameWithType: EDMOPacket
+  fullName: ServerCore.EDMO.Communication.EDMOPacket
+- uid: ServerCore.EDMO.Communication.EDMOPacketType
+  commentId: T:ServerCore.EDMO.Communication.EDMOPacketType
+  parent: ServerCore.EDMO.Communication
+  href: ServerCore.EDMO.Communication.EDMOPacketType.html
+  name: EDMOPacketType
+  nameWithType: EDMOPacketType
+  fullName: ServerCore.EDMO.Communication.EDMOPacketType
+- uid: ServerCore.EDMO.Communication.FusedEDMOConnection
+  commentId: T:ServerCore.EDMO.Communication.FusedEDMOConnection
+  parent: ServerCore.EDMO.Communication
+  href: ServerCore.EDMO.Communication.FusedEDMOConnection.html
+  name: FusedEDMOConnection
+  nameWithType: FusedEDMOConnection
+  fullName: ServerCore.EDMO.Communication.FusedEDMOConnection
+- uid: ServerCore.EDMO.Communication
+  commentId: N:ServerCore.EDMO.Communication
+  href: ServerCore.html
+  name: ServerCore.EDMO.Communication
+  nameWithType: ServerCore.EDMO.Communication
+  fullName: ServerCore.EDMO.Communication
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html

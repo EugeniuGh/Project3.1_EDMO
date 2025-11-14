@@ -1,0 +1,320 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.EDMO.Plugins.Loaders.IPluginLoader
+  commentId: T:ServerCore.EDMO.Plugins.Loaders.IPluginLoader
+  id: IPluginLoader
+  parent: ServerCore.EDMO.Plugins.Loaders
+  children:
+  - ServerCore.EDMO.Plugins.Loaders.IPluginLoader.CreatePluginsFor(ServerCore.EDMO.EDMOSession)
+  - ServerCore.EDMO.Plugins.Loaders.IPluginLoader.Initialise(System.IO.DirectoryInfo)
+  langs:
+  - csharp
+  - vb
+  name: IPluginLoader
+  nameWithType: IPluginLoader
+  fullName: ServerCore.EDMO.Plugins.Loaders.IPluginLoader
+  type: Interface
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/Loaders/IPluginLoader.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: IPluginLoader
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/Loaders/IPluginLoader.cs
+    startLine: 8
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins.Loaders
+  summary: Provides functionality to find plugins used to extend the functionality of an <xref href="ServerCore.EDMO.EDMOSession" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public interface IPluginLoader
+    content.vb: Public Interface IPluginLoader
+- uid: ServerCore.EDMO.Plugins.Loaders.IPluginLoader.Initialise(System.IO.DirectoryInfo)
+  commentId: M:ServerCore.EDMO.Plugins.Loaders.IPluginLoader.Initialise(System.IO.DirectoryInfo)
+  id: Initialise(System.IO.DirectoryInfo)
+  parent: ServerCore.EDMO.Plugins.Loaders.IPluginLoader
+  langs:
+  - csharp
+  - vb
+  name: Initialise(DirectoryInfo)
+  nameWithType: IPluginLoader.Initialise(DirectoryInfo)
+  fullName: ServerCore.EDMO.Plugins.Loaders.IPluginLoader.Initialise(System.IO.DirectoryInfo)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/Loaders/IPluginLoader.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Initialise
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/Loaders/IPluginLoader.cs
+    startLine: 17
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins.Loaders
+  summary: Initialises this plugin loader. This will search for plugin definitions in the specified plugin directory, and may involve initialising a plugin runtime.
+  remarks: It is safe to initialise the same plugin loader instance multiple times, subsequent attempts will result in a no-op.
+  example: []
+  syntax:
+    content: void Initialise(DirectoryInfo pluginDirectory)
+    parameters:
+    - id: pluginDirectory
+      type: System.IO.DirectoryInfo
+      description: The directory where the plugins are located.
+    content.vb: Sub Initialise(pluginDirectory As DirectoryInfo)
+  overload: ServerCore.EDMO.Plugins.Loaders.IPluginLoader.Initialise*
+- uid: ServerCore.EDMO.Plugins.Loaders.IPluginLoader.CreatePluginsFor(ServerCore.EDMO.EDMOSession)
+  commentId: M:ServerCore.EDMO.Plugins.Loaders.IPluginLoader.CreatePluginsFor(ServerCore.EDMO.EDMOSession)
+  id: CreatePluginsFor(ServerCore.EDMO.EDMOSession)
+  parent: ServerCore.EDMO.Plugins.Loaders.IPluginLoader
+  langs:
+  - csharp
+  - vb
+  name: CreatePluginsFor(EDMOSession)
+  nameWithType: IPluginLoader.CreatePluginsFor(EDMOSession)
+  fullName: ServerCore.EDMO.Plugins.Loaders.IPluginLoader.CreatePluginsFor(ServerCore.EDMO.EDMOSession)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Plugins/Loaders/IPluginLoader.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: CreatePluginsFor
+    path: ../ServerVNext/ServerCore/EDMO/Plugins/Loaders/IPluginLoader.cs
+    startLine: 27
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Plugins.Loaders
+  summary: Construct plugins, injecting the <xref href="ServerCore.EDMO.EDMOSession" data-throw-if-not-resolved="false"></xref> into the plugins.
+  remarks: If this plugin loader is not initialised properly, then this will return an empty enumerable.
+  example: []
+  syntax:
+    content: IEnumerable<EDMOPlugin> CreatePluginsFor(EDMOSession session)
+    parameters:
+    - id: session
+      type: ServerCore.EDMO.EDMOSession
+      description: The session provided to
+    return:
+      type: System.Collections.Generic.IEnumerable{ServerCore.EDMO.Plugins.EDMOPlugin}
+      description: An enumerable containing an ordered sequence of <xref href="ServerCore.EDMO.Plugins.EDMOPlugin" data-throw-if-not-resolved="false"></xref>s.
+    content.vb: Function CreatePluginsFor(session As EDMOSession) As IEnumerable(Of EDMOPlugin)
+  overload: ServerCore.EDMO.Plugins.Loaders.IPluginLoader.CreatePluginsFor*
+references:
+- uid: ServerCore.EDMO.EDMOSession
+  commentId: T:ServerCore.EDMO.EDMOSession
+  parent: ServerCore.EDMO
+  href: ServerCore.EDMO.EDMOSession.html
+  name: EDMOSession
+  nameWithType: EDMOSession
+  fullName: ServerCore.EDMO.EDMOSession
+- uid: ServerCore.EDMO.Plugins.Loaders
+  commentId: N:ServerCore.EDMO.Plugins.Loaders
+  href: ServerCore.html
+  name: ServerCore.EDMO.Plugins.Loaders
+  nameWithType: ServerCore.EDMO.Plugins.Loaders
+  fullName: ServerCore.EDMO.Plugins.Loaders
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Plugins
+    name: Plugins
+    href: ServerCore.EDMO.Plugins.html
+  - name: .
+  - uid: ServerCore.EDMO.Plugins.Loaders
+    name: Loaders
+    href: ServerCore.EDMO.Plugins.Loaders.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Plugins
+    name: Plugins
+    href: ServerCore.EDMO.Plugins.html
+  - name: .
+  - uid: ServerCore.EDMO.Plugins.Loaders
+    name: Loaders
+    href: ServerCore.EDMO.Plugins.Loaders.html
+- uid: ServerCore.EDMO
+  commentId: N:ServerCore.EDMO
+  href: ServerCore.html
+  name: ServerCore.EDMO
+  nameWithType: ServerCore.EDMO
+  fullName: ServerCore.EDMO
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+- uid: ServerCore.EDMO.Plugins.Loaders.IPluginLoader.Initialise*
+  commentId: Overload:ServerCore.EDMO.Plugins.Loaders.IPluginLoader.Initialise
+  href: ServerCore.EDMO.Plugins.Loaders.IPluginLoader.html#ServerCore_EDMO_Plugins_Loaders_IPluginLoader_Initialise_System_IO_DirectoryInfo_
+  name: Initialise
+  nameWithType: IPluginLoader.Initialise
+  fullName: ServerCore.EDMO.Plugins.Loaders.IPluginLoader.Initialise
+- uid: System.IO.DirectoryInfo
+  commentId: T:System.IO.DirectoryInfo
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.directoryinfo
+  name: DirectoryInfo
+  nameWithType: DirectoryInfo
+  fullName: System.IO.DirectoryInfo
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: ServerCore.EDMO.Plugins.EDMOPlugin
+  commentId: T:ServerCore.EDMO.Plugins.EDMOPlugin
+  href: ServerCore.EDMO.Plugins.EDMOPlugin.html
+  name: EDMOPlugin
+  nameWithType: EDMOPlugin
+  fullName: ServerCore.EDMO.Plugins.EDMOPlugin
+- uid: ServerCore.EDMO.Plugins.Loaders.IPluginLoader.CreatePluginsFor*
+  commentId: Overload:ServerCore.EDMO.Plugins.Loaders.IPluginLoader.CreatePluginsFor
+  href: ServerCore.EDMO.Plugins.Loaders.IPluginLoader.html#ServerCore_EDMO_Plugins_Loaders_IPluginLoader_CreatePluginsFor_ServerCore_EDMO_EDMOSession_
+  name: CreatePluginsFor
+  nameWithType: IPluginLoader.CreatePluginsFor
+  fullName: ServerCore.EDMO.Plugins.Loaders.IPluginLoader.CreatePluginsFor
+- uid: System.Collections.Generic.IEnumerable{ServerCore.EDMO.Plugins.EDMOPlugin}
+  commentId: T:System.Collections.Generic.IEnumerable{ServerCore.EDMO.Plugins.EDMOPlugin}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<EDMOPlugin>
+  nameWithType: IEnumerable<EDMOPlugin>
+  fullName: System.Collections.Generic.IEnumerable<ServerCore.EDMO.Plugins.EDMOPlugin>
+  nameWithType.vb: IEnumerable(Of EDMOPlugin)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of ServerCore.EDMO.Plugins.EDMOPlugin)
+  name.vb: IEnumerable(Of EDMOPlugin)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: ServerCore.EDMO.Plugins.EDMOPlugin
+    name: EDMOPlugin
+    href: ServerCore.EDMO.Plugins.EDMOPlugin.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ServerCore.EDMO.Plugins.EDMOPlugin
+    name: EDMOPlugin
+    href: ServerCore.EDMO.Plugins.EDMOPlugin.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

@@ -1,0 +1,7 @@
+**/__pycache__
+**/SessionLogs
+**/exploreData
+*.MP4
+.idea
+**/venv
+**/cleanData

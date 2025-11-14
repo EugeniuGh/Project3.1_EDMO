@@ -1,0 +1,587 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.Logging.CompositeLogger
+  commentId: T:ServerCore.Logging.CompositeLogger
+  id: CompositeLogger
+  parent: ServerCore.Logging
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: CompositeLogger
+  nameWithType: CompositeLogger
+  fullName: ServerCore.Logging.CompositeLogger
+  type: Class
+  source:
+    remote:
+      path: ServerCore/Logging/CompositeLogger.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: CompositeLogger
+    path: ../ServerVNext/ServerCore/Logging/CompositeLogger.cs
+    startLine: 7
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Logging
+  summary: >-
+    Supports all classes in the .NET class hierarchy and provides low-level services to derived classes. This is the ultimate base class of all .NET classes; it is the root of the type hierarchy.
+
+    <br />
+
+    This logger is a wrapper that can hold multiple <xref href="ServerCore.Logging.ILogger" data-throw-if-not-resolved="false"></xref> implementations. Used to transparently log to multiple destinations.
+  example: []
+  syntax:
+    content: 'public sealed class CompositeLogger : CompositeLogger<ILogger>, ILogger, IDisposable'
+    content.vb: Public NotInheritable Class CompositeLogger Inherits CompositeLogger(Of ILogger) Implements ILogger, IDisposable
+  inheritance:
+  - System.Object
+  - ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}
+  implements:
+  - ServerCore.Logging.ILogger
+  - System.IDisposable
+  inheritedMembers:
+  - ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}.Loggers
+  - ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}.Log``1({T},ServerCore.Logging.LogLevel)
+  - ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}.LogAsync``1({T},ServerCore.Logging.LogLevel)
+  - ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}.Dispose
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+references:
+- uid: ServerCore.Logging.ILogger
+  commentId: T:ServerCore.Logging.ILogger
+  parent: ServerCore.Logging
+  href: ServerCore.Logging.ILogger.html
+  name: ILogger
+  nameWithType: ILogger
+  fullName: ServerCore.Logging.ILogger
+- uid: ServerCore.Logging
+  commentId: N:ServerCore.Logging
+  href: ServerCore.html
+  name: ServerCore.Logging
+  nameWithType: ServerCore.Logging
+  fullName: ServerCore.Logging
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Logging
+    name: Logging
+    href: ServerCore.Logging.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Logging
+    name: Logging
+    href: ServerCore.Logging.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}
+  commentId: T:ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}
+  parent: ServerCore.Logging
+  definition: ServerCore.Logging.CompositeLogger`1
+  href: ServerCore.Logging.CompositeLogger-1.html
+  name: CompositeLogger<ILogger>
+  nameWithType: CompositeLogger<ILogger>
+  fullName: ServerCore.Logging.CompositeLogger<ServerCore.Logging.ILogger>
+  nameWithType.vb: CompositeLogger(Of ILogger)
+  fullName.vb: ServerCore.Logging.CompositeLogger(Of ServerCore.Logging.ILogger)
+  name.vb: CompositeLogger(Of ILogger)
+  spec.csharp:
+  - uid: ServerCore.Logging.CompositeLogger`1
+    name: CompositeLogger
+    href: ServerCore.Logging.CompositeLogger-1.html
+  - name: <
+  - uid: ServerCore.Logging.ILogger
+    name: ILogger
+    href: ServerCore.Logging.ILogger.html
+  - name: '>'
+  spec.vb:
+  - uid: ServerCore.Logging.CompositeLogger`1
+    name: CompositeLogger
+    href: ServerCore.Logging.CompositeLogger-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ServerCore.Logging.ILogger
+    name: ILogger
+    href: ServerCore.Logging.ILogger.html
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}.Loggers
+  commentId: P:ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}.Loggers
+  parent: ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}
+  definition: ServerCore.Logging.CompositeLogger`1.Loggers
+  href: ServerCore.Logging.CompositeLogger-1.html#ServerCore_Logging_CompositeLogger_1_Loggers
+  name: Loggers
+  nameWithType: CompositeLogger<ILogger>.Loggers
+  fullName: ServerCore.Logging.CompositeLogger<ServerCore.Logging.ILogger>.Loggers
+  nameWithType.vb: CompositeLogger(Of ILogger).Loggers
+  fullName.vb: ServerCore.Logging.CompositeLogger(Of ServerCore.Logging.ILogger).Loggers
+- uid: ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}.Log``1({T},ServerCore.Logging.LogLevel)
+  commentId: M:ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}.Log``1(``0,ServerCore.Logging.LogLevel)
+  parent: ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}
+  definition: ServerCore.Logging.CompositeLogger`1.Log``1(``0,ServerCore.Logging.LogLevel)
+  href: ServerCore.Logging.CompositeLogger-1.html#ServerCore_Logging_CompositeLogger_1_Log__1___0_ServerCore_Logging_LogLevel_
+  name: Log<T>(T, LogLevel)
+  nameWithType: CompositeLogger<ILogger>.Log<T>(T, LogLevel)
+  fullName: ServerCore.Logging.CompositeLogger<ServerCore.Logging.ILogger>.Log<T>(T, ServerCore.Logging.LogLevel)
+  nameWithType.vb: CompositeLogger(Of ILogger).Log(Of T)(T, LogLevel)
+  fullName.vb: ServerCore.Logging.CompositeLogger(Of ServerCore.Logging.ILogger).Log(Of T)(T, ServerCore.Logging.LogLevel)
+  name.vb: Log(Of T)(T, LogLevel)
+  spec.csharp:
+  - uid: ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}.Log``1(``0,ServerCore.Logging.LogLevel)
+    name: Log
+    href: ServerCore.Logging.CompositeLogger-1.html#ServerCore_Logging_CompositeLogger_1_Log__1___0_ServerCore_Logging_LogLevel_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: ServerCore.Logging.LogLevel
+    name: LogLevel
+    href: ServerCore.Logging.LogLevel.html
+  - name: )
+  spec.vb:
+  - uid: ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}.Log``1(``0,ServerCore.Logging.LogLevel)
+    name: Log
+    href: ServerCore.Logging.CompositeLogger-1.html#ServerCore_Logging_CompositeLogger_1_Log__1___0_ServerCore_Logging_LogLevel_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: ServerCore.Logging.LogLevel
+    name: LogLevel
+    href: ServerCore.Logging.LogLevel.html
+  - name: )
+- uid: ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}.LogAsync``1({T},ServerCore.Logging.LogLevel)
+  commentId: M:ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}.LogAsync``1(``0,ServerCore.Logging.LogLevel)
+  parent: ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}
+  definition: ServerCore.Logging.CompositeLogger`1.LogAsync``1(``0,ServerCore.Logging.LogLevel)
+  href: ServerCore.Logging.CompositeLogger-1.html#ServerCore_Logging_CompositeLogger_1_LogAsync__1___0_ServerCore_Logging_LogLevel_
+  name: LogAsync<T>(T, LogLevel)
+  nameWithType: CompositeLogger<ILogger>.LogAsync<T>(T, LogLevel)
+  fullName: ServerCore.Logging.CompositeLogger<ServerCore.Logging.ILogger>.LogAsync<T>(T, ServerCore.Logging.LogLevel)
+  nameWithType.vb: CompositeLogger(Of ILogger).LogAsync(Of T)(T, LogLevel)
+  fullName.vb: ServerCore.Logging.CompositeLogger(Of ServerCore.Logging.ILogger).LogAsync(Of T)(T, ServerCore.Logging.LogLevel)
+  name.vb: LogAsync(Of T)(T, LogLevel)
+  spec.csharp:
+  - uid: ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}.LogAsync``1(``0,ServerCore.Logging.LogLevel)
+    name: LogAsync
+    href: ServerCore.Logging.CompositeLogger-1.html#ServerCore_Logging_CompositeLogger_1_LogAsync__1___0_ServerCore_Logging_LogLevel_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: ServerCore.Logging.LogLevel
+    name: LogLevel
+    href: ServerCore.Logging.LogLevel.html
+  - name: )
+  spec.vb:
+  - uid: ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}.LogAsync``1(``0,ServerCore.Logging.LogLevel)
+    name: LogAsync
+    href: ServerCore.Logging.CompositeLogger-1.html#ServerCore_Logging_CompositeLogger_1_LogAsync__1___0_ServerCore_Logging_LogLevel_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: ServerCore.Logging.LogLevel
+    name: LogLevel
+    href: ServerCore.Logging.LogLevel.html
+  - name: )
+- uid: ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}.Dispose
+  commentId: M:ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}.Dispose
+  parent: ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}
+  definition: ServerCore.Logging.CompositeLogger`1.Dispose
+  href: ServerCore.Logging.CompositeLogger-1.html#ServerCore_Logging_CompositeLogger_1_Dispose
+  name: Dispose()
+  nameWithType: CompositeLogger<ILogger>.Dispose()
+  fullName: ServerCore.Logging.CompositeLogger<ServerCore.Logging.ILogger>.Dispose()
+  nameWithType.vb: CompositeLogger(Of ILogger).Dispose()
+  fullName.vb: ServerCore.Logging.CompositeLogger(Of ServerCore.Logging.ILogger).Dispose()
+  spec.csharp:
+  - uid: ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}.Dispose
+    name: Dispose
+    href: ServerCore.Logging.CompositeLogger-1.html#ServerCore_Logging_CompositeLogger_1_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ServerCore.Logging.CompositeLogger{ServerCore.Logging.ILogger}.Dispose
+    name: Dispose
+    href: ServerCore.Logging.CompositeLogger-1.html#ServerCore_Logging_CompositeLogger_1_Dispose
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ServerCore.Logging.CompositeLogger`1
+  commentId: T:ServerCore.Logging.CompositeLogger`1
+  href: ServerCore.Logging.CompositeLogger-1.html
+  name: CompositeLogger<TLogger>
+  nameWithType: CompositeLogger<TLogger>
+  fullName: ServerCore.Logging.CompositeLogger<TLogger>
+  nameWithType.vb: CompositeLogger(Of TLogger)
+  fullName.vb: ServerCore.Logging.CompositeLogger(Of TLogger)
+  name.vb: CompositeLogger(Of TLogger)
+  spec.csharp:
+  - uid: ServerCore.Logging.CompositeLogger`1
+    name: CompositeLogger
+    href: ServerCore.Logging.CompositeLogger-1.html
+  - name: <
+  - name: TLogger
+  - name: '>'
+  spec.vb:
+  - uid: ServerCore.Logging.CompositeLogger`1
+    name: CompositeLogger
+    href: ServerCore.Logging.CompositeLogger-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TLogger
+  - name: )
+- uid: ServerCore.Logging.CompositeLogger`1.Loggers
+  commentId: P:ServerCore.Logging.CompositeLogger`1.Loggers
+  href: ServerCore.Logging.CompositeLogger-1.html#ServerCore_Logging_CompositeLogger_1_Loggers
+  name: Loggers
+  nameWithType: CompositeLogger<TLogger>.Loggers
+  fullName: ServerCore.Logging.CompositeLogger<TLogger>.Loggers
+  nameWithType.vb: CompositeLogger(Of TLogger).Loggers
+  fullName.vb: ServerCore.Logging.CompositeLogger(Of TLogger).Loggers
+- uid: ServerCore.Logging.CompositeLogger`1.Log``1(``0,ServerCore.Logging.LogLevel)
+  commentId: M:ServerCore.Logging.CompositeLogger`1.Log``1(``0,ServerCore.Logging.LogLevel)
+  href: ServerCore.Logging.CompositeLogger-1.html#ServerCore_Logging_CompositeLogger_1_Log__1___0_ServerCore_Logging_LogLevel_
+  name: Log<T>(T, LogLevel)
+  nameWithType: CompositeLogger<TLogger>.Log<T>(T, LogLevel)
+  fullName: ServerCore.Logging.CompositeLogger<TLogger>.Log<T>(T, ServerCore.Logging.LogLevel)
+  nameWithType.vb: CompositeLogger(Of TLogger).Log(Of T)(T, LogLevel)
+  fullName.vb: ServerCore.Logging.CompositeLogger(Of TLogger).Log(Of T)(T, ServerCore.Logging.LogLevel)
+  name.vb: Log(Of T)(T, LogLevel)
+  spec.csharp:
+  - uid: ServerCore.Logging.CompositeLogger`1.Log``1(``0,ServerCore.Logging.LogLevel)
+    name: Log
+    href: ServerCore.Logging.CompositeLogger-1.html#ServerCore_Logging_CompositeLogger_1_Log__1___0_ServerCore_Logging_LogLevel_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: ServerCore.Logging.LogLevel
+    name: LogLevel
+    href: ServerCore.Logging.LogLevel.html
+  - name: )
+  spec.vb:
+  - uid: ServerCore.Logging.CompositeLogger`1.Log``1(``0,ServerCore.Logging.LogLevel)
+    name: Log
+    href: ServerCore.Logging.CompositeLogger-1.html#ServerCore_Logging_CompositeLogger_1_Log__1___0_ServerCore_Logging_LogLevel_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: ServerCore.Logging.LogLevel
+    name: LogLevel
+    href: ServerCore.Logging.LogLevel.html
+  - name: )
+- uid: ServerCore.Logging.CompositeLogger`1.LogAsync``1(``0,ServerCore.Logging.LogLevel)
+  commentId: M:ServerCore.Logging.CompositeLogger`1.LogAsync``1(``0,ServerCore.Logging.LogLevel)
+  href: ServerCore.Logging.CompositeLogger-1.html#ServerCore_Logging_CompositeLogger_1_LogAsync__1___0_ServerCore_Logging_LogLevel_
+  name: LogAsync<T>(T, LogLevel)
+  nameWithType: CompositeLogger<TLogger>.LogAsync<T>(T, LogLevel)
+  fullName: ServerCore.Logging.CompositeLogger<TLogger>.LogAsync<T>(T, ServerCore.Logging.LogLevel)
+  nameWithType.vb: CompositeLogger(Of TLogger).LogAsync(Of T)(T, LogLevel)
+  fullName.vb: ServerCore.Logging.CompositeLogger(Of TLogger).LogAsync(Of T)(T, ServerCore.Logging.LogLevel)
+  name.vb: LogAsync(Of T)(T, LogLevel)
+  spec.csharp:
+  - uid: ServerCore.Logging.CompositeLogger`1.LogAsync``1(``0,ServerCore.Logging.LogLevel)
+    name: LogAsync
+    href: ServerCore.Logging.CompositeLogger-1.html#ServerCore_Logging_CompositeLogger_1_LogAsync__1___0_ServerCore_Logging_LogLevel_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: ServerCore.Logging.LogLevel
+    name: LogLevel
+    href: ServerCore.Logging.LogLevel.html
+  - name: )
+  spec.vb:
+  - uid: ServerCore.Logging.CompositeLogger`1.LogAsync``1(``0,ServerCore.Logging.LogLevel)
+    name: LogAsync
+    href: ServerCore.Logging.CompositeLogger-1.html#ServerCore_Logging_CompositeLogger_1_LogAsync__1___0_ServerCore_Logging_LogLevel_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: ServerCore.Logging.LogLevel
+    name: LogLevel
+    href: ServerCore.Logging.LogLevel.html
+  - name: )
+- uid: ServerCore.Logging.CompositeLogger`1.Dispose
+  commentId: M:ServerCore.Logging.CompositeLogger`1.Dispose
+  href: ServerCore.Logging.CompositeLogger-1.html#ServerCore_Logging_CompositeLogger_1_Dispose
+  name: Dispose()
+  nameWithType: CompositeLogger<TLogger>.Dispose()
+  fullName: ServerCore.Logging.CompositeLogger<TLogger>.Dispose()
+  nameWithType.vb: CompositeLogger(Of TLogger).Dispose()
+  fullName.vb: ServerCore.Logging.CompositeLogger(Of TLogger).Dispose()
+  spec.csharp:
+  - uid: ServerCore.Logging.CompositeLogger`1.Dispose
+    name: Dispose
+    href: ServerCore.Logging.CompositeLogger-1.html#ServerCore_Logging_CompositeLogger_1_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ServerCore.Logging.CompositeLogger`1.Dispose
+    name: Dispose
+    href: ServerCore.Logging.CompositeLogger-1.html#ServerCore_Logging_CompositeLogger_1_Dispose
+  - name: (
+  - name: )

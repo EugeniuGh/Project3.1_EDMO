@@ -1,0 +1,237 @@
+### YamlMime:TableOfContent
+items:
+- uid: EDMOFrontend.Components
+  name: EDMOFrontend.Components
+  type: Namespace
+  items:
+  - uid: EDMOFrontend.Components.LocalisationContext
+    name: LocalisationContext
+    type: Class
+  - uid: EDMOFrontend.Components.LocalisationProvider
+    name: LocalisationProvider
+    type: Class
+- uid: ServerCore.Communication
+  name: ServerCore.Communication
+  type: Namespace
+  items:
+  - uid: ServerCore.Communication.ConnectionStatus
+    name: ConnectionStatus
+    type: Enum
+  - uid: ServerCore.Communication.ICommunicationChannel
+    name: ICommunicationChannel
+    type: Interface
+  - uid: ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+    name: ICommunicationChannel.DataReceivedAction
+    type: Delegate
+  - uid: ServerCore.Communication.ICommunicationManager
+    name: ICommunicationManager
+    type: Interface
+  - uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+    name: ICommunicationManager.CommunicationChannelEstablishedAction
+    type: Delegate
+  - uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+    name: ICommunicationManager.CommunicationChannelLostAction
+    type: Delegate
+- uid: ServerCore.Communication.Serial
+  name: ServerCore.Communication.Serial
+  type: Namespace
+  items:
+  - uid: ServerCore.Communication.Serial.SerialCommunicationChannel
+    name: SerialCommunicationChannel
+    type: Class
+  - uid: ServerCore.Communication.Serial.SerialCommunicationManager
+    name: SerialCommunicationManager
+    type: Class
+- uid: ServerCore.Communication.UDP
+  name: ServerCore.Communication.UDP
+  type: Namespace
+  items:
+  - uid: ServerCore.Communication.UDP.UdpCommunicationChannel
+    name: UdpCommunicationChannel
+    type: Class
+  - uid: ServerCore.Communication.UDP.UdpCommunicationManager
+    name: UdpCommunicationManager
+    type: Class
+- uid: ServerCore.EDMO
+  name: ServerCore.EDMO
+  type: Namespace
+  items:
+  - uid: ServerCore.EDMO.EDMOSession
+    name: EDMOSession
+    type: Class
+  - uid: ServerCore.EDMO.EDMOSession.ControlContext
+    name: EDMOSession.ControlContext
+    type: Class
+  - uid: ServerCore.EDMO.EDMOSessionManager
+    name: EDMOSessionManager
+    type: Class
+- uid: ServerCore.EDMO.Communication
+  name: ServerCore.EDMO.Communication
+  type: Namespace
+  items:
+  - uid: ServerCore.EDMO.Communication.EDMOConnection
+    name: EDMOConnection
+    type: Class
+  - uid: ServerCore.EDMO.Communication.EDMOConnection.ImuDataPacketHandler
+    name: EDMOConnection.ImuDataPacketHandler
+    type: Delegate
+  - uid: ServerCore.EDMO.Communication.EDMOConnection.OscillatorDataPacketHandler
+    name: EDMOConnection.OscillatorDataPacketHandler
+    type: Delegate
+  - uid: ServerCore.EDMO.Communication.EDMOConnection.TimePacketHandler
+    name: EDMOConnection.TimePacketHandler
+    type: Delegate
+  - uid: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketHandler
+    name: EDMOConnection.UnknownPacketHandler
+    type: Delegate
+  - uid: ServerCore.EDMO.Communication.EDMOConnectionManager
+    name: EDMOConnectionManager
+    type: Class
+  - uid: ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionEstablishedHandler
+    name: EDMOConnectionManager.EDMOConnectionEstablishedHandler
+    type: Delegate
+  - uid: ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionLostHandler
+    name: EDMOConnectionManager.EDMOConnectionLostHandler
+    type: Delegate
+  - uid: ServerCore.EDMO.Communication.EDMOPacket
+    name: EDMOPacket
+    type: Class
+  - uid: ServerCore.EDMO.Communication.EDMOPacketType
+    name: EDMOPacketType
+    type: Enum
+  - uid: ServerCore.EDMO.Communication.FusedEDMOConnection
+    name: FusedEDMOConnection
+    type: Class
+- uid: ServerCore.EDMO.Communication.Commands
+  name: ServerCore.EDMO.Communication.Commands
+  type: Namespace
+  items:
+  - uid: ServerCore.EDMO.Communication.Commands.IdentificationCommand
+    name: IdentificationCommand
+    type: Struct
+  - uid: ServerCore.EDMO.Communication.Commands.OscillatorParams
+    name: OscillatorParams
+    type: Struct
+  - uid: ServerCore.EDMO.Communication.Commands.SessionEndCommand
+    name: SessionEndCommand
+    type: Struct
+  - uid: ServerCore.EDMO.Communication.Commands.SessionStartCommand
+    name: SessionStartCommand
+    type: Struct
+  - uid: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand
+    name: UpdateOscillatorCommand
+    type: Struct
+- uid: ServerCore.EDMO.Communication.Packets
+  name: ServerCore.EDMO.Communication.Packets
+  type: Namespace
+  items:
+  - uid: ServerCore.EDMO.Communication.Packets.IMUData
+    name: IMUData
+    type: Struct
+  - uid: ServerCore.EDMO.Communication.Packets.IMUDataPacket
+    name: IMUDataPacket
+    type: Struct
+  - uid: ServerCore.EDMO.Communication.Packets.IdentificationPacket
+    name: IdentificationPacket
+    type: Struct
+  - uid: ServerCore.EDMO.Communication.Packets.OscillatorDataPacket
+    name: OscillatorDataPacket
+    type: Struct
+  - uid: ServerCore.EDMO.Communication.Packets.OscillatorState
+    name: OscillatorState
+    type: Struct
+  - uid: ServerCore.EDMO.Communication.Packets.SensorInfo`1
+    name: SensorInfo<T>
+    type: Struct
+  - uid: ServerCore.EDMO.Communication.Packets.TimePacket
+    name: TimePacket
+    type: Struct
+- uid: ServerCore.EDMO.Objectives
+  name: ServerCore.EDMO.Objectives
+  type: Namespace
+  items:
+  - uid: ServerCore.EDMO.Objectives.EDMOObjective
+    name: EDMOObjective
+    type: Class
+  - uid: ServerCore.EDMO.Objectives.EDMOObjectiveGroup
+    name: EDMOObjectiveGroup
+    type: Class
+- uid: ServerCore.EDMO.Plugins
+  name: ServerCore.EDMO.Plugins
+  type: Namespace
+  items:
+  - uid: ServerCore.EDMO.Plugins.EDMOPlugin
+    name: EDMOPlugin
+    type: Class
+- uid: ServerCore.EDMO.Plugins.Loaders
+  name: ServerCore.EDMO.Plugins.Loaders
+  type: Namespace
+  items:
+  - uid: ServerCore.EDMO.Plugins.Loaders.CompositePluginLoader
+    name: CompositePluginLoader
+    type: Class
+  - uid: ServerCore.EDMO.Plugins.Loaders.DotnetPluginLoader
+    name: DotnetPluginLoader
+    type: Class
+  - uid: ServerCore.EDMO.Plugins.Loaders.IPluginLoader
+    name: IPluginLoader
+    type: Interface
+  - uid: ServerCore.EDMO.Plugins.Loaders.PythonPluginLoader
+    name: PythonPluginLoader
+    type: Class
+- uid: ServerCore.Logging
+  name: ServerCore.Logging
+  type: Namespace
+  items:
+  - uid: ServerCore.Logging.CompositeLogger
+    name: CompositeLogger
+    type: Class
+  - uid: ServerCore.Logging.CompositeLogger`1
+    name: CompositeLogger<TLogger>
+    type: Class
+  - uid: ServerCore.Logging.ConsoleLogger
+    name: ConsoleLogger
+    type: Class
+  - uid: ServerCore.Logging.FileLogger
+    name: FileLogger
+    type: Class
+  - uid: ServerCore.Logging.ILogger
+    name: ILogger
+    type: Interface
+  - uid: ServerCore.Logging.LogLevel
+    name: LogLevel
+    type: Enum
+  - uid: ServerCore.Logging.StandardLogs
+    name: StandardLogs
+    type: Class
+- uid: ServerCore.Tests
+  name: ServerCore.Tests
+  type: Namespace
+  items:
+  - uid: ServerCore.Tests.Test1
+    name: Test1
+    type: Class
+- uid: ServerCore.Tests.Communication.UDP
+  name: ServerCore.Tests.Communication.UDP
+  type: Namespace
+  items:
+  - uid: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager
+    name: TestUdpCommunicationManager
+    type: Class
+- uid: ServerCore.Tests.EDMO
+  name: ServerCore.Tests.EDMO
+  type: Namespace
+  items:
+  - uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel
+    name: SampleEDMOCommunicationChannel
+    type: Class
+  - uid: ServerCore.Tests.EDMO.StressTestEDMOPhysical
+    name: StressTestEDMOPhysical
+    type: Class
+  - uid: ServerCore.Tests.EDMO.TestEDMOCommsFundamentals
+    name: TestEDMOCommsFundamentals
+    type: Class
+  - uid: ServerCore.Tests.EDMO.TestEDMOSessionManager
+    name: TestEDMOSessionManager
+    type: Class
+memberLayout: SamePage

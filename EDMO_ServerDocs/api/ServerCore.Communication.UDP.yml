@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.Communication.UDP
+  commentId: N:ServerCore.Communication.UDP
+  id: ServerCore.Communication.UDP
+  children:
+  - ServerCore.Communication.UDP.UdpCommunicationChannel
+  - ServerCore.Communication.UDP.UdpCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: ServerCore.Communication.UDP
+  nameWithType: ServerCore.Communication.UDP
+  fullName: ServerCore.Communication.UDP
+  type: Namespace
+  assemblies:
+  - ServerCore
+references:
+- uid: ServerCore.Communication.UDP.UdpCommunicationChannel
+  commentId: T:ServerCore.Communication.UDP.UdpCommunicationChannel
+  href: ServerCore.Communication.UDP.UdpCommunicationChannel.html
+  name: UdpCommunicationChannel
+  nameWithType: UdpCommunicationChannel
+  fullName: ServerCore.Communication.UDP.UdpCommunicationChannel
+- uid: ServerCore.Communication.UDP.UdpCommunicationManager
+  commentId: T:ServerCore.Communication.UDP.UdpCommunicationManager
+  href: ServerCore.Communication.UDP.UdpCommunicationManager.html
+  name: UdpCommunicationManager
+  nameWithType: UdpCommunicationManager
+  fullName: ServerCore.Communication.UDP.UdpCommunicationManager

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.Tests.Communication.UDP
+  commentId: N:ServerCore.Tests.Communication.UDP
+  id: ServerCore.Tests.Communication.UDP
+  children:
+  - ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: ServerCore.Tests.Communication.UDP
+  nameWithType: ServerCore.Tests.Communication.UDP
+  fullName: ServerCore.Tests.Communication.UDP
+  type: Namespace
+  assemblies:
+  - ServerCore.Tests
+references:
+- uid: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager
+  commentId: T:ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager
+  href: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.html
+  name: TestUdpCommunicationManager
+  nameWithType: TestUdpCommunicationManager
+  fullName: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager

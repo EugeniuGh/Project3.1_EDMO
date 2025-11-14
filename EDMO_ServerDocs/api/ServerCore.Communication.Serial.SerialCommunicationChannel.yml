@@ -1,0 +1,985 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.Communication.Serial.SerialCommunicationChannel
+  commentId: T:ServerCore.Communication.Serial.SerialCommunicationChannel
+  id: SerialCommunicationChannel
+  parent: ServerCore.Communication.Serial
+  children:
+  - ServerCore.Communication.Serial.SerialCommunicationChannel.#ctor(System.String,System.Int32)
+  - ServerCore.Communication.Serial.SerialCommunicationChannel.Close
+  - ServerCore.Communication.Serial.SerialCommunicationChannel.DataReceived
+  - ServerCore.Communication.Serial.SerialCommunicationChannel.Dispose
+  - ServerCore.Communication.Serial.SerialCommunicationChannel.Status
+  - ServerCore.Communication.Serial.SerialCommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+  - ServerCore.Communication.Serial.SerialCommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+  langs:
+  - csharp
+  - vb
+  name: SerialCommunicationChannel
+  nameWithType: SerialCommunicationChannel
+  fullName: ServerCore.Communication.Serial.SerialCommunicationChannel
+  type: Class
+  source:
+    remote:
+      path: ServerCore/Communication/Serial/SerialCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: SerialCommunicationChannel
+    path: ../ServerVNext/ServerCore/Communication/Serial/SerialCommunicationChannel.cs
+    startLine: 18
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.Serial
+  summary: A <xref href="ServerCore.Communication.ICommunicationChannel" data-throw-if-not-resolved="false"></xref> where the underlying connection is based on Serial communication.
+  remarks: Receiving data from serial ports are done in a separate thread.
+  example: []
+  syntax:
+    content: 'public sealed class SerialCommunicationChannel : ICommunicationChannel, IDisposable'
+    content.vb: Public NotInheritable Class SerialCommunicationChannel Implements ICommunicationChannel, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - ServerCore.Communication.ICommunicationChannel
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ServerCore.Communication.Serial.SerialCommunicationChannel.#ctor(System.String,System.Int32)
+  commentId: M:ServerCore.Communication.Serial.SerialCommunicationChannel.#ctor(System.String,System.Int32)
+  id: '#ctor(System.String,System.Int32)'
+  parent: ServerCore.Communication.Serial.SerialCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: SerialCommunicationChannel(string, int)
+  nameWithType: SerialCommunicationChannel.SerialCommunicationChannel(string, int)
+  fullName: ServerCore.Communication.Serial.SerialCommunicationChannel.SerialCommunicationChannel(string, int)
+  type: Constructor
+  source:
+    remote:
+      path: ServerCore/Communication/Serial/SerialCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: .ctor
+    path: ../ServerVNext/ServerCore/Communication/Serial/SerialCommunicationChannel.cs
+    startLine: 35
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.Serial
+  summary: A <xref href="ServerCore.Communication.ICommunicationChannel" data-throw-if-not-resolved="false"></xref> where the underlying connection is based on Serial communication.
+  remarks: Receiving data from serial ports are done in a separate thread.
+  example: []
+  syntax:
+    content: public SerialCommunicationChannel(string port, int connectionTimeout = 3000)
+    parameters:
+    - id: port
+      type: System.String
+      description: The name of the Serial port to connect to, in preferred format for the OS
+    - id: connectionTimeout
+      type: System.Int32
+      description: The upper time limit (in milliseconds) the channel should wait for a connection to establish before failing.
+    content.vb: Public Sub New(port As String, connectionTimeout As Integer = 3000)
+  overload: ServerCore.Communication.Serial.SerialCommunicationChannel.#ctor*
+  nameWithType.vb: SerialCommunicationChannel.New(String, Integer)
+  fullName.vb: ServerCore.Communication.Serial.SerialCommunicationChannel.New(String, Integer)
+  name.vb: New(String, Integer)
+- uid: ServerCore.Communication.Serial.SerialCommunicationChannel.Status
+  commentId: P:ServerCore.Communication.Serial.SerialCommunicationChannel.Status
+  id: Status
+  parent: ServerCore.Communication.Serial.SerialCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: SerialCommunicationChannel.Status
+  fullName: ServerCore.Communication.Serial.SerialCommunicationChannel.Status
+  type: Property
+  source:
+    remote:
+      path: ServerCore/Communication/Serial/SerialCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Status
+    path: ../ServerVNext/ServerCore/Communication/Serial/SerialCommunicationChannel.cs
+    startLine: 50
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.Serial
+  summary: Provides information about the state of the underlying connection.
+  example: []
+  syntax:
+    content: public ConnectionStatus Status { get; }
+    parameters: []
+    return:
+      type: ServerCore.Communication.ConnectionStatus
+    content.vb: Public Property Status As ConnectionStatus
+  overload: ServerCore.Communication.Serial.SerialCommunicationChannel.Status*
+  implements:
+  - ServerCore.Communication.ICommunicationChannel.Status
+- uid: ServerCore.Communication.Serial.SerialCommunicationChannel.DataReceived
+  commentId: P:ServerCore.Communication.Serial.SerialCommunicationChannel.DataReceived
+  id: DataReceived
+  parent: ServerCore.Communication.Serial.SerialCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: DataReceived
+  nameWithType: SerialCommunicationChannel.DataReceived
+  fullName: ServerCore.Communication.Serial.SerialCommunicationChannel.DataReceived
+  type: Property
+  source:
+    remote:
+      path: ServerCore/Communication/Serial/SerialCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: DataReceived
+    path: ../ServerVNext/ServerCore/Communication/Serial/SerialCommunicationChannel.cs
+    startLine: 129
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.Serial
+  summary: An event which is raised when <xref href="ServerCore.Communication.ICommunicationChannel" data-throw-if-not-resolved="false"></xref> receives any data.
+  example: []
+  syntax:
+    content: public ICommunicationChannel.DataReceivedAction? DataReceived { get; set; }
+    parameters: []
+    return:
+      type: ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+    content.vb: Public Property DataReceived As ICommunicationChannel.DataReceivedAction
+  overload: ServerCore.Communication.Serial.SerialCommunicationChannel.DataReceived*
+  implements:
+  - ServerCore.Communication.ICommunicationChannel.DataReceived
+- uid: ServerCore.Communication.Serial.SerialCommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+  commentId: M:ServerCore.Communication.Serial.SerialCommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+  id: WriteAsync(System.ReadOnlyMemory{System.Byte})
+  parent: ServerCore.Communication.Serial.SerialCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(ReadOnlyMemory<byte>)
+  nameWithType: SerialCommunicationChannel.WriteAsync(ReadOnlyMemory<byte>)
+  fullName: ServerCore.Communication.Serial.SerialCommunicationChannel.WriteAsync(System.ReadOnlyMemory<byte>)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/Communication/Serial/SerialCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: WriteAsync
+    path: ../ServerVNext/ServerCore/Communication/Serial/SerialCommunicationChannel.cs
+    startLine: 132
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.Serial
+  summary: Send arbitrary data through the communication channel asynchronously.
+  example: []
+  syntax:
+    content: public Task WriteAsync(ReadOnlyMemory<byte> data)
+    parameters:
+    - id: data
+      type: System.ReadOnlyMemory{System.Byte}
+      description: The data to be sent
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteAsync(data As ReadOnlyMemory(Of Byte)) As Task
+  overload: ServerCore.Communication.Serial.SerialCommunicationChannel.WriteAsync*
+  implements:
+  - ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+  nameWithType.vb: SerialCommunicationChannel.WriteAsync(ReadOnlyMemory(Of Byte))
+  fullName.vb: ServerCore.Communication.Serial.SerialCommunicationChannel.WriteAsync(System.ReadOnlyMemory(Of Byte))
+  name.vb: WriteAsync(ReadOnlyMemory(Of Byte))
+- uid: ServerCore.Communication.Serial.SerialCommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+  commentId: M:ServerCore.Communication.Serial.SerialCommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+  id: Write(System.ReadOnlySpan{System.Byte})
+  parent: ServerCore.Communication.Serial.SerialCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: Write(ReadOnlySpan<byte>)
+  nameWithType: SerialCommunicationChannel.Write(ReadOnlySpan<byte>)
+  fullName: ServerCore.Communication.Serial.SerialCommunicationChannel.Write(System.ReadOnlySpan<byte>)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/Communication/Serial/SerialCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Write
+    path: ../ServerVNext/ServerCore/Communication/Serial/SerialCommunicationChannel.cs
+    startLine: 136
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.Serial
+  summary: Send arbitrary data through the communication channel.
+  example: []
+  syntax:
+    content: public void Write(ReadOnlySpan<byte> data)
+    parameters:
+    - id: data
+      type: System.ReadOnlySpan{System.Byte}
+      description: The data to be sent
+    content.vb: Public Sub Write(data As ReadOnlySpan(Of Byte))
+  overload: ServerCore.Communication.Serial.SerialCommunicationChannel.Write*
+  implements:
+  - ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+  nameWithType.vb: SerialCommunicationChannel.Write(ReadOnlySpan(Of Byte))
+  fullName.vb: ServerCore.Communication.Serial.SerialCommunicationChannel.Write(System.ReadOnlySpan(Of Byte))
+  name.vb: Write(ReadOnlySpan(Of Byte))
+- uid: ServerCore.Communication.Serial.SerialCommunicationChannel.Close
+  commentId: M:ServerCore.Communication.Serial.SerialCommunicationChannel.Close
+  id: Close
+  parent: ServerCore.Communication.Serial.SerialCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: SerialCommunicationChannel.Close()
+  fullName: ServerCore.Communication.Serial.SerialCommunicationChannel.Close()
+  type: Method
+  source:
+    remote:
+      path: ServerCore/Communication/Serial/SerialCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Close
+    path: ../ServerVNext/ServerCore/Communication/Serial/SerialCommunicationChannel.cs
+    startLine: 139
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.Serial
+  summary: Close the communication channel, and the underlying implementation.
+  example: []
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close()
+  overload: ServerCore.Communication.Serial.SerialCommunicationChannel.Close*
+  implements:
+  - ServerCore.Communication.ICommunicationChannel.Close
+- uid: ServerCore.Communication.Serial.SerialCommunicationChannel.Dispose
+  commentId: M:ServerCore.Communication.Serial.SerialCommunicationChannel.Dispose
+  id: Dispose
+  parent: ServerCore.Communication.Serial.SerialCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: SerialCommunicationChannel.Dispose()
+  fullName: ServerCore.Communication.Serial.SerialCommunicationChannel.Dispose()
+  type: Method
+  source:
+    remote:
+      path: ServerCore/Communication/Serial/SerialCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Dispose
+    path: ../ServerVNext/ServerCore/Communication/Serial/SerialCommunicationChannel.cs
+    startLine: 161
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.Serial
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: ServerCore.Communication.Serial.SerialCommunicationChannel.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: ServerCore.Communication.ICommunicationChannel
+  commentId: T:ServerCore.Communication.ICommunicationChannel
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationChannel.html
+  name: ICommunicationChannel
+  nameWithType: ICommunicationChannel
+  fullName: ServerCore.Communication.ICommunicationChannel
+- uid: ServerCore.Communication.Serial
+  commentId: N:ServerCore.Communication.Serial
+  href: ServerCore.html
+  name: ServerCore.Communication.Serial
+  nameWithType: ServerCore.Communication.Serial
+  fullName: ServerCore.Communication.Serial
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+  - name: .
+  - uid: ServerCore.Communication.Serial
+    name: Serial
+    href: ServerCore.Communication.Serial.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+  - name: .
+  - uid: ServerCore.Communication.Serial
+    name: Serial
+    href: ServerCore.Communication.Serial.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: ServerCore.Communication
+  commentId: N:ServerCore.Communication
+  href: ServerCore.html
+  name: ServerCore.Communication
+  nameWithType: ServerCore.Communication
+  fullName: ServerCore.Communication
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ServerCore.Communication.Serial.SerialCommunicationChannel.#ctor*
+  commentId: Overload:ServerCore.Communication.Serial.SerialCommunicationChannel.#ctor
+  href: ServerCore.Communication.Serial.SerialCommunicationChannel.html#ServerCore_Communication_Serial_SerialCommunicationChannel__ctor_System_String_System_Int32_
+  name: SerialCommunicationChannel
+  nameWithType: SerialCommunicationChannel.SerialCommunicationChannel
+  fullName: ServerCore.Communication.Serial.SerialCommunicationChannel.SerialCommunicationChannel
+  nameWithType.vb: SerialCommunicationChannel.New
+  fullName.vb: ServerCore.Communication.Serial.SerialCommunicationChannel.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ServerCore.Communication.Serial.SerialCommunicationChannel.Status*
+  commentId: Overload:ServerCore.Communication.Serial.SerialCommunicationChannel.Status
+  href: ServerCore.Communication.Serial.SerialCommunicationChannel.html#ServerCore_Communication_Serial_SerialCommunicationChannel_Status
+  name: Status
+  nameWithType: SerialCommunicationChannel.Status
+  fullName: ServerCore.Communication.Serial.SerialCommunicationChannel.Status
+- uid: ServerCore.Communication.ICommunicationChannel.Status
+  commentId: P:ServerCore.Communication.ICommunicationChannel.Status
+  parent: ServerCore.Communication.ICommunicationChannel
+  href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Status
+  name: Status
+  nameWithType: ICommunicationChannel.Status
+  fullName: ServerCore.Communication.ICommunicationChannel.Status
+- uid: ServerCore.Communication.ConnectionStatus
+  commentId: T:ServerCore.Communication.ConnectionStatus
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ConnectionStatus.html
+  name: ConnectionStatus
+  nameWithType: ConnectionStatus
+  fullName: ServerCore.Communication.ConnectionStatus
+- uid: ServerCore.Communication.Serial.SerialCommunicationChannel.DataReceived*
+  commentId: Overload:ServerCore.Communication.Serial.SerialCommunicationChannel.DataReceived
+  href: ServerCore.Communication.Serial.SerialCommunicationChannel.html#ServerCore_Communication_Serial_SerialCommunicationChannel_DataReceived
+  name: DataReceived
+  nameWithType: SerialCommunicationChannel.DataReceived
+  fullName: ServerCore.Communication.Serial.SerialCommunicationChannel.DataReceived
+- uid: ServerCore.Communication.ICommunicationChannel.DataReceived
+  commentId: P:ServerCore.Communication.ICommunicationChannel.DataReceived
+  parent: ServerCore.Communication.ICommunicationChannel
+  href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_DataReceived
+  name: DataReceived
+  nameWithType: ICommunicationChannel.DataReceived
+  fullName: ServerCore.Communication.ICommunicationChannel.DataReceived
+- uid: ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+  commentId: T:ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationChannel.html
+  name: ICommunicationChannel.DataReceivedAction
+  nameWithType: ICommunicationChannel.DataReceivedAction
+  fullName: ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationChannel
+    name: ICommunicationChannel
+    href: ServerCore.Communication.ICommunicationChannel.html
+  - name: .
+  - uid: ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+    name: DataReceivedAction
+    href: ServerCore.Communication.ICommunicationChannel.DataReceivedAction.html
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationChannel
+    name: ICommunicationChannel
+    href: ServerCore.Communication.ICommunicationChannel.html
+  - name: .
+  - uid: ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+    name: DataReceivedAction
+    href: ServerCore.Communication.ICommunicationChannel.DataReceivedAction.html
+- uid: ServerCore.Communication.Serial.SerialCommunicationChannel.WriteAsync*
+  commentId: Overload:ServerCore.Communication.Serial.SerialCommunicationChannel.WriteAsync
+  href: ServerCore.Communication.Serial.SerialCommunicationChannel.html#ServerCore_Communication_Serial_SerialCommunicationChannel_WriteAsync_System_ReadOnlyMemory_System_Byte__
+  name: WriteAsync
+  nameWithType: SerialCommunicationChannel.WriteAsync
+  fullName: ServerCore.Communication.Serial.SerialCommunicationChannel.WriteAsync
+- uid: ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+  commentId: M:ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+  parent: ServerCore.Communication.ICommunicationChannel
+  isExternal: true
+  href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_WriteAsync_System_ReadOnlyMemory_System_Byte__
+  name: WriteAsync(ReadOnlyMemory<byte>)
+  nameWithType: ICommunicationChannel.WriteAsync(ReadOnlyMemory<byte>)
+  fullName: ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory<byte>)
+  nameWithType.vb: ICommunicationChannel.WriteAsync(ReadOnlyMemory(Of Byte))
+  fullName.vb: ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory(Of Byte))
+  name.vb: WriteAsync(ReadOnlyMemory(Of Byte))
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+    name: WriteAsync
+    href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_WriteAsync_System_ReadOnlyMemory_System_Byte__
+  - name: (
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+    name: WriteAsync
+    href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_WriteAsync_System_ReadOnlyMemory_System_Byte__
+  - name: (
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: )
+- uid: System.ReadOnlyMemory{System.Byte}
+  commentId: T:System.ReadOnlyMemory{System.Byte}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<byte>
+  nameWithType: ReadOnlyMemory<byte>
+  fullName: System.ReadOnlyMemory<byte>
+  nameWithType.vb: ReadOnlyMemory(Of Byte)
+  fullName.vb: System.ReadOnlyMemory(Of Byte)
+  name.vb: ReadOnlyMemory(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.ReadOnlyMemory`1
+  commentId: T:System.ReadOnlyMemory`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<T>
+  nameWithType: ReadOnlyMemory<T>
+  fullName: System.ReadOnlyMemory<T>
+  nameWithType.vb: ReadOnlyMemory(Of T)
+  fullName.vb: System.ReadOnlyMemory(Of T)
+  name.vb: ReadOnlyMemory(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: ServerCore.Communication.Serial.SerialCommunicationChannel.Write*
+  commentId: Overload:ServerCore.Communication.Serial.SerialCommunicationChannel.Write
+  href: ServerCore.Communication.Serial.SerialCommunicationChannel.html#ServerCore_Communication_Serial_SerialCommunicationChannel_Write_System_ReadOnlySpan_System_Byte__
+  name: Write
+  nameWithType: SerialCommunicationChannel.Write
+  fullName: ServerCore.Communication.Serial.SerialCommunicationChannel.Write
+- uid: ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+  commentId: M:ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+  parent: ServerCore.Communication.ICommunicationChannel
+  isExternal: true
+  href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Write_System_ReadOnlySpan_System_Byte__
+  name: Write(ReadOnlySpan<byte>)
+  nameWithType: ICommunicationChannel.Write(ReadOnlySpan<byte>)
+  fullName: ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan<byte>)
+  nameWithType.vb: ICommunicationChannel.Write(ReadOnlySpan(Of Byte))
+  fullName.vb: ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan(Of Byte))
+  name.vb: Write(ReadOnlySpan(Of Byte))
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+    name: Write
+    href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Write_System_ReadOnlySpan_System_Byte__
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+    name: Write
+    href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Write_System_ReadOnlySpan_System_Byte__
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: )
+- uid: System.ReadOnlySpan{System.Byte}
+  commentId: T:System.ReadOnlySpan{System.Byte}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<byte>
+  nameWithType: ReadOnlySpan<byte>
+  fullName: System.ReadOnlySpan<byte>
+  nameWithType.vb: ReadOnlySpan(Of Byte)
+  fullName.vb: System.ReadOnlySpan(Of Byte)
+  name.vb: ReadOnlySpan(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: ServerCore.Communication.Serial.SerialCommunicationChannel.Close*
+  commentId: Overload:ServerCore.Communication.Serial.SerialCommunicationChannel.Close
+  href: ServerCore.Communication.Serial.SerialCommunicationChannel.html#ServerCore_Communication_Serial_SerialCommunicationChannel_Close
+  name: Close
+  nameWithType: SerialCommunicationChannel.Close
+  fullName: ServerCore.Communication.Serial.SerialCommunicationChannel.Close
+- uid: ServerCore.Communication.ICommunicationChannel.Close
+  commentId: M:ServerCore.Communication.ICommunicationChannel.Close
+  parent: ServerCore.Communication.ICommunicationChannel
+  href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Close
+  name: Close()
+  nameWithType: ICommunicationChannel.Close()
+  fullName: ServerCore.Communication.ICommunicationChannel.Close()
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationChannel.Close
+    name: Close
+    href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Close
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationChannel.Close
+    name: Close
+    href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Close
+  - name: (
+  - name: )
+- uid: ServerCore.Communication.Serial.SerialCommunicationChannel.Dispose*
+  commentId: Overload:ServerCore.Communication.Serial.SerialCommunicationChannel.Dispose
+  href: ServerCore.Communication.Serial.SerialCommunicationChannel.html#ServerCore_Communication_Serial_SerialCommunicationChannel_Dispose
+  name: Dispose
+  nameWithType: SerialCommunicationChannel.Dispose
+  fullName: ServerCore.Communication.Serial.SerialCommunicationChannel.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

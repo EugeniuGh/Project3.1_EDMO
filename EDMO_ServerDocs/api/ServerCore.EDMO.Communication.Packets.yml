@@ -1,0 +1,127 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.EDMO.Communication.Packets
+  commentId: N:ServerCore.EDMO.Communication.Packets
+  id: ServerCore.EDMO.Communication.Packets
+  children:
+  - ServerCore.EDMO.Communication.Packets.IMUData
+  - ServerCore.EDMO.Communication.Packets.IMUDataPacket
+  - ServerCore.EDMO.Communication.Packets.IdentificationPacket
+  - ServerCore.EDMO.Communication.Packets.OscillatorDataPacket
+  - ServerCore.EDMO.Communication.Packets.OscillatorState
+  - ServerCore.EDMO.Communication.Packets.SensorInfo`1
+  - ServerCore.EDMO.Communication.Packets.TimePacket
+  langs:
+  - csharp
+  - vb
+  name: ServerCore.EDMO.Communication.Packets
+  nameWithType: ServerCore.EDMO.Communication.Packets
+  fullName: ServerCore.EDMO.Communication.Packets
+  type: Namespace
+  assemblies:
+  - ServerCore
+references:
+- uid: ServerCore.EDMO.Communication.Packets.IdentificationPacket
+  commentId: T:ServerCore.EDMO.Communication.Packets.IdentificationPacket
+  href: ServerCore.EDMO.Communication.Packets.IdentificationPacket.html
+  name: IdentificationPacket
+  nameWithType: IdentificationPacket
+  fullName: ServerCore.EDMO.Communication.Packets.IdentificationPacket
+- uid: ServerCore.EDMO.Communication.Packets.IMUDataPacket
+  commentId: T:ServerCore.EDMO.Communication.Packets.IMUDataPacket
+  parent: ServerCore.EDMO.Communication.Packets
+  href: ServerCore.EDMO.Communication.Packets.IMUDataPacket.html
+  name: IMUDataPacket
+  nameWithType: IMUDataPacket
+  fullName: ServerCore.EDMO.Communication.Packets.IMUDataPacket
+- uid: ServerCore.EDMO.Communication.Packets.SensorInfo`1
+  commentId: T:ServerCore.EDMO.Communication.Packets.SensorInfo`1
+  href: ServerCore.EDMO.Communication.Packets.SensorInfo-1.html
+  name: SensorInfo<T>
+  nameWithType: SensorInfo<T>
+  fullName: ServerCore.EDMO.Communication.Packets.SensorInfo<T>
+  nameWithType.vb: SensorInfo(Of T)
+  fullName.vb: ServerCore.EDMO.Communication.Packets.SensorInfo(Of T)
+  name.vb: SensorInfo(Of T)
+  spec.csharp:
+  - uid: ServerCore.EDMO.Communication.Packets.SensorInfo`1
+    name: SensorInfo
+    href: ServerCore.EDMO.Communication.Packets.SensorInfo-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: ServerCore.EDMO.Communication.Packets.SensorInfo`1
+    name: SensorInfo
+    href: ServerCore.EDMO.Communication.Packets.SensorInfo-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: ServerCore.EDMO.Communication.Packets.IMUData
+  commentId: T:ServerCore.EDMO.Communication.Packets.IMUData
+  parent: ServerCore.EDMO.Communication.Packets
+  href: ServerCore.EDMO.Communication.Packets.IMUData.html
+  name: IMUData
+  nameWithType: IMUData
+  fullName: ServerCore.EDMO.Communication.Packets.IMUData
+- uid: ServerCore.EDMO.Communication.Packets.OscillatorState
+  commentId: T:ServerCore.EDMO.Communication.Packets.OscillatorState
+  parent: ServerCore.EDMO.Communication.Packets
+  href: ServerCore.EDMO.Communication.Packets.OscillatorState.html
+  name: OscillatorState
+  nameWithType: OscillatorState
+  fullName: ServerCore.EDMO.Communication.Packets.OscillatorState
+- uid: ServerCore.EDMO.Communication.Packets.OscillatorDataPacket
+  commentId: T:ServerCore.EDMO.Communication.Packets.OscillatorDataPacket
+  parent: ServerCore.EDMO.Communication.Packets
+  href: ServerCore.EDMO.Communication.Packets.OscillatorDataPacket.html
+  name: OscillatorDataPacket
+  nameWithType: OscillatorDataPacket
+  fullName: ServerCore.EDMO.Communication.Packets.OscillatorDataPacket
+- uid: ServerCore.EDMO.Communication.Packets.TimePacket
+  commentId: T:ServerCore.EDMO.Communication.Packets.TimePacket
+  parent: ServerCore.EDMO.Communication.Packets
+  href: ServerCore.EDMO.Communication.Packets.TimePacket.html
+  name: TimePacket
+  nameWithType: TimePacket
+  fullName: ServerCore.EDMO.Communication.Packets.TimePacket
+- uid: ServerCore.EDMO.Communication.Packets
+  commentId: N:ServerCore.EDMO.Communication.Packets
+  href: ServerCore.html
+  name: ServerCore.EDMO.Communication.Packets
+  nameWithType: ServerCore.EDMO.Communication.Packets
+  fullName: ServerCore.EDMO.Communication.Packets
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.Packets
+    name: Packets
+    href: ServerCore.EDMO.Communication.Packets.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.Packets
+    name: Packets
+    href: ServerCore.EDMO.Communication.Packets.html

@@ -1,0 +1,284 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.Logging.LogLevel
+  commentId: T:ServerCore.Logging.LogLevel
+  id: LogLevel
+  parent: ServerCore.Logging
+  children:
+  - ServerCore.Logging.LogLevel.Debug
+  - ServerCore.Logging.LogLevel.Error
+  - ServerCore.Logging.LogLevel.Fatal
+  - ServerCore.Logging.LogLevel.Info
+  - ServerCore.Logging.LogLevel.Trace
+  - ServerCore.Logging.LogLevel.Warning
+  - ServerCore.Logging.LogLevel.Write
+  langs:
+  - csharp
+  - vb
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: ServerCore.Logging.LogLevel
+  type: Enum
+  source:
+    remote:
+      path: ServerCore/Logging/LogLevel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: LogLevel
+    path: ../ServerVNext/ServerCore/Logging/LogLevel.cs
+    startLine: 5
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Logging
+  summary: Represents the importance and severity of a log entry.
+  example: []
+  syntax:
+    content: public enum LogLevel
+    content.vb: Public Enum LogLevel
+- uid: ServerCore.Logging.LogLevel.Write
+  commentId: F:ServerCore.Logging.LogLevel.Write
+  id: Write
+  parent: ServerCore.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Write
+  nameWithType: LogLevel.Write
+  fullName: ServerCore.Logging.LogLevel.Write
+  type: Field
+  source:
+    remote:
+      path: ServerCore/Logging/LogLevel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Write
+    path: ../ServerVNext/ServerCore/Logging/LogLevel.cs
+    startLine: 10
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Logging
+  summary: Just a regular message. Similar to <xref href="System.Console.WriteLine" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: Write = 0
+    return:
+      type: ServerCore.Logging.LogLevel
+- uid: ServerCore.Logging.LogLevel.Info
+  commentId: F:ServerCore.Logging.LogLevel.Info
+  id: Info
+  parent: ServerCore.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Info
+  nameWithType: LogLevel.Info
+  fullName: ServerCore.Logging.LogLevel.Info
+  type: Field
+  source:
+    remote:
+      path: ServerCore/Logging/LogLevel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Info
+    path: ../ServerVNext/ServerCore/Logging/LogLevel.cs
+    startLine: 15
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Logging
+  summary: An informational message.
+  example: []
+  syntax:
+    content: Info = 1
+    return:
+      type: ServerCore.Logging.LogLevel
+- uid: ServerCore.Logging.LogLevel.Warning
+  commentId: F:ServerCore.Logging.LogLevel.Warning
+  id: Warning
+  parent: ServerCore.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  nameWithType: LogLevel.Warning
+  fullName: ServerCore.Logging.LogLevel.Warning
+  type: Field
+  source:
+    remote:
+      path: ServerCore/Logging/LogLevel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Warning
+    path: ../ServerVNext/ServerCore/Logging/LogLevel.cs
+    startLine: 20
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Logging
+  summary: A warning of improper/unexpected execution.
+  example: []
+  syntax:
+    content: Warning = 2
+    return:
+      type: ServerCore.Logging.LogLevel
+- uid: ServerCore.Logging.LogLevel.Error
+  commentId: F:ServerCore.Logging.LogLevel.Error
+  id: Error
+  parent: ServerCore.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: LogLevel.Error
+  fullName: ServerCore.Logging.LogLevel.Error
+  type: Field
+  source:
+    remote:
+      path: ServerCore/Logging/LogLevel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Error
+    path: ../ServerVNext/ServerCore/Logging/LogLevel.cs
+    startLine: 25
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Logging
+  summary: A problem has occurred, but is recoverable.
+  example: []
+  syntax:
+    content: Error = 3
+    return:
+      type: ServerCore.Logging.LogLevel
+- uid: ServerCore.Logging.LogLevel.Fatal
+  commentId: F:ServerCore.Logging.LogLevel.Fatal
+  id: Fatal
+  parent: ServerCore.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Fatal
+  nameWithType: LogLevel.Fatal
+  fullName: ServerCore.Logging.LogLevel.Fatal
+  type: Field
+  source:
+    remote:
+      path: ServerCore/Logging/LogLevel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Fatal
+    path: ../ServerVNext/ServerCore/Logging/LogLevel.cs
+    startLine: 30
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Logging
+  summary: A problem has occured that prevents further functioning of the program.
+  example: []
+  syntax:
+    content: Fatal = 4
+    return:
+      type: ServerCore.Logging.LogLevel
+- uid: ServerCore.Logging.LogLevel.Debug
+  commentId: F:ServerCore.Logging.LogLevel.Debug
+  id: Debug
+  parent: ServerCore.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Debug
+  nameWithType: LogLevel.Debug
+  fullName: ServerCore.Logging.LogLevel.Debug
+  type: Field
+  source:
+    remote:
+      path: ServerCore/Logging/LogLevel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Debug
+    path: ../ServerVNext/ServerCore/Logging/LogLevel.cs
+    startLine: 35
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Logging
+  summary: Additional debug information, useful for diagnostics.
+  example: []
+  syntax:
+    content: Debug = 5
+    return:
+      type: ServerCore.Logging.LogLevel
+- uid: ServerCore.Logging.LogLevel.Trace
+  commentId: F:ServerCore.Logging.LogLevel.Trace
+  id: Trace
+  parent: ServerCore.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: Trace
+  nameWithType: LogLevel.Trace
+  fullName: ServerCore.Logging.LogLevel.Trace
+  type: Field
+  source:
+    remote:
+      path: ServerCore/Logging/LogLevel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Trace
+    path: ../ServerVNext/ServerCore/Logging/LogLevel.cs
+    startLine: 40
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Logging
+  summary: Even more information, used to analyse the flow of the program.
+  example: []
+  syntax:
+    content: Trace = 6
+    return:
+      type: ServerCore.Logging.LogLevel
+references:
+- uid: ServerCore.Logging
+  commentId: N:ServerCore.Logging
+  href: ServerCore.html
+  name: ServerCore.Logging
+  nameWithType: ServerCore.Logging
+  fullName: ServerCore.Logging
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Logging
+    name: Logging
+    href: ServerCore.Logging.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Logging
+    name: Logging
+    href: ServerCore.Logging.html
+- uid: System.Console.WriteLine
+  commentId: M:System.Console.WriteLine
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.console.writeline#system-console-writeline
+  name: WriteLine()
+  nameWithType: Console.WriteLine()
+  fullName: System.Console.WriteLine()
+  spec.csharp:
+  - uid: System.Console.WriteLine
+    name: WriteLine
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.console.writeline#system-console-writeline
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Console.WriteLine
+    name: WriteLine
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.console.writeline#system-console-writeline
+  - name: (
+  - name: )
+- uid: ServerCore.Logging.LogLevel
+  commentId: T:ServerCore.Logging.LogLevel
+  parent: ServerCore.Logging
+  href: ServerCore.Logging.LogLevel.html
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: ServerCore.Logging.LogLevel

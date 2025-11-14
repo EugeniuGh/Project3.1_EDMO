@@ -1,0 +1,205 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.Communication.ConnectionStatus
+  commentId: T:ServerCore.Communication.ConnectionStatus
+  id: ConnectionStatus
+  parent: ServerCore.Communication
+  children:
+  - ServerCore.Communication.ConnectionStatus.Closed
+  - ServerCore.Communication.ConnectionStatus.Connected
+  - ServerCore.Communication.ConnectionStatus.Failed
+  - ServerCore.Communication.ConnectionStatus.Idle
+  - ServerCore.Communication.ConnectionStatus.Waiting
+  langs:
+  - csharp
+  - vb
+  name: ConnectionStatus
+  nameWithType: ConnectionStatus
+  fullName: ServerCore.Communication.ConnectionStatus
+  type: Enum
+  source:
+    remote:
+      path: ServerCore/Communication/ConnectionStatus.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: ConnectionStatus
+    path: ../ServerVNext/ServerCore/Communication/ConnectionStatus.cs
+    startLine: 5
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication
+  summary: Provides information about the state of the underlying connection.
+  example: []
+  syntax:
+    content: public enum ConnectionStatus
+    content.vb: Public Enum ConnectionStatus
+- uid: ServerCore.Communication.ConnectionStatus.Idle
+  commentId: F:ServerCore.Communication.ConnectionStatus.Idle
+  id: Idle
+  parent: ServerCore.Communication.ConnectionStatus
+  langs:
+  - csharp
+  - vb
+  name: Idle
+  nameWithType: ConnectionStatus.Idle
+  fullName: ServerCore.Communication.ConnectionStatus.Idle
+  type: Field
+  source:
+    remote:
+      path: ServerCore/Communication/ConnectionStatus.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Idle
+    path: ../ServerVNext/ServerCore/Communication/ConnectionStatus.cs
+    startLine: 10
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication
+  summary: The connection is not doing anything. Possibly just created.
+  example: []
+  syntax:
+    content: Idle = 0
+    return:
+      type: ServerCore.Communication.ConnectionStatus
+- uid: ServerCore.Communication.ConnectionStatus.Waiting
+  commentId: F:ServerCore.Communication.ConnectionStatus.Waiting
+  id: Waiting
+  parent: ServerCore.Communication.ConnectionStatus
+  langs:
+  - csharp
+  - vb
+  name: Waiting
+  nameWithType: ConnectionStatus.Waiting
+  fullName: ServerCore.Communication.ConnectionStatus.Waiting
+  type: Field
+  source:
+    remote:
+      path: ServerCore/Communication/ConnectionStatus.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Waiting
+    path: ../ServerVNext/ServerCore/Communication/ConnectionStatus.cs
+    startLine: 15
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication
+  summary: The connection has been properly initialised, and is waiting for establishment
+  example: []
+  syntax:
+    content: Waiting = 1
+    return:
+      type: ServerCore.Communication.ConnectionStatus
+- uid: ServerCore.Communication.ConnectionStatus.Connected
+  commentId: F:ServerCore.Communication.ConnectionStatus.Connected
+  id: Connected
+  parent: ServerCore.Communication.ConnectionStatus
+  langs:
+  - csharp
+  - vb
+  name: Connected
+  nameWithType: ConnectionStatus.Connected
+  fullName: ServerCore.Communication.ConnectionStatus.Connected
+  type: Field
+  source:
+    remote:
+      path: ServerCore/Communication/ConnectionStatus.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Connected
+    path: ../ServerVNext/ServerCore/Communication/ConnectionStatus.cs
+    startLine: 20
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication
+  summary: A connection was successfully made.
+  example: []
+  syntax:
+    content: Connected = 2
+    return:
+      type: ServerCore.Communication.ConnectionStatus
+- uid: ServerCore.Communication.ConnectionStatus.Failed
+  commentId: F:ServerCore.Communication.ConnectionStatus.Failed
+  id: Failed
+  parent: ServerCore.Communication.ConnectionStatus
+  langs:
+  - csharp
+  - vb
+  name: Failed
+  nameWithType: ConnectionStatus.Failed
+  fullName: ServerCore.Communication.ConnectionStatus.Failed
+  type: Field
+  source:
+    remote:
+      path: ServerCore/Communication/ConnectionStatus.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Failed
+    path: ../ServerVNext/ServerCore/Communication/ConnectionStatus.cs
+    startLine: 25
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication
+  summary: The connection has failed.
+  example: []
+  syntax:
+    content: Failed = 3
+    return:
+      type: ServerCore.Communication.ConnectionStatus
+- uid: ServerCore.Communication.ConnectionStatus.Closed
+  commentId: F:ServerCore.Communication.ConnectionStatus.Closed
+  id: Closed
+  parent: ServerCore.Communication.ConnectionStatus
+  langs:
+  - csharp
+  - vb
+  name: Closed
+  nameWithType: ConnectionStatus.Closed
+  fullName: ServerCore.Communication.ConnectionStatus.Closed
+  type: Field
+  source:
+    remote:
+      path: ServerCore/Communication/ConnectionStatus.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Closed
+    path: ../ServerVNext/ServerCore/Communication/ConnectionStatus.cs
+    startLine: 30
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication
+  summary: The connection has been closed due to voluntary or involuntary disconnection after a successful connection has been made.
+  example: []
+  syntax:
+    content: Closed = 4
+    return:
+      type: ServerCore.Communication.ConnectionStatus
+references:
+- uid: ServerCore.Communication
+  commentId: N:ServerCore.Communication
+  href: ServerCore.html
+  name: ServerCore.Communication
+  nameWithType: ServerCore.Communication
+  fullName: ServerCore.Communication
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+- uid: ServerCore.Communication.ConnectionStatus
+  commentId: T:ServerCore.Communication.ConnectionStatus
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ConnectionStatus.html
+  name: ConnectionStatus
+  nameWithType: ConnectionStatus
+  fullName: ServerCore.Communication.ConnectionStatus

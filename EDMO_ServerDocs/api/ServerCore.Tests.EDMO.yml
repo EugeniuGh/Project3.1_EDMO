@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.Tests.EDMO
+  commentId: N:ServerCore.Tests.EDMO
+  id: ServerCore.Tests.EDMO
+  children:
+  - ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel
+  - ServerCore.Tests.EDMO.StressTestEDMOPhysical
+  - ServerCore.Tests.EDMO.TestEDMOCommsFundamentals
+  - ServerCore.Tests.EDMO.TestEDMOSessionManager
+  langs:
+  - csharp
+  - vb
+  name: ServerCore.Tests.EDMO
+  nameWithType: ServerCore.Tests.EDMO
+  fullName: ServerCore.Tests.EDMO
+  type: Namespace
+  assemblies:
+  - ServerCore.Tests
+references:
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel
+  commentId: T:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel
+  href: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.html
+  name: SampleEDMOCommunicationChannel
+  nameWithType: SampleEDMOCommunicationChannel
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel
+- uid: ServerCore.Tests.EDMO.StressTestEDMOPhysical
+  commentId: T:ServerCore.Tests.EDMO.StressTestEDMOPhysical
+  href: ServerCore.Tests.EDMO.StressTestEDMOPhysical.html
+  name: StressTestEDMOPhysical
+  nameWithType: StressTestEDMOPhysical
+  fullName: ServerCore.Tests.EDMO.StressTestEDMOPhysical
+- uid: ServerCore.Tests.EDMO.TestEDMOCommsFundamentals
+  commentId: T:ServerCore.Tests.EDMO.TestEDMOCommsFundamentals
+  href: ServerCore.Tests.EDMO.TestEDMOCommsFundamentals.html
+  name: TestEDMOCommsFundamentals
+  nameWithType: TestEDMOCommsFundamentals
+  fullName: ServerCore.Tests.EDMO.TestEDMOCommsFundamentals
+- uid: ServerCore.Tests.EDMO.TestEDMOSessionManager
+  commentId: T:ServerCore.Tests.EDMO.TestEDMOSessionManager
+  href: ServerCore.Tests.EDMO.TestEDMOSessionManager.html
+  name: TestEDMOSessionManager
+  nameWithType: TestEDMOSessionManager
+  fullName: ServerCore.Tests.EDMO.TestEDMOSessionManager

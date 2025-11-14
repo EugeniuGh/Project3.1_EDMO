@@ -1,0 +1,1122 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.Communication.UDP.UdpCommunicationChannel
+  commentId: T:ServerCore.Communication.UDP.UdpCommunicationChannel
+  id: UdpCommunicationChannel
+  parent: ServerCore.Communication.UDP
+  children:
+  - ServerCore.Communication.UDP.UdpCommunicationChannel.#ctor(System.Net.Sockets.UdpClient,System.Net.IPEndPoint)
+  - ServerCore.Communication.UDP.UdpCommunicationChannel.Close
+  - ServerCore.Communication.UDP.UdpCommunicationChannel.DataReceived
+  - ServerCore.Communication.UDP.UdpCommunicationChannel.Dispose
+  - ServerCore.Communication.UDP.UdpCommunicationChannel.InactivityTimeout
+  - ServerCore.Communication.UDP.UdpCommunicationChannel.Status
+  - ServerCore.Communication.UDP.UdpCommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+  - ServerCore.Communication.UDP.UdpCommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+  langs:
+  - csharp
+  - vb
+  name: UdpCommunicationChannel
+  nameWithType: UdpCommunicationChannel
+  fullName: ServerCore.Communication.UDP.UdpCommunicationChannel
+  type: Class
+  source:
+    remote:
+      path: ServerCore/Communication/UDP/UdpCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: UdpCommunicationChannel
+    path: ../ServerVNext/ServerCore/Communication/UDP/UdpCommunicationChannel.cs
+    startLine: 22
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.UDP
+  summary: A <xref href="ServerCore.Communication.ICommunicationChannel" data-throw-if-not-resolved="false"></xref> where the underlying connection is based on UDP communication.
+  remarks: >-
+    <p>
+
+    This channel does not manage its own <xref href="System.Net.Sockets.UdpClient" data-throw-if-not-resolved="false"></xref>, but uses the same <xref href="System.Net.Sockets.UdpClient" data-throw-if-not-resolved="false"></xref> as the <xref href="ServerCore.Communication.UDP.UdpCommunicationManager" data-throw-if-not-resolved="false"></xref> this channel was created from.
+
+    The <xref href="ServerCore.Communication.UDP.UdpCommunicationManager" data-throw-if-not-resolved="false"></xref> is responsible for passing received messages to the appropriate channel instance.
+
+    </p>
+
+    <p>
+
+    Closing the originating <xref href="ServerCore.Communication.UDP.UdpCommunicationManager" data-throw-if-not-resolved="false"></xref> will also stop this channel from being updated.
+
+    </p>
+  example: []
+  syntax:
+    content: 'public sealed class UdpCommunicationChannel : ICommunicationChannel, IDisposable'
+    content.vb: Public NotInheritable Class UdpCommunicationChannel Implements ICommunicationChannel, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - ServerCore.Communication.ICommunicationChannel
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ServerCore.Communication.UDP.UdpCommunicationChannel.Status
+  commentId: P:ServerCore.Communication.UDP.UdpCommunicationChannel.Status
+  id: Status
+  parent: ServerCore.Communication.UDP.UdpCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: UdpCommunicationChannel.Status
+  fullName: ServerCore.Communication.UDP.UdpCommunicationChannel.Status
+  type: Property
+  source:
+    remote:
+      path: ServerCore/Communication/UDP/UdpCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Status
+    path: ../ServerVNext/ServerCore/Communication/UDP/UdpCommunicationChannel.cs
+    startLine: 27
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.UDP
+  summary: Provides information about the state of the underlying connection.
+  example: []
+  syntax:
+    content: public ConnectionStatus Status { get; }
+    parameters: []
+    return:
+      type: ServerCore.Communication.ConnectionStatus
+    content.vb: Public ReadOnly Property Status As ConnectionStatus
+  overload: ServerCore.Communication.UDP.UdpCommunicationChannel.Status*
+  implements:
+  - ServerCore.Communication.ICommunicationChannel.Status
+- uid: ServerCore.Communication.UDP.UdpCommunicationChannel.DataReceived
+  commentId: P:ServerCore.Communication.UDP.UdpCommunicationChannel.DataReceived
+  id: DataReceived
+  parent: ServerCore.Communication.UDP.UdpCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: DataReceived
+  nameWithType: UdpCommunicationChannel.DataReceived
+  fullName: ServerCore.Communication.UDP.UdpCommunicationChannel.DataReceived
+  type: Property
+  source:
+    remote:
+      path: ServerCore/Communication/UDP/UdpCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: DataReceived
+    path: ../ServerVNext/ServerCore/Communication/UDP/UdpCommunicationChannel.cs
+    startLine: 38
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.UDP
+  summary: An event which is raised when <xref href="ServerCore.Communication.ICommunicationChannel" data-throw-if-not-resolved="false"></xref> receives any data.
+  example: []
+  syntax:
+    content: public ICommunicationChannel.DataReceivedAction? DataReceived { get; set; }
+    parameters: []
+    return:
+      type: ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+    content.vb: Public Property DataReceived As ICommunicationChannel.DataReceivedAction
+  overload: ServerCore.Communication.UDP.UdpCommunicationChannel.DataReceived*
+  implements:
+  - ServerCore.Communication.ICommunicationChannel.DataReceived
+- uid: ServerCore.Communication.UDP.UdpCommunicationChannel.InactivityTimeout
+  commentId: P:ServerCore.Communication.UDP.UdpCommunicationChannel.InactivityTimeout
+  id: InactivityTimeout
+  parent: ServerCore.Communication.UDP.UdpCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: InactivityTimeout
+  nameWithType: UdpCommunicationChannel.InactivityTimeout
+  fullName: ServerCore.Communication.UDP.UdpCommunicationChannel.InactivityTimeout
+  type: Property
+  source:
+    remote:
+      path: ServerCore/Communication/UDP/UdpCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: InactivityTimeout
+    path: ../ServerVNext/ServerCore/Communication/UDP/UdpCommunicationChannel.cs
+    startLine: 46
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.UDP
+  summary: The amount of time without receiving a message before the connection is considered closed.
+  remarks: Default timeout is set to 10 seconds.
+  example: []
+  syntax:
+    content: public TimeSpan InactivityTimeout { get; init; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property InactivityTimeout As TimeSpan
+  overload: ServerCore.Communication.UDP.UdpCommunicationChannel.InactivityTimeout*
+- uid: ServerCore.Communication.UDP.UdpCommunicationChannel.#ctor(System.Net.Sockets.UdpClient,System.Net.IPEndPoint)
+  commentId: M:ServerCore.Communication.UDP.UdpCommunicationChannel.#ctor(System.Net.Sockets.UdpClient,System.Net.IPEndPoint)
+  id: '#ctor(System.Net.Sockets.UdpClient,System.Net.IPEndPoint)'
+  parent: ServerCore.Communication.UDP.UdpCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: UdpCommunicationChannel(UdpClient, IPEndPoint)
+  nameWithType: UdpCommunicationChannel.UdpCommunicationChannel(UdpClient, IPEndPoint)
+  fullName: ServerCore.Communication.UDP.UdpCommunicationChannel.UdpCommunicationChannel(System.Net.Sockets.UdpClient, System.Net.IPEndPoint)
+  type: Constructor
+  source:
+    remote:
+      path: ServerCore/Communication/UDP/UdpCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: .ctor
+    path: ../ServerVNext/ServerCore/Communication/UDP/UdpCommunicationChannel.cs
+    startLine: 51
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.UDP
+  summary: A <xref href="ServerCore.Communication.ICommunicationChannel" data-throw-if-not-resolved="false"></xref> where the underlying connection is based on UDP communication.
+  remarks: >-
+    <p>
+
+    This channel does not manage its own <xref href="System.Net.Sockets.UdpClient" data-throw-if-not-resolved="false"></xref>, but uses the same <xref href="System.Net.Sockets.UdpClient" data-throw-if-not-resolved="false"></xref> as the <xref href="ServerCore.Communication.UDP.UdpCommunicationManager" data-throw-if-not-resolved="false"></xref> this channel was created from.
+
+    The <xref href="ServerCore.Communication.UDP.UdpCommunicationManager" data-throw-if-not-resolved="false"></xref> is responsible for passing received messages to the appropriate channel instance.
+
+    </p>
+
+    <p>
+
+    Closing the originating <xref href="ServerCore.Communication.UDP.UdpCommunicationManager" data-throw-if-not-resolved="false"></xref> will also stop this channel from being updated.
+
+    </p>
+  example: []
+  syntax:
+    content: public UdpCommunicationChannel(UdpClient client, IPEndPoint endpoint)
+    parameters:
+    - id: client
+      type: System.Net.Sockets.UdpClient
+      description: The UdpClient this communication channel will write to
+    - id: endpoint
+      type: System.Net.IPEndPoint
+      description: The remote endpoint of all communications through this channel
+    content.vb: Public Sub New(client As UdpClient, endpoint As IPEndPoint)
+  overload: ServerCore.Communication.UDP.UdpCommunicationChannel.#ctor*
+  nameWithType.vb: UdpCommunicationChannel.New(UdpClient, IPEndPoint)
+  fullName.vb: ServerCore.Communication.UDP.UdpCommunicationChannel.New(System.Net.Sockets.UdpClient, System.Net.IPEndPoint)
+  name.vb: New(UdpClient, IPEndPoint)
+- uid: ServerCore.Communication.UDP.UdpCommunicationChannel.Close
+  commentId: M:ServerCore.Communication.UDP.UdpCommunicationChannel.Close
+  id: Close
+  parent: ServerCore.Communication.UDP.UdpCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: UdpCommunicationChannel.Close()
+  fullName: ServerCore.Communication.UDP.UdpCommunicationChannel.Close()
+  type: Method
+  source:
+    remote:
+      path: ServerCore/Communication/UDP/UdpCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Close
+    path: ../ServerVNext/ServerCore/Communication/UDP/UdpCommunicationChannel.cs
+    startLine: 69
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.UDP
+  summary: Close the communication channel, and the underlying implementation.
+  example: []
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close()
+  overload: ServerCore.Communication.UDP.UdpCommunicationChannel.Close*
+  implements:
+  - ServerCore.Communication.ICommunicationChannel.Close
+- uid: ServerCore.Communication.UDP.UdpCommunicationChannel.Dispose
+  commentId: M:ServerCore.Communication.UDP.UdpCommunicationChannel.Dispose
+  id: Dispose
+  parent: ServerCore.Communication.UDP.UdpCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: UdpCommunicationChannel.Dispose()
+  fullName: ServerCore.Communication.UDP.UdpCommunicationChannel.Dispose()
+  type: Method
+  source:
+    remote:
+      path: ServerCore/Communication/UDP/UdpCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Dispose
+    path: ../ServerVNext/ServerCore/Communication/UDP/UdpCommunicationChannel.cs
+    startLine: 75
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.UDP
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: ServerCore.Communication.UDP.UdpCommunicationChannel.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: ServerCore.Communication.UDP.UdpCommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+  commentId: M:ServerCore.Communication.UDP.UdpCommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+  id: WriteAsync(System.ReadOnlyMemory{System.Byte})
+  parent: ServerCore.Communication.UDP.UdpCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(ReadOnlyMemory<byte>)
+  nameWithType: UdpCommunicationChannel.WriteAsync(ReadOnlyMemory<byte>)
+  fullName: ServerCore.Communication.UDP.UdpCommunicationChannel.WriteAsync(System.ReadOnlyMemory<byte>)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/Communication/UDP/UdpCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: WriteAsync
+    path: ../ServerVNext/ServerCore/Communication/UDP/UdpCommunicationChannel.cs
+    startLine: 81
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.UDP
+  summary: Send arbitrary data through the communication channel asynchronously.
+  example: []
+  syntax:
+    content: public Task WriteAsync(ReadOnlyMemory<byte> data)
+    parameters:
+    - id: data
+      type: System.ReadOnlyMemory{System.Byte}
+      description: The data to be sent
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteAsync(data As ReadOnlyMemory(Of Byte)) As Task
+  overload: ServerCore.Communication.UDP.UdpCommunicationChannel.WriteAsync*
+  implements:
+  - ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+  nameWithType.vb: UdpCommunicationChannel.WriteAsync(ReadOnlyMemory(Of Byte))
+  fullName.vb: ServerCore.Communication.UDP.UdpCommunicationChannel.WriteAsync(System.ReadOnlyMemory(Of Byte))
+  name.vb: WriteAsync(ReadOnlyMemory(Of Byte))
+- uid: ServerCore.Communication.UDP.UdpCommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+  commentId: M:ServerCore.Communication.UDP.UdpCommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+  id: Write(System.ReadOnlySpan{System.Byte})
+  parent: ServerCore.Communication.UDP.UdpCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: Write(ReadOnlySpan<byte>)
+  nameWithType: UdpCommunicationChannel.Write(ReadOnlySpan<byte>)
+  fullName: ServerCore.Communication.UDP.UdpCommunicationChannel.Write(System.ReadOnlySpan<byte>)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/Communication/UDP/UdpCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Write
+    path: ../ServerVNext/ServerCore/Communication/UDP/UdpCommunicationChannel.cs
+    startLine: 90
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication.UDP
+  summary: Send arbitrary data through the communication channel.
+  example: []
+  syntax:
+    content: public void Write(ReadOnlySpan<byte> data)
+    parameters:
+    - id: data
+      type: System.ReadOnlySpan{System.Byte}
+      description: The data to be sent
+    content.vb: Public Sub Write(data As ReadOnlySpan(Of Byte))
+  overload: ServerCore.Communication.UDP.UdpCommunicationChannel.Write*
+  implements:
+  - ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+  nameWithType.vb: UdpCommunicationChannel.Write(ReadOnlySpan(Of Byte))
+  fullName.vb: ServerCore.Communication.UDP.UdpCommunicationChannel.Write(System.ReadOnlySpan(Of Byte))
+  name.vb: Write(ReadOnlySpan(Of Byte))
+references:
+- uid: ServerCore.Communication.ICommunicationChannel
+  commentId: T:ServerCore.Communication.ICommunicationChannel
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationChannel.html
+  name: ICommunicationChannel
+  nameWithType: ICommunicationChannel
+  fullName: ServerCore.Communication.ICommunicationChannel
+- uid: System.Net.Sockets.UdpClient
+  commentId: T:System.Net.Sockets.UdpClient
+  parent: System.Net.Sockets
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.sockets.udpclient
+  name: UdpClient
+  nameWithType: UdpClient
+  fullName: System.Net.Sockets.UdpClient
+- uid: ServerCore.Communication.UDP.UdpCommunicationManager
+  commentId: T:ServerCore.Communication.UDP.UdpCommunicationManager
+  href: ServerCore.Communication.UDP.UdpCommunicationManager.html
+  name: UdpCommunicationManager
+  nameWithType: UdpCommunicationManager
+  fullName: ServerCore.Communication.UDP.UdpCommunicationManager
+- uid: ServerCore.Communication.UDP
+  commentId: N:ServerCore.Communication.UDP
+  href: ServerCore.html
+  name: ServerCore.Communication.UDP
+  nameWithType: ServerCore.Communication.UDP
+  fullName: ServerCore.Communication.UDP
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+  - name: .
+  - uid: ServerCore.Communication.UDP
+    name: UDP
+    href: ServerCore.Communication.UDP.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+  - name: .
+  - uid: ServerCore.Communication.UDP
+    name: UDP
+    href: ServerCore.Communication.UDP.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: ServerCore.Communication
+  commentId: N:ServerCore.Communication
+  href: ServerCore.html
+  name: ServerCore.Communication
+  nameWithType: ServerCore.Communication
+  fullName: ServerCore.Communication
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+- uid: System.Net.Sockets
+  commentId: N:System.Net.Sockets
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net.Sockets
+  nameWithType: System.Net.Sockets
+  fullName: System.Net.Sockets
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Sockets
+    name: Sockets
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.sockets
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Sockets
+    name: Sockets
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.sockets
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ServerCore.Communication.UDP.UdpCommunicationChannel.Status*
+  commentId: Overload:ServerCore.Communication.UDP.UdpCommunicationChannel.Status
+  href: ServerCore.Communication.UDP.UdpCommunicationChannel.html#ServerCore_Communication_UDP_UdpCommunicationChannel_Status
+  name: Status
+  nameWithType: UdpCommunicationChannel.Status
+  fullName: ServerCore.Communication.UDP.UdpCommunicationChannel.Status
+- uid: ServerCore.Communication.ICommunicationChannel.Status
+  commentId: P:ServerCore.Communication.ICommunicationChannel.Status
+  parent: ServerCore.Communication.ICommunicationChannel
+  href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Status
+  name: Status
+  nameWithType: ICommunicationChannel.Status
+  fullName: ServerCore.Communication.ICommunicationChannel.Status
+- uid: ServerCore.Communication.ConnectionStatus
+  commentId: T:ServerCore.Communication.ConnectionStatus
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ConnectionStatus.html
+  name: ConnectionStatus
+  nameWithType: ConnectionStatus
+  fullName: ServerCore.Communication.ConnectionStatus
+- uid: ServerCore.Communication.UDP.UdpCommunicationChannel.DataReceived*
+  commentId: Overload:ServerCore.Communication.UDP.UdpCommunicationChannel.DataReceived
+  href: ServerCore.Communication.UDP.UdpCommunicationChannel.html#ServerCore_Communication_UDP_UdpCommunicationChannel_DataReceived
+  name: DataReceived
+  nameWithType: UdpCommunicationChannel.DataReceived
+  fullName: ServerCore.Communication.UDP.UdpCommunicationChannel.DataReceived
+- uid: ServerCore.Communication.ICommunicationChannel.DataReceived
+  commentId: P:ServerCore.Communication.ICommunicationChannel.DataReceived
+  parent: ServerCore.Communication.ICommunicationChannel
+  href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_DataReceived
+  name: DataReceived
+  nameWithType: ICommunicationChannel.DataReceived
+  fullName: ServerCore.Communication.ICommunicationChannel.DataReceived
+- uid: ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+  commentId: T:ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationChannel.html
+  name: ICommunicationChannel.DataReceivedAction
+  nameWithType: ICommunicationChannel.DataReceivedAction
+  fullName: ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationChannel
+    name: ICommunicationChannel
+    href: ServerCore.Communication.ICommunicationChannel.html
+  - name: .
+  - uid: ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+    name: DataReceivedAction
+    href: ServerCore.Communication.ICommunicationChannel.DataReceivedAction.html
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationChannel
+    name: ICommunicationChannel
+    href: ServerCore.Communication.ICommunicationChannel.html
+  - name: .
+  - uid: ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+    name: DataReceivedAction
+    href: ServerCore.Communication.ICommunicationChannel.DataReceivedAction.html
+- uid: ServerCore.Communication.UDP.UdpCommunicationChannel.InactivityTimeout*
+  commentId: Overload:ServerCore.Communication.UDP.UdpCommunicationChannel.InactivityTimeout
+  href: ServerCore.Communication.UDP.UdpCommunicationChannel.html#ServerCore_Communication_UDP_UdpCommunicationChannel_InactivityTimeout
+  name: InactivityTimeout
+  nameWithType: UdpCommunicationChannel.InactivityTimeout
+  fullName: ServerCore.Communication.UDP.UdpCommunicationChannel.InactivityTimeout
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: ServerCore.Communication.UDP.UdpCommunicationChannel.#ctor*
+  commentId: Overload:ServerCore.Communication.UDP.UdpCommunicationChannel.#ctor
+  href: ServerCore.Communication.UDP.UdpCommunicationChannel.html#ServerCore_Communication_UDP_UdpCommunicationChannel__ctor_System_Net_Sockets_UdpClient_System_Net_IPEndPoint_
+  name: UdpCommunicationChannel
+  nameWithType: UdpCommunicationChannel.UdpCommunicationChannel
+  fullName: ServerCore.Communication.UDP.UdpCommunicationChannel.UdpCommunicationChannel
+  nameWithType.vb: UdpCommunicationChannel.New
+  fullName.vb: ServerCore.Communication.UDP.UdpCommunicationChannel.New
+  name.vb: New
+- uid: System.Net.IPEndPoint
+  commentId: T:System.Net.IPEndPoint
+  parent: System.Net
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.ipendpoint
+  name: IPEndPoint
+  nameWithType: IPEndPoint
+  fullName: System.Net.IPEndPoint
+- uid: System.Net
+  commentId: N:System.Net
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net
+  nameWithType: System.Net
+  fullName: System.Net
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+- uid: ServerCore.Communication.UDP.UdpCommunicationChannel.Close*
+  commentId: Overload:ServerCore.Communication.UDP.UdpCommunicationChannel.Close
+  href: ServerCore.Communication.UDP.UdpCommunicationChannel.html#ServerCore_Communication_UDP_UdpCommunicationChannel_Close
+  name: Close
+  nameWithType: UdpCommunicationChannel.Close
+  fullName: ServerCore.Communication.UDP.UdpCommunicationChannel.Close
+- uid: ServerCore.Communication.ICommunicationChannel.Close
+  commentId: M:ServerCore.Communication.ICommunicationChannel.Close
+  parent: ServerCore.Communication.ICommunicationChannel
+  href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Close
+  name: Close()
+  nameWithType: ICommunicationChannel.Close()
+  fullName: ServerCore.Communication.ICommunicationChannel.Close()
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationChannel.Close
+    name: Close
+    href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Close
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationChannel.Close
+    name: Close
+    href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Close
+  - name: (
+  - name: )
+- uid: ServerCore.Communication.UDP.UdpCommunicationChannel.Dispose*
+  commentId: Overload:ServerCore.Communication.UDP.UdpCommunicationChannel.Dispose
+  href: ServerCore.Communication.UDP.UdpCommunicationChannel.html#ServerCore_Communication_UDP_UdpCommunicationChannel_Dispose
+  name: Dispose
+  nameWithType: UdpCommunicationChannel.Dispose
+  fullName: ServerCore.Communication.UDP.UdpCommunicationChannel.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: ServerCore.Communication.UDP.UdpCommunicationChannel.WriteAsync*
+  commentId: Overload:ServerCore.Communication.UDP.UdpCommunicationChannel.WriteAsync
+  href: ServerCore.Communication.UDP.UdpCommunicationChannel.html#ServerCore_Communication_UDP_UdpCommunicationChannel_WriteAsync_System_ReadOnlyMemory_System_Byte__
+  name: WriteAsync
+  nameWithType: UdpCommunicationChannel.WriteAsync
+  fullName: ServerCore.Communication.UDP.UdpCommunicationChannel.WriteAsync
+- uid: ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+  commentId: M:ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+  parent: ServerCore.Communication.ICommunicationChannel
+  isExternal: true
+  href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_WriteAsync_System_ReadOnlyMemory_System_Byte__
+  name: WriteAsync(ReadOnlyMemory<byte>)
+  nameWithType: ICommunicationChannel.WriteAsync(ReadOnlyMemory<byte>)
+  fullName: ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory<byte>)
+  nameWithType.vb: ICommunicationChannel.WriteAsync(ReadOnlyMemory(Of Byte))
+  fullName.vb: ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory(Of Byte))
+  name.vb: WriteAsync(ReadOnlyMemory(Of Byte))
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+    name: WriteAsync
+    href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_WriteAsync_System_ReadOnlyMemory_System_Byte__
+  - name: (
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+    name: WriteAsync
+    href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_WriteAsync_System_ReadOnlyMemory_System_Byte__
+  - name: (
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: )
+- uid: System.ReadOnlyMemory{System.Byte}
+  commentId: T:System.ReadOnlyMemory{System.Byte}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<byte>
+  nameWithType: ReadOnlyMemory<byte>
+  fullName: System.ReadOnlyMemory<byte>
+  nameWithType.vb: ReadOnlyMemory(Of Byte)
+  fullName.vb: System.ReadOnlyMemory(Of Byte)
+  name.vb: ReadOnlyMemory(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.ReadOnlyMemory`1
+  commentId: T:System.ReadOnlyMemory`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<T>
+  nameWithType: ReadOnlyMemory<T>
+  fullName: System.ReadOnlyMemory<T>
+  nameWithType.vb: ReadOnlyMemory(Of T)
+  fullName.vb: System.ReadOnlyMemory(Of T)
+  name.vb: ReadOnlyMemory(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: ServerCore.Communication.UDP.UdpCommunicationChannel.Write*
+  commentId: Overload:ServerCore.Communication.UDP.UdpCommunicationChannel.Write
+  href: ServerCore.Communication.UDP.UdpCommunicationChannel.html#ServerCore_Communication_UDP_UdpCommunicationChannel_Write_System_ReadOnlySpan_System_Byte__
+  name: Write
+  nameWithType: UdpCommunicationChannel.Write
+  fullName: ServerCore.Communication.UDP.UdpCommunicationChannel.Write
+- uid: ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+  commentId: M:ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+  parent: ServerCore.Communication.ICommunicationChannel
+  isExternal: true
+  href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Write_System_ReadOnlySpan_System_Byte__
+  name: Write(ReadOnlySpan<byte>)
+  nameWithType: ICommunicationChannel.Write(ReadOnlySpan<byte>)
+  fullName: ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan<byte>)
+  nameWithType.vb: ICommunicationChannel.Write(ReadOnlySpan(Of Byte))
+  fullName.vb: ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan(Of Byte))
+  name.vb: Write(ReadOnlySpan(Of Byte))
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+    name: Write
+    href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Write_System_ReadOnlySpan_System_Byte__
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+    name: Write
+    href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Write_System_ReadOnlySpan_System_Byte__
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: )
+- uid: System.ReadOnlySpan{System.Byte}
+  commentId: T:System.ReadOnlySpan{System.Byte}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<byte>
+  nameWithType: ReadOnlySpan<byte>
+  fullName: System.ReadOnlySpan<byte>
+  nameWithType.vb: ReadOnlySpan(Of Byte)
+  fullName.vb: System.ReadOnlySpan(Of Byte)
+  name.vb: ReadOnlySpan(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

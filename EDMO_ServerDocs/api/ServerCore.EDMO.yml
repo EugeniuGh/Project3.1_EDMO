@@ -1,0 +1,78 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.EDMO
+  commentId: N:ServerCore.EDMO
+  id: ServerCore.EDMO
+  children:
+  - ServerCore.EDMO.EDMOSession
+  - ServerCore.EDMO.EDMOSession.ControlContext
+  - ServerCore.EDMO.EDMOSessionManager
+  langs:
+  - csharp
+  - vb
+  name: ServerCore.EDMO
+  nameWithType: ServerCore.EDMO
+  fullName: ServerCore.EDMO
+  type: Namespace
+  assemblies:
+  - ServerCore
+references:
+- uid: ServerCore.EDMO.EDMOSession
+  commentId: T:ServerCore.EDMO.EDMOSession
+  parent: ServerCore.EDMO
+  href: ServerCore.EDMO.EDMOSession.html
+  name: EDMOSession
+  nameWithType: EDMOSession
+  fullName: ServerCore.EDMO.EDMOSession
+- uid: ServerCore.EDMO.EDMOSession.ControlContext
+  commentId: T:ServerCore.EDMO.EDMOSession.ControlContext
+  parent: ServerCore.EDMO
+  href: ServerCore.EDMO.EDMOSession.html
+  name: EDMOSession.ControlContext
+  nameWithType: EDMOSession.ControlContext
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext
+  spec.csharp:
+  - uid: ServerCore.EDMO.EDMOSession
+    name: EDMOSession
+    href: ServerCore.EDMO.EDMOSession.html
+  - name: .
+  - uid: ServerCore.EDMO.EDMOSession.ControlContext
+    name: ControlContext
+    href: ServerCore.EDMO.EDMOSession.ControlContext.html
+  spec.vb:
+  - uid: ServerCore.EDMO.EDMOSession
+    name: EDMOSession
+    href: ServerCore.EDMO.EDMOSession.html
+  - name: .
+  - uid: ServerCore.EDMO.EDMOSession.ControlContext
+    name: ControlContext
+    href: ServerCore.EDMO.EDMOSession.ControlContext.html
+- uid: ServerCore.EDMO.EDMOSessionManager
+  commentId: T:ServerCore.EDMO.EDMOSessionManager
+  parent: ServerCore.EDMO
+  href: ServerCore.EDMO.EDMOSessionManager.html
+  name: EDMOSessionManager
+  nameWithType: EDMOSessionManager
+  fullName: ServerCore.EDMO.EDMOSessionManager
+- uid: ServerCore.EDMO
+  commentId: N:ServerCore.EDMO
+  href: ServerCore.html
+  name: ServerCore.EDMO
+  nameWithType: ServerCore.EDMO
+  fullName: ServerCore.EDMO
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html

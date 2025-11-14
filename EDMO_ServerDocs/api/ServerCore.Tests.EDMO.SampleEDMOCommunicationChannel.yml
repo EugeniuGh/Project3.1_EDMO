@@ -1,0 +1,1164 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel
+  commentId: T:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel
+  id: SampleEDMOCommunicationChannel
+  parent: ServerCore.Tests.EDMO
+  children:
+  - ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.#ctor
+  - ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Close
+  - ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.DataReceived
+  - ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Dispose
+  - ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.ReferenceIMUData
+  - ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.ReferenceOscillatorStates
+  - ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Status
+  - ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+  - ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.WriteAsCommunicatee(System.ReadOnlySpan{System.Byte})
+  - ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+  langs:
+  - csharp
+  - vb
+  name: SampleEDMOCommunicationChannel
+  nameWithType: SampleEDMOCommunicationChannel
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel
+  type: Class
+  source:
+    remote:
+      path: ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: SampleEDMOCommunicationChannel
+    path: ../ServerVNext/ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+    startLine: 9
+  assemblies:
+  - ServerCore.Tests
+  namespace: ServerCore.Tests.EDMO
+  syntax:
+    content: 'public class SampleEDMOCommunicationChannel : ICommunicationChannel, IDisposable'
+    content.vb: Public Class SampleEDMOCommunicationChannel Implements ICommunicationChannel, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - ServerCore.Communication.ICommunicationChannel
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.ReferenceIMUData
+  commentId: P:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.ReferenceIMUData
+  id: ReferenceIMUData
+  parent: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: ReferenceIMUData
+  nameWithType: SampleEDMOCommunicationChannel.ReferenceIMUData
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.ReferenceIMUData
+  type: Property
+  source:
+    remote:
+      path: ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: ReferenceIMUData
+    path: ../ServerVNext/ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+    startLine: 11
+  assemblies:
+  - ServerCore.Tests
+  namespace: ServerCore.Tests.EDMO
+  syntax:
+    content: public IMUData ReferenceIMUData { get; }
+    parameters: []
+    return:
+      type: ServerCore.EDMO.Communication.Packets.IMUData
+    content.vb: Public ReadOnly Property ReferenceIMUData As IMUData
+  overload: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.ReferenceIMUData*
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.ReferenceOscillatorStates
+  commentId: P:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.ReferenceOscillatorStates
+  id: ReferenceOscillatorStates
+  parent: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: ReferenceOscillatorStates
+  nameWithType: SampleEDMOCommunicationChannel.ReferenceOscillatorStates
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.ReferenceOscillatorStates
+  type: Property
+  source:
+    remote:
+      path: ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: ReferenceOscillatorStates
+    path: ../ServerVNext/ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+    startLine: 15
+  assemblies:
+  - ServerCore.Tests
+  namespace: ServerCore.Tests.EDMO
+  syntax:
+    content: public ReadOnlySpan<OscillatorState> ReferenceOscillatorStates { get; }
+    parameters: []
+    return:
+      type: System.ReadOnlySpan{ServerCore.EDMO.Communication.Packets.OscillatorState}
+    content.vb: Public ReadOnly Property ReferenceOscillatorStates As ReadOnlySpan(Of OscillatorState)
+  overload: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.ReferenceOscillatorStates*
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.#ctor
+  commentId: M:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.#ctor
+  id: '#ctor'
+  parent: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: SampleEDMOCommunicationChannel()
+  nameWithType: SampleEDMOCommunicationChannel.SampleEDMOCommunicationChannel()
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.SampleEDMOCommunicationChannel()
+  type: Constructor
+  source:
+    remote:
+      path: ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: .ctor
+    path: ../ServerVNext/ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+    startLine: 39
+  assemblies:
+  - ServerCore.Tests
+  namespace: ServerCore.Tests.EDMO
+  syntax:
+    content: public SampleEDMOCommunicationChannel()
+    content.vb: Public Sub New()
+  overload: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.#ctor*
+  nameWithType.vb: SampleEDMOCommunicationChannel.New()
+  fullName.vb: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.New()
+  name.vb: New()
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Dispose
+  commentId: M:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Dispose
+  id: Dispose
+  parent: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: SampleEDMOCommunicationChannel.Dispose()
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Dispose()
+  type: Method
+  source:
+    remote:
+      path: ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Dispose
+    path: ../ServerVNext/ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+    startLine: 67
+  assemblies:
+  - ServerCore.Tests
+  namespace: ServerCore.Tests.EDMO
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Status
+  commentId: P:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Status
+  id: Status
+  parent: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: SampleEDMOCommunicationChannel.Status
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Status
+  type: Property
+  source:
+    remote:
+      path: ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Status
+    path: ../ServerVNext/ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+    startLine: 69
+  assemblies:
+  - ServerCore.Tests
+  namespace: ServerCore.Tests.EDMO
+  summary: Provides information about the state of the underlying connection.
+  example: []
+  syntax:
+    content: public ConnectionStatus Status { get; }
+    parameters: []
+    return:
+      type: ServerCore.Communication.ConnectionStatus
+    content.vb: Public ReadOnly Property Status As ConnectionStatus
+  overload: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Status*
+  implements:
+  - ServerCore.Communication.ICommunicationChannel.Status
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+  commentId: M:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+  id: WriteAsync(System.ReadOnlyMemory{System.Byte})
+  parent: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(ReadOnlyMemory<byte>)
+  nameWithType: SampleEDMOCommunicationChannel.WriteAsync(ReadOnlyMemory<byte>)
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.WriteAsync(System.ReadOnlyMemory<byte>)
+  type: Method
+  source:
+    remote:
+      path: ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: WriteAsync
+    path: ../ServerVNext/ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+    startLine: 73
+  assemblies:
+  - ServerCore.Tests
+  namespace: ServerCore.Tests.EDMO
+  summary: Send arbitrary data through the communication channel asynchronously.
+  example: []
+  syntax:
+    content: public Task WriteAsync(ReadOnlyMemory<byte> data)
+    parameters:
+    - id: data
+      type: System.ReadOnlyMemory{System.Byte}
+      description: The data to be sent
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteAsync(data As ReadOnlyMemory(Of Byte)) As Task
+  overload: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.WriteAsync*
+  implements:
+  - ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+  nameWithType.vb: SampleEDMOCommunicationChannel.WriteAsync(ReadOnlyMemory(Of Byte))
+  fullName.vb: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.WriteAsync(System.ReadOnlyMemory(Of Byte))
+  name.vb: WriteAsync(ReadOnlyMemory(Of Byte))
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+  commentId: M:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+  id: Write(System.ReadOnlySpan{System.Byte})
+  parent: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: Write(ReadOnlySpan<byte>)
+  nameWithType: SampleEDMOCommunicationChannel.Write(ReadOnlySpan<byte>)
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Write(System.ReadOnlySpan<byte>)
+  type: Method
+  source:
+    remote:
+      path: ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Write
+    path: ../ServerVNext/ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+    startLine: 79
+  assemblies:
+  - ServerCore.Tests
+  namespace: ServerCore.Tests.EDMO
+  summary: Send arbitrary data through the communication channel.
+  example: []
+  syntax:
+    content: public void Write(ReadOnlySpan<byte> data)
+    parameters:
+    - id: data
+      type: System.ReadOnlySpan{System.Byte}
+      description: The data to be sent
+    content.vb: Public Sub Write(data As ReadOnlySpan(Of Byte))
+  overload: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Write*
+  implements:
+  - ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+  nameWithType.vb: SampleEDMOCommunicationChannel.Write(ReadOnlySpan(Of Byte))
+  fullName.vb: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Write(System.ReadOnlySpan(Of Byte))
+  name.vb: Write(ReadOnlySpan(Of Byte))
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.WriteAsCommunicatee(System.ReadOnlySpan{System.Byte})
+  commentId: M:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.WriteAsCommunicatee(System.ReadOnlySpan{System.Byte})
+  id: WriteAsCommunicatee(System.ReadOnlySpan{System.Byte})
+  parent: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: WriteAsCommunicatee(ReadOnlySpan<byte>)
+  nameWithType: SampleEDMOCommunicationChannel.WriteAsCommunicatee(ReadOnlySpan<byte>)
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.WriteAsCommunicatee(System.ReadOnlySpan<byte>)
+  type: Method
+  source:
+    remote:
+      path: ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: WriteAsCommunicatee
+    path: ../ServerVNext/ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+    startLine: 220
+  assemblies:
+  - ServerCore.Tests
+  namespace: ServerCore.Tests.EDMO
+  syntax:
+    content: public void WriteAsCommunicatee(ReadOnlySpan<byte> data)
+    parameters:
+    - id: data
+      type: System.ReadOnlySpan{System.Byte}
+    content.vb: Public Sub WriteAsCommunicatee(data As ReadOnlySpan(Of Byte))
+  overload: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.WriteAsCommunicatee*
+  nameWithType.vb: SampleEDMOCommunicationChannel.WriteAsCommunicatee(ReadOnlySpan(Of Byte))
+  fullName.vb: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.WriteAsCommunicatee(System.ReadOnlySpan(Of Byte))
+  name.vb: WriteAsCommunicatee(ReadOnlySpan(Of Byte))
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.DataReceived
+  commentId: P:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.DataReceived
+  id: DataReceived
+  parent: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: DataReceived
+  nameWithType: SampleEDMOCommunicationChannel.DataReceived
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.DataReceived
+  type: Property
+  source:
+    remote:
+      path: ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: DataReceived
+    path: ../ServerVNext/ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+    startLine: 226
+  assemblies:
+  - ServerCore.Tests
+  namespace: ServerCore.Tests.EDMO
+  summary: An event which is raised when <xref href="ServerCore.Communication.ICommunicationChannel" data-throw-if-not-resolved="false"></xref> receives any data.
+  example: []
+  syntax:
+    content: public ICommunicationChannel.DataReceivedAction? DataReceived { get; set; }
+    parameters: []
+    return:
+      type: ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+    content.vb: Public Property DataReceived As ICommunicationChannel.DataReceivedAction
+  overload: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.DataReceived*
+  implements:
+  - ServerCore.Communication.ICommunicationChannel.DataReceived
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Close
+  commentId: M:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Close
+  id: Close
+  parent: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: SampleEDMOCommunicationChannel.Close()
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Close()
+  type: Method
+  source:
+    remote:
+      path: ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Close
+    path: ../ServerVNext/ServerCore.Tests/EDMO/SampleEDMOCommunicationChannel.cs
+    startLine: 228
+  assemblies:
+  - ServerCore.Tests
+  namespace: ServerCore.Tests.EDMO
+  summary: Close the communication channel, and the underlying implementation.
+  example: []
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close()
+  overload: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Close*
+  implements:
+  - ServerCore.Communication.ICommunicationChannel.Close
+references:
+- uid: ServerCore.Tests.EDMO
+  commentId: N:ServerCore.Tests.EDMO
+  href: ServerCore.html
+  name: ServerCore.Tests.EDMO
+  nameWithType: ServerCore.Tests.EDMO
+  fullName: ServerCore.Tests.EDMO
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Tests
+    name: Tests
+    href: ServerCore.Tests.html
+  - name: .
+  - uid: ServerCore.Tests.EDMO
+    name: EDMO
+    href: ServerCore.Tests.EDMO.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Tests
+    name: Tests
+    href: ServerCore.Tests.html
+  - name: .
+  - uid: ServerCore.Tests.EDMO
+    name: EDMO
+    href: ServerCore.Tests.EDMO.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ServerCore.Communication.ICommunicationChannel
+  commentId: T:ServerCore.Communication.ICommunicationChannel
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationChannel.html
+  name: ICommunicationChannel
+  nameWithType: ICommunicationChannel
+  fullName: ServerCore.Communication.ICommunicationChannel
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ServerCore.Communication
+  commentId: N:ServerCore.Communication
+  href: ServerCore.html
+  name: ServerCore.Communication
+  nameWithType: ServerCore.Communication
+  fullName: ServerCore.Communication
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.ReferenceIMUData*
+  commentId: Overload:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.ReferenceIMUData
+  href: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.html#ServerCore_Tests_EDMO_SampleEDMOCommunicationChannel_ReferenceIMUData
+  name: ReferenceIMUData
+  nameWithType: SampleEDMOCommunicationChannel.ReferenceIMUData
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.ReferenceIMUData
+- uid: ServerCore.EDMO.Communication.Packets.IMUData
+  commentId: T:ServerCore.EDMO.Communication.Packets.IMUData
+  parent: ServerCore.EDMO.Communication.Packets
+  href: ServerCore.EDMO.Communication.Packets.IMUData.html
+  name: IMUData
+  nameWithType: IMUData
+  fullName: ServerCore.EDMO.Communication.Packets.IMUData
+- uid: ServerCore.EDMO.Communication.Packets
+  commentId: N:ServerCore.EDMO.Communication.Packets
+  href: ServerCore.html
+  name: ServerCore.EDMO.Communication.Packets
+  nameWithType: ServerCore.EDMO.Communication.Packets
+  fullName: ServerCore.EDMO.Communication.Packets
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.Packets
+    name: Packets
+    href: ServerCore.EDMO.Communication.Packets.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.Packets
+    name: Packets
+    href: ServerCore.EDMO.Communication.Packets.html
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.ReferenceOscillatorStates*
+  commentId: Overload:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.ReferenceOscillatorStates
+  href: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.html#ServerCore_Tests_EDMO_SampleEDMOCommunicationChannel_ReferenceOscillatorStates
+  name: ReferenceOscillatorStates
+  nameWithType: SampleEDMOCommunicationChannel.ReferenceOscillatorStates
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.ReferenceOscillatorStates
+- uid: System.ReadOnlySpan{ServerCore.EDMO.Communication.Packets.OscillatorState}
+  commentId: T:System.ReadOnlySpan{ServerCore.EDMO.Communication.Packets.OscillatorState}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<OscillatorState>
+  nameWithType: ReadOnlySpan<OscillatorState>
+  fullName: System.ReadOnlySpan<ServerCore.EDMO.Communication.Packets.OscillatorState>
+  nameWithType.vb: ReadOnlySpan(Of OscillatorState)
+  fullName.vb: System.ReadOnlySpan(Of ServerCore.EDMO.Communication.Packets.OscillatorState)
+  name.vb: ReadOnlySpan(Of OscillatorState)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: ServerCore.EDMO.Communication.Packets.OscillatorState
+    name: OscillatorState
+    href: ServerCore.EDMO.Communication.Packets.OscillatorState.html
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ServerCore.EDMO.Communication.Packets.OscillatorState
+    name: OscillatorState
+    href: ServerCore.EDMO.Communication.Packets.OscillatorState.html
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.#ctor*
+  commentId: Overload:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.#ctor
+  href: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.html#ServerCore_Tests_EDMO_SampleEDMOCommunicationChannel__ctor
+  name: SampleEDMOCommunicationChannel
+  nameWithType: SampleEDMOCommunicationChannel.SampleEDMOCommunicationChannel
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.SampleEDMOCommunicationChannel
+  nameWithType.vb: SampleEDMOCommunicationChannel.New
+  fullName.vb: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.New
+  name.vb: New
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Dispose*
+  commentId: Overload:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Dispose
+  href: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.html#ServerCore_Tests_EDMO_SampleEDMOCommunicationChannel_Dispose
+  name: Dispose
+  nameWithType: SampleEDMOCommunicationChannel.Dispose
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Status*
+  commentId: Overload:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Status
+  href: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.html#ServerCore_Tests_EDMO_SampleEDMOCommunicationChannel_Status
+  name: Status
+  nameWithType: SampleEDMOCommunicationChannel.Status
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Status
+- uid: ServerCore.Communication.ICommunicationChannel.Status
+  commentId: P:ServerCore.Communication.ICommunicationChannel.Status
+  parent: ServerCore.Communication.ICommunicationChannel
+  href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Status
+  name: Status
+  nameWithType: ICommunicationChannel.Status
+  fullName: ServerCore.Communication.ICommunicationChannel.Status
+- uid: ServerCore.Communication.ConnectionStatus
+  commentId: T:ServerCore.Communication.ConnectionStatus
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ConnectionStatus.html
+  name: ConnectionStatus
+  nameWithType: ConnectionStatus
+  fullName: ServerCore.Communication.ConnectionStatus
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.WriteAsync*
+  commentId: Overload:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.WriteAsync
+  href: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.html#ServerCore_Tests_EDMO_SampleEDMOCommunicationChannel_WriteAsync_System_ReadOnlyMemory_System_Byte__
+  name: WriteAsync
+  nameWithType: SampleEDMOCommunicationChannel.WriteAsync
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.WriteAsync
+- uid: ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+  commentId: M:ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+  parent: ServerCore.Communication.ICommunicationChannel
+  isExternal: true
+  href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_WriteAsync_System_ReadOnlyMemory_System_Byte__
+  name: WriteAsync(ReadOnlyMemory<byte>)
+  nameWithType: ICommunicationChannel.WriteAsync(ReadOnlyMemory<byte>)
+  fullName: ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory<byte>)
+  nameWithType.vb: ICommunicationChannel.WriteAsync(ReadOnlyMemory(Of Byte))
+  fullName.vb: ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory(Of Byte))
+  name.vb: WriteAsync(ReadOnlyMemory(Of Byte))
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+    name: WriteAsync
+    href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_WriteAsync_System_ReadOnlyMemory_System_Byte__
+  - name: (
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationChannel.WriteAsync(System.ReadOnlyMemory{System.Byte})
+    name: WriteAsync
+    href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_WriteAsync_System_ReadOnlyMemory_System_Byte__
+  - name: (
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: )
+- uid: System.ReadOnlyMemory{System.Byte}
+  commentId: T:System.ReadOnlyMemory{System.Byte}
+  parent: System
+  definition: System.ReadOnlyMemory`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<byte>
+  nameWithType: ReadOnlyMemory<byte>
+  fullName: System.ReadOnlyMemory<byte>
+  nameWithType.vb: ReadOnlyMemory(Of Byte)
+  fullName.vb: System.ReadOnlyMemory(Of Byte)
+  name.vb: ReadOnlyMemory(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.ReadOnlyMemory`1
+  commentId: T:System.ReadOnlyMemory`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  name: ReadOnlyMemory<T>
+  nameWithType: ReadOnlyMemory<T>
+  fullName: System.ReadOnlyMemory<T>
+  nameWithType.vb: ReadOnlyMemory(Of T)
+  fullName.vb: System.ReadOnlyMemory(Of T)
+  name.vb: ReadOnlyMemory(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlyMemory`1
+    name: ReadOnlyMemory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlymemory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Write*
+  commentId: Overload:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Write
+  href: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.html#ServerCore_Tests_EDMO_SampleEDMOCommunicationChannel_Write_System_ReadOnlySpan_System_Byte__
+  name: Write
+  nameWithType: SampleEDMOCommunicationChannel.Write
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Write
+- uid: ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+  commentId: M:ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+  parent: ServerCore.Communication.ICommunicationChannel
+  isExternal: true
+  href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Write_System_ReadOnlySpan_System_Byte__
+  name: Write(ReadOnlySpan<byte>)
+  nameWithType: ICommunicationChannel.Write(ReadOnlySpan<byte>)
+  fullName: ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan<byte>)
+  nameWithType.vb: ICommunicationChannel.Write(ReadOnlySpan(Of Byte))
+  fullName.vb: ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan(Of Byte))
+  name.vb: Write(ReadOnlySpan(Of Byte))
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+    name: Write
+    href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Write_System_ReadOnlySpan_System_Byte__
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationChannel.Write(System.ReadOnlySpan{System.Byte})
+    name: Write
+    href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Write_System_ReadOnlySpan_System_Byte__
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: )
+- uid: System.ReadOnlySpan{System.Byte}
+  commentId: T:System.ReadOnlySpan{System.Byte}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<byte>
+  nameWithType: ReadOnlySpan<byte>
+  fullName: System.ReadOnlySpan<byte>
+  nameWithType.vb: ReadOnlySpan(Of Byte)
+  fullName.vb: System.ReadOnlySpan(Of Byte)
+  name.vb: ReadOnlySpan(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.WriteAsCommunicatee*
+  commentId: Overload:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.WriteAsCommunicatee
+  href: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.html#ServerCore_Tests_EDMO_SampleEDMOCommunicationChannel_WriteAsCommunicatee_System_ReadOnlySpan_System_Byte__
+  name: WriteAsCommunicatee
+  nameWithType: SampleEDMOCommunicationChannel.WriteAsCommunicatee
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.WriteAsCommunicatee
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.DataReceived*
+  commentId: Overload:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.DataReceived
+  href: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.html#ServerCore_Tests_EDMO_SampleEDMOCommunicationChannel_DataReceived
+  name: DataReceived
+  nameWithType: SampleEDMOCommunicationChannel.DataReceived
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.DataReceived
+- uid: ServerCore.Communication.ICommunicationChannel.DataReceived
+  commentId: P:ServerCore.Communication.ICommunicationChannel.DataReceived
+  parent: ServerCore.Communication.ICommunicationChannel
+  href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_DataReceived
+  name: DataReceived
+  nameWithType: ICommunicationChannel.DataReceived
+  fullName: ServerCore.Communication.ICommunicationChannel.DataReceived
+- uid: ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+  commentId: T:ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationChannel.html
+  name: ICommunicationChannel.DataReceivedAction
+  nameWithType: ICommunicationChannel.DataReceivedAction
+  fullName: ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationChannel
+    name: ICommunicationChannel
+    href: ServerCore.Communication.ICommunicationChannel.html
+  - name: .
+  - uid: ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+    name: DataReceivedAction
+    href: ServerCore.Communication.ICommunicationChannel.DataReceivedAction.html
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationChannel
+    name: ICommunicationChannel
+    href: ServerCore.Communication.ICommunicationChannel.html
+  - name: .
+  - uid: ServerCore.Communication.ICommunicationChannel.DataReceivedAction
+    name: DataReceivedAction
+    href: ServerCore.Communication.ICommunicationChannel.DataReceivedAction.html
+- uid: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Close*
+  commentId: Overload:ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Close
+  href: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.html#ServerCore_Tests_EDMO_SampleEDMOCommunicationChannel_Close
+  name: Close
+  nameWithType: SampleEDMOCommunicationChannel.Close
+  fullName: ServerCore.Tests.EDMO.SampleEDMOCommunicationChannel.Close
+- uid: ServerCore.Communication.ICommunicationChannel.Close
+  commentId: M:ServerCore.Communication.ICommunicationChannel.Close
+  parent: ServerCore.Communication.ICommunicationChannel
+  href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Close
+  name: Close()
+  nameWithType: ICommunicationChannel.Close()
+  fullName: ServerCore.Communication.ICommunicationChannel.Close()
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationChannel.Close
+    name: Close
+    href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Close
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationChannel.Close
+    name: Close
+    href: ServerCore.Communication.ICommunicationChannel.html#ServerCore_Communication_ICommunicationChannel_Close
+  - name: (
+  - name: )

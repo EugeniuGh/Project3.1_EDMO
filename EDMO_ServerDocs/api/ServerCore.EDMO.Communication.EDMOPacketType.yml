@@ -1,0 +1,454 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.EDMO.Communication.EDMOPacketType
+  commentId: T:ServerCore.EDMO.Communication.EDMOPacketType
+  id: EDMOPacketType
+  parent: ServerCore.EDMO.Communication
+  children:
+  - ServerCore.EDMO.Communication.EDMOPacketType.GetTime
+  - ServerCore.EDMO.Communication.EDMOPacketType.Identify
+  - ServerCore.EDMO.Communication.EDMOPacketType.SendAllData
+  - ServerCore.EDMO.Communication.EDMOPacketType.SendImuData
+  - ServerCore.EDMO.Communication.EDMOPacketType.SendMotorData
+  - ServerCore.EDMO.Communication.EDMOPacketType.SessionEnd
+  - ServerCore.EDMO.Communication.EDMOPacketType.SessionStart
+  - ServerCore.EDMO.Communication.EDMOPacketType.UpdateOscillator
+  langs:
+  - csharp
+  - vb
+  name: EDMOPacketType
+  nameWithType: EDMOPacketType
+  fullName: ServerCore.EDMO.Communication.EDMOPacketType
+  type: Enum
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOPacketType.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: EDMOPacketType
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOPacketType.cs
+    startLine: 8
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: An enum that contains valid packet types that is supported by the EDMO firmware
+  example: []
+  syntax:
+    content: 'public enum EDMOPacketType : byte'
+    content.vb: Public Enum EDMOPacketType As Byte
+- uid: ServerCore.EDMO.Communication.EDMOPacketType.Identify
+  commentId: F:ServerCore.EDMO.Communication.EDMOPacketType.Identify
+  id: Identify
+  parent: ServerCore.EDMO.Communication.EDMOPacketType
+  langs:
+  - csharp
+  - vb
+  name: Identify
+  nameWithType: EDMOPacketType.Identify
+  fullName: ServerCore.EDMO.Communication.EDMOPacketType.Identify
+  type: Field
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOPacketType.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Identify
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOPacketType.cs
+    startLine: 15
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: >-
+    In command: Requests the EDMO robot to identify itself
+
+    <br />
+
+    In response: Indicates the payload contains identification information. (<xref href="System.String" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: Identify = 0
+    return:
+      type: ServerCore.EDMO.Communication.EDMOPacketType
+- uid: ServerCore.EDMO.Communication.EDMOPacketType.SessionStart
+  commentId: F:ServerCore.EDMO.Communication.EDMOPacketType.SessionStart
+  id: SessionStart
+  parent: ServerCore.EDMO.Communication.EDMOPacketType
+  langs:
+  - csharp
+  - vb
+  name: SessionStart
+  nameWithType: EDMOPacketType.SessionStart
+  fullName: ServerCore.EDMO.Communication.EDMOPacketType.SessionStart
+  type: Field
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOPacketType.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: SessionStart
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOPacketType.cs
+    startLine: 24
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: >-
+    In command: Requests the EDMO robot to start pushing data, along with synchronizing with the provided timestamp. (<xref href="ServerCore.EDMO.Communication.Commands.SessionStartCommand" data-throw-if-not-resolved="false"></xref>)
+
+
+    Will also hold a weak lock, preventing other servers from connecting.
+
+    <br />
+
+    In response: N/A
+  example: []
+  syntax:
+    content: SessionStart = 1
+    return:
+      type: ServerCore.EDMO.Communication.EDMOPacketType
+- uid: ServerCore.EDMO.Communication.EDMOPacketType.GetTime
+  commentId: F:ServerCore.EDMO.Communication.EDMOPacketType.GetTime
+  id: GetTime
+  parent: ServerCore.EDMO.Communication.EDMOPacketType
+  langs:
+  - csharp
+  - vb
+  name: GetTime
+  nameWithType: EDMOPacketType.GetTime
+  fullName: ServerCore.EDMO.Communication.EDMOPacketType.GetTime
+  type: Field
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOPacketType.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: GetTime
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOPacketType.cs
+    startLine: 31
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: >-
+    In command: Requests the EDMO robot to send it's current time
+
+    <br />
+
+    In response: Indicates the payload contains the local timestamp of the robot. (<xref href="ServerCore.EDMO.Communication.Packets.TimePacket" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: GetTime = 2
+    return:
+      type: ServerCore.EDMO.Communication.EDMOPacketType
+- uid: ServerCore.EDMO.Communication.EDMOPacketType.UpdateOscillator
+  commentId: F:ServerCore.EDMO.Communication.EDMOPacketType.UpdateOscillator
+  id: UpdateOscillator
+  parent: ServerCore.EDMO.Communication.EDMOPacketType
+  langs:
+  - csharp
+  - vb
+  name: UpdateOscillator
+  nameWithType: EDMOPacketType.UpdateOscillator
+  fullName: ServerCore.EDMO.Communication.EDMOPacketType.UpdateOscillator
+  type: Field
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOPacketType.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: UpdateOscillator
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOPacketType.cs
+    startLine: 38
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: >-
+    In command: Indicates that the payload contains parameters of a single oscillator, to be applied by the robot. (<xref href="ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand" data-throw-if-not-resolved="false"></xref>)
+
+    <br />
+
+    In response: N/A
+  example: []
+  syntax:
+    content: UpdateOscillator = 3
+    return:
+      type: ServerCore.EDMO.Communication.EDMOPacketType
+- uid: ServerCore.EDMO.Communication.EDMOPacketType.SendMotorData
+  commentId: F:ServerCore.EDMO.Communication.EDMOPacketType.SendMotorData
+  id: SendMotorData
+  parent: ServerCore.EDMO.Communication.EDMOPacketType
+  langs:
+  - csharp
+  - vb
+  name: SendMotorData
+  nameWithType: EDMOPacketType.SendMotorData
+  fullName: ServerCore.EDMO.Communication.EDMOPacketType.SendMotorData
+  type: Field
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOPacketType.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: SendMotorData
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOPacketType.cs
+    startLine: 45
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: >-
+    In command: Requests the EDMO robot to send the current state of the oscillator.
+
+    <br />
+
+    In response: Indicates that the payload contains the state of a single oscillator. (<xref href="ServerCore.EDMO.Communication.Packets.OscillatorDataPacket" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: SendMotorData = 4
+    return:
+      type: ServerCore.EDMO.Communication.EDMOPacketType
+- uid: ServerCore.EDMO.Communication.EDMOPacketType.SendImuData
+  commentId: F:ServerCore.EDMO.Communication.EDMOPacketType.SendImuData
+  id: SendImuData
+  parent: ServerCore.EDMO.Communication.EDMOPacketType
+  langs:
+  - csharp
+  - vb
+  name: SendImuData
+  nameWithType: EDMOPacketType.SendImuData
+  fullName: ServerCore.EDMO.Communication.EDMOPacketType.SendImuData
+  type: Field
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOPacketType.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: SendImuData
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOPacketType.cs
+    startLine: 52
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: >-
+    In command: Requests the EDMO robot to send the current IMU state.
+
+    <br />
+
+    In response: Indicates that the payload contains the current IMU readings. (<xref href="ServerCore.EDMO.Communication.Packets.IMUDataPacket" data-throw-if-not-resolved="false"></xref>)
+  example: []
+  syntax:
+    content: SendImuData = 5
+    return:
+      type: ServerCore.EDMO.Communication.EDMOPacketType
+- uid: ServerCore.EDMO.Communication.EDMOPacketType.SessionEnd
+  commentId: F:ServerCore.EDMO.Communication.EDMOPacketType.SessionEnd
+  id: SessionEnd
+  parent: ServerCore.EDMO.Communication.EDMOPacketType
+  langs:
+  - csharp
+  - vb
+  name: SessionEnd
+  nameWithType: EDMOPacketType.SessionEnd
+  fullName: ServerCore.EDMO.Communication.EDMOPacketType.SessionEnd
+  type: Field
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOPacketType.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: SessionEnd
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOPacketType.cs
+    startLine: 61
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: >-
+    In command: Requests the EDMO robot to stop pushing data, along with synchronizing with the provided timestamp. (<xref href="ServerCore.EDMO.Communication.Commands.SessionStartCommand" data-throw-if-not-resolved="false"></xref>)
+
+
+    Will also release the lock held by this server. Allowing other servers to control the robot.
+
+    <br />
+
+    In response: N/A
+  example: []
+  syntax:
+    content: SessionEnd = 6
+    return:
+      type: ServerCore.EDMO.Communication.EDMOPacketType
+- uid: ServerCore.EDMO.Communication.EDMOPacketType.SendAllData
+  commentId: F:ServerCore.EDMO.Communication.EDMOPacketType.SendAllData
+  id: SendAllData
+  parent: ServerCore.EDMO.Communication.EDMOPacketType
+  langs:
+  - csharp
+  - vb
+  name: SendAllData
+  nameWithType: EDMOPacketType.SendAllData
+  fullName: ServerCore.EDMO.Communication.EDMOPacketType.SendAllData
+  type: Field
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOPacketType.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: SendAllData
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOPacketType.cs
+    startLine: 71
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: >-
+    In command: Requests the EDMO robot to send all data.
+
+    <br />
+
+    In response: Indicates that the payload contains a batch of all information that it can send.
+  remarks: This is a operation that is a composite of <xref href="ServerCore.EDMO.Communication.EDMOPacketType.GetTime" data-throw-if-not-resolved="false"></xref>, <xref href="ServerCore.EDMO.Communication.EDMOPacketType.SendMotorData" data-throw-if-not-resolved="false"></xref> and <xref href="ServerCore.EDMO.Communication.EDMOPacketType.SendImuData" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: SendAllData = 69
+    return:
+      type: ServerCore.EDMO.Communication.EDMOPacketType
+references:
+- uid: ServerCore.EDMO.Communication
+  commentId: N:ServerCore.EDMO.Communication
+  href: ServerCore.html
+  name: ServerCore.EDMO.Communication
+  nameWithType: ServerCore.EDMO.Communication
+  fullName: ServerCore.EDMO.Communication
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ServerCore.EDMO.Communication.EDMOPacketType
+  commentId: T:ServerCore.EDMO.Communication.EDMOPacketType
+  parent: ServerCore.EDMO.Communication
+  href: ServerCore.EDMO.Communication.EDMOPacketType.html
+  name: EDMOPacketType
+  nameWithType: EDMOPacketType
+  fullName: ServerCore.EDMO.Communication.EDMOPacketType
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ServerCore.EDMO.Communication.Commands.SessionStartCommand
+  commentId: T:ServerCore.EDMO.Communication.Commands.SessionStartCommand
+  href: ServerCore.EDMO.Communication.Commands.SessionStartCommand.html
+  name: SessionStartCommand
+  nameWithType: SessionStartCommand
+  fullName: ServerCore.EDMO.Communication.Commands.SessionStartCommand
+- uid: ServerCore.EDMO.Communication.Packets.TimePacket
+  commentId: T:ServerCore.EDMO.Communication.Packets.TimePacket
+  parent: ServerCore.EDMO.Communication.Packets
+  href: ServerCore.EDMO.Communication.Packets.TimePacket.html
+  name: TimePacket
+  nameWithType: TimePacket
+  fullName: ServerCore.EDMO.Communication.Packets.TimePacket
+- uid: ServerCore.EDMO.Communication.Packets
+  commentId: N:ServerCore.EDMO.Communication.Packets
+  href: ServerCore.html
+  name: ServerCore.EDMO.Communication.Packets
+  nameWithType: ServerCore.EDMO.Communication.Packets
+  fullName: ServerCore.EDMO.Communication.Packets
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.Packets
+    name: Packets
+    href: ServerCore.EDMO.Communication.Packets.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.Packets
+    name: Packets
+    href: ServerCore.EDMO.Communication.Packets.html
+- uid: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand
+  commentId: T:ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand
+  href: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.html
+  name: UpdateOscillatorCommand
+  nameWithType: UpdateOscillatorCommand
+  fullName: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand
+- uid: ServerCore.EDMO.Communication.Packets.OscillatorDataPacket
+  commentId: T:ServerCore.EDMO.Communication.Packets.OscillatorDataPacket
+  parent: ServerCore.EDMO.Communication.Packets
+  href: ServerCore.EDMO.Communication.Packets.OscillatorDataPacket.html
+  name: OscillatorDataPacket
+  nameWithType: OscillatorDataPacket
+  fullName: ServerCore.EDMO.Communication.Packets.OscillatorDataPacket
+- uid: ServerCore.EDMO.Communication.Packets.IMUDataPacket
+  commentId: T:ServerCore.EDMO.Communication.Packets.IMUDataPacket
+  parent: ServerCore.EDMO.Communication.Packets
+  href: ServerCore.EDMO.Communication.Packets.IMUDataPacket.html
+  name: IMUDataPacket
+  nameWithType: IMUDataPacket
+  fullName: ServerCore.EDMO.Communication.Packets.IMUDataPacket
+- uid: ServerCore.EDMO.Communication.EDMOPacketType.GetTime
+  commentId: F:ServerCore.EDMO.Communication.EDMOPacketType.GetTime
+  href: ServerCore.EDMO.Communication.EDMOPacketType.html#ServerCore_EDMO_Communication_EDMOPacketType_GetTime
+  name: GetTime
+  nameWithType: EDMOPacketType.GetTime
+  fullName: ServerCore.EDMO.Communication.EDMOPacketType.GetTime
+- uid: ServerCore.EDMO.Communication.EDMOPacketType.SendMotorData
+  commentId: F:ServerCore.EDMO.Communication.EDMOPacketType.SendMotorData
+  href: ServerCore.EDMO.Communication.EDMOPacketType.html#ServerCore_EDMO_Communication_EDMOPacketType_SendMotorData
+  name: SendMotorData
+  nameWithType: EDMOPacketType.SendMotorData
+  fullName: ServerCore.EDMO.Communication.EDMOPacketType.SendMotorData
+- uid: ServerCore.EDMO.Communication.EDMOPacketType.SendImuData
+  commentId: F:ServerCore.EDMO.Communication.EDMOPacketType.SendImuData
+  href: ServerCore.EDMO.Communication.EDMOPacketType.html#ServerCore_EDMO_Communication_EDMOPacketType_SendImuData
+  name: SendImuData
+  nameWithType: EDMOPacketType.SendImuData
+  fullName: ServerCore.EDMO.Communication.EDMOPacketType.SendImuData

@@ -1,0 +1,71 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionEstablishedHandler
+  commentId: T:ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionEstablishedHandler
+  id: EDMOConnectionManager.EDMOConnectionEstablishedHandler
+  parent: ServerCore.EDMO.Communication
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: EDMOConnectionManager.EDMOConnectionEstablishedHandler
+  nameWithType: EDMOConnectionManager.EDMOConnectionEstablishedHandler
+  fullName: ServerCore.EDMO.Communication.EDMOConnectionManager.EDMOConnectionEstablishedHandler
+  type: Delegate
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOConnectionManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: EDMOConnectionEstablishedHandler
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOConnectionManager.cs
+    startLine: 215
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: Describes a handler for responding to EDMO connections
+  example: []
+  syntax:
+    content: public delegate void EDMOConnectionManager.EDMOConnectionEstablishedHandler(FusedEDMOConnection connection)
+    parameters:
+    - id: connection
+      type: ServerCore.EDMO.Communication.FusedEDMOConnection
+    content.vb: Public Delegate Sub EDMOConnectionManager.EDMOConnectionEstablishedHandler(connection As FusedEDMOConnection)
+references:
+- uid: ServerCore.EDMO.Communication
+  commentId: N:ServerCore.EDMO.Communication
+  href: ServerCore.html
+  name: ServerCore.EDMO.Communication
+  nameWithType: ServerCore.EDMO.Communication
+  fullName: ServerCore.EDMO.Communication
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+- uid: ServerCore.EDMO.Communication.FusedEDMOConnection
+  commentId: T:ServerCore.EDMO.Communication.FusedEDMOConnection
+  parent: ServerCore.EDMO.Communication
+  href: ServerCore.EDMO.Communication.FusedEDMOConnection.html
+  name: FusedEDMOConnection
+  nameWithType: FusedEDMOConnection
+  fullName: ServerCore.EDMO.Communication.FusedEDMOConnection

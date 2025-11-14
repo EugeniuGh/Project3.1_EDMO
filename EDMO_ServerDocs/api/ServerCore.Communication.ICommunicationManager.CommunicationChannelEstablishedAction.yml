@@ -1,0 +1,71 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+  commentId: T:ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+  id: ICommunicationManager.CommunicationChannelEstablishedAction
+  parent: ServerCore.Communication
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ICommunicationManager.CommunicationChannelEstablishedAction
+  nameWithType: ICommunicationManager.CommunicationChannelEstablishedAction
+  fullName: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+  type: Delegate
+  source:
+    remote:
+      path: ServerCore/Communication/ICommunicationManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: CommunicationChannelEstablishedAction
+    path: ../ServerVNext/ServerCore/Communication/ICommunicationManager.cs
+    startLine: 38
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication
+  summary: Represents a handler for receiving an <xref href="ServerCore.Communication.ICommunicationChannel" data-throw-if-not-resolved="false"></xref> from an <xref href="ServerCore.Communication.ICommunicationManager" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public delegate void ICommunicationManager.CommunicationChannelEstablishedAction(ICommunicationChannel channel)
+    parameters:
+    - id: channel
+      type: ServerCore.Communication.ICommunicationChannel
+      description: The newly connected channel
+    content.vb: Public Delegate Sub ICommunicationManager.CommunicationChannelEstablishedAction(channel As ICommunicationChannel)
+references:
+- uid: ServerCore.Communication.ICommunicationChannel
+  commentId: T:ServerCore.Communication.ICommunicationChannel
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationChannel.html
+  name: ICommunicationChannel
+  nameWithType: ICommunicationChannel
+  fullName: ServerCore.Communication.ICommunicationChannel
+- uid: ServerCore.Communication.ICommunicationManager
+  commentId: T:ServerCore.Communication.ICommunicationManager
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationManager.html
+  name: ICommunicationManager
+  nameWithType: ICommunicationManager
+  fullName: ServerCore.Communication.ICommunicationManager
+- uid: ServerCore.Communication
+  commentId: N:ServerCore.Communication
+  href: ServerCore.html
+  name: ServerCore.Communication
+  nameWithType: ServerCore.Communication
+  fullName: ServerCore.Communication
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html

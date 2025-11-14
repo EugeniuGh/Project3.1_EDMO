@@ -1,0 +1,519 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager
+  commentId: T:ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager
+  id: TestUdpCommunicationManager
+  parent: ServerCore.Tests.Communication.UDP
+  children:
+  - ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.Setup
+  - ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.Teardown
+  - ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.TestContext
+  - ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.TestUDPCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: TestUdpCommunicationManager
+  nameWithType: TestUdpCommunicationManager
+  fullName: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager
+  type: Class
+  source:
+    remote:
+      path: ServerCore.Tests/Communication/UDP/TestUdpCommunicationManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: TestUdpCommunicationManager
+    path: ../ServerVNext/ServerCore.Tests/Communication/UDP/TestUdpCommunicationManager.cs
+    startLine: 7
+  assemblies:
+  - ServerCore.Tests
+  namespace: ServerCore.Tests.Communication.UDP
+  syntax:
+    content: >-
+      [TestClass]
+
+      public sealed class TestUdpCommunicationManager
+    content.vb: >-
+      <TestClass>
+
+      Public NotInheritable Class TestUdpCommunicationManager
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.TestContext
+  commentId: P:ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.TestContext
+  id: TestContext
+  parent: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: TestContext
+  nameWithType: TestUdpCommunicationManager.TestContext
+  fullName: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.TestContext
+  type: Property
+  source:
+    remote:
+      path: ServerCore.Tests/Communication/UDP/TestUdpCommunicationManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: TestContext
+    path: ../ServerVNext/ServerCore.Tests/Communication/UDP/TestUdpCommunicationManager.cs
+    startLine: 10
+  assemblies:
+  - ServerCore.Tests
+  namespace: ServerCore.Tests.Communication.UDP
+  syntax:
+    content: public TestContext TestContext { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.VisualStudio.TestTools.UnitTesting.TestContext
+    content.vb: Public Property TestContext As TestContext
+  overload: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.TestContext*
+- uid: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.Setup
+  commentId: M:ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.Setup
+  id: Setup
+  parent: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: Setup()
+  nameWithType: TestUdpCommunicationManager.Setup()
+  fullName: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.Setup()
+  type: Method
+  source:
+    remote:
+      path: ServerCore.Tests/Communication/UDP/TestUdpCommunicationManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Setup
+    path: ../ServerVNext/ServerCore.Tests/Communication/UDP/TestUdpCommunicationManager.cs
+    startLine: 14
+  assemblies:
+  - ServerCore.Tests
+  namespace: ServerCore.Tests.Communication.UDP
+  syntax:
+    content: >-
+      [TestInitialize]
+
+      public void Setup()
+    content.vb: >-
+      <TestInitialize>
+
+      Public Sub Setup()
+  overload: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.Setup*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestInitializeAttribute.#ctor
+    arguments: []
+- uid: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.Teardown
+  commentId: M:ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.Teardown
+  id: Teardown
+  parent: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: Teardown()
+  nameWithType: TestUdpCommunicationManager.Teardown()
+  fullName: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.Teardown()
+  type: Method
+  source:
+    remote:
+      path: ServerCore.Tests/Communication/UDP/TestUdpCommunicationManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Teardown
+    path: ../ServerVNext/ServerCore.Tests/Communication/UDP/TestUdpCommunicationManager.cs
+    startLine: 24
+  assemblies:
+  - ServerCore.Tests
+  namespace: ServerCore.Tests.Communication.UDP
+  syntax:
+    content: >-
+      [TestCleanup]
+
+      public void Teardown()
+    content.vb: >-
+      <TestCleanup>
+
+      Public Sub Teardown()
+  overload: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.Teardown*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute.#ctor
+    arguments: []
+- uid: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.TestUDPCommunicationManager
+  commentId: M:ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.TestUDPCommunicationManager
+  id: TestUDPCommunicationManager
+  parent: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: TestUDPCommunicationManager()
+  nameWithType: TestUdpCommunicationManager.TestUDPCommunicationManager()
+  fullName: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.TestUDPCommunicationManager()
+  type: Method
+  source:
+    remote:
+      path: ServerCore.Tests/Communication/UDP/TestUdpCommunicationManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: TestUDPCommunicationManager
+    path: ../ServerVNext/ServerCore.Tests/Communication/UDP/TestUdpCommunicationManager.cs
+    startLine: 43
+  assemblies:
+  - ServerCore.Tests
+  namespace: ServerCore.Tests.Communication.UDP
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void TestUDPCommunicationManager()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub TestUDPCommunicationManager()
+  overload: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.TestUDPCommunicationManager*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: ServerCore.Tests.Communication.UDP
+  commentId: N:ServerCore.Tests.Communication.UDP
+  href: ServerCore.html
+  name: ServerCore.Tests.Communication.UDP
+  nameWithType: ServerCore.Tests.Communication.UDP
+  fullName: ServerCore.Tests.Communication.UDP
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Tests
+    name: Tests
+    href: ServerCore.Tests.html
+  - name: .
+  - uid: ServerCore.Tests.Communication
+    name: Communication
+    href: ServerCore.Tests.Communication.html
+  - name: .
+  - uid: ServerCore.Tests.Communication.UDP
+    name: UDP
+    href: ServerCore.Tests.Communication.UDP.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Tests
+    name: Tests
+    href: ServerCore.Tests.html
+  - name: .
+  - uid: ServerCore.Tests.Communication
+    name: Communication
+    href: ServerCore.Tests.Communication.html
+  - name: .
+  - uid: ServerCore.Tests.Communication.UDP
+    name: UDP
+    href: ServerCore.Tests.Communication.UDP.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.TestContext*
+  commentId: Overload:ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.TestContext
+  href: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.html#ServerCore_Tests_Communication_UDP_TestUdpCommunicationManager_TestContext
+  name: TestContext
+  nameWithType: TestUdpCommunicationManager.TestContext
+  fullName: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.TestContext
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting.TestContext
+  commentId: T:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext
+  parent: Microsoft.VisualStudio.TestTools.UnitTesting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting.testcontext
+  name: TestContext
+  nameWithType: TestContext
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting.TestContext
+- uid: Microsoft.VisualStudio.TestTools.UnitTesting
+  commentId: N:Microsoft.VisualStudio.TestTools.UnitTesting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.VisualStudio.TestTools.UnitTesting
+  nameWithType: Microsoft.VisualStudio.TestTools.UnitTesting
+  fullName: Microsoft.VisualStudio.TestTools.UnitTesting
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio
+  - name: .
+  - uid: Microsoft.VisualStudio.TestTools
+    name: TestTools
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools
+  - name: .
+  - uid: Microsoft.VisualStudio.TestTools.UnitTesting
+    name: UnitTesting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.VisualStudio
+    name: VisualStudio
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio
+  - name: .
+  - uid: Microsoft.VisualStudio.TestTools
+    name: TestTools
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools
+  - name: .
+  - uid: Microsoft.VisualStudio.TestTools.UnitTesting
+    name: UnitTesting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.visualstudio.testtools.unittesting
+- uid: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.Setup*
+  commentId: Overload:ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.Setup
+  href: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.html#ServerCore_Tests_Communication_UDP_TestUdpCommunicationManager_Setup
+  name: Setup
+  nameWithType: TestUdpCommunicationManager.Setup
+  fullName: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.Setup
+- uid: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.Teardown*
+  commentId: Overload:ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.Teardown
+  href: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.html#ServerCore_Tests_Communication_UDP_TestUdpCommunicationManager_Teardown
+  name: Teardown
+  nameWithType: TestUdpCommunicationManager.Teardown
+  fullName: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.Teardown
+- uid: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.TestUDPCommunicationManager*
+  commentId: Overload:ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.TestUDPCommunicationManager
+  href: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.html#ServerCore_Tests_Communication_UDP_TestUdpCommunicationManager_TestUDPCommunicationManager
+  name: TestUDPCommunicationManager
+  nameWithType: TestUdpCommunicationManager.TestUDPCommunicationManager
+  fullName: ServerCore.Tests.Communication.UDP.TestUdpCommunicationManager.TestUDPCommunicationManager

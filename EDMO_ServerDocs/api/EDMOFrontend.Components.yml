@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: EDMOFrontend.Components
+  commentId: N:EDMOFrontend.Components
+  id: EDMOFrontend.Components
+  children:
+  - EDMOFrontend.Components.LocalisationContext
+  - EDMOFrontend.Components.LocalisationProvider
+  langs:
+  - csharp
+  - vb
+  name: EDMOFrontend.Components
+  nameWithType: EDMOFrontend.Components
+  fullName: EDMOFrontend.Components
+  type: Namespace
+  assemblies:
+  - EDMOFrontend
+references:
+- uid: EDMOFrontend.Components.LocalisationContext
+  commentId: T:EDMOFrontend.Components.LocalisationContext
+  href: EDMOFrontend.Components.LocalisationContext.html
+  name: LocalisationContext
+  nameWithType: LocalisationContext
+  fullName: EDMOFrontend.Components.LocalisationContext
+- uid: EDMOFrontend.Components.LocalisationProvider
+  commentId: T:EDMOFrontend.Components.LocalisationProvider
+  parent: EDMOFrontend.Components
+  href: EDMOFrontend.Components.LocalisationProvider.html
+  name: LocalisationProvider
+  nameWithType: LocalisationProvider
+  fullName: EDMOFrontend.Components.LocalisationProvider
+- uid: EDMOFrontend.Components
+  commentId: N:EDMOFrontend.Components
+  href: EDMOFrontend.html
+  name: EDMOFrontend.Components
+  nameWithType: EDMOFrontend.Components
+  fullName: EDMOFrontend.Components
+  spec.csharp:
+  - uid: EDMOFrontend
+    name: EDMOFrontend
+    href: EDMOFrontend.html
+  - name: .
+  - uid: EDMOFrontend.Components
+    name: Components
+    href: EDMOFrontend.Components.html
+  spec.vb:
+  - uid: EDMOFrontend
+    name: EDMOFrontend
+    href: EDMOFrontend.html
+  - name: .
+  - uid: EDMOFrontend.Components
+    name: Components
+    href: EDMOFrontend.Components.html

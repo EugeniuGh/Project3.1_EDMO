@@ -1,0 +1,955 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.EDMO.EDMOSession
+  commentId: T:ServerCore.EDMO.EDMOSession
+  id: EDMOSession
+  parent: ServerCore.EDMO
+  children:
+  - ServerCore.EDMO.EDMOSession.#ctor(ServerCore.EDMO.EDMOSessionManager,System.String,ServerCore.EDMO.Plugins.Loaders.IPluginLoader,ServerCore.EDMO.Communication.FusedEDMOConnection)
+  - ServerCore.EDMO.EDMOSession.BindConnection(ServerCore.EDMO.Communication.FusedEDMOConnection)
+  - ServerCore.EDMO.EDMOSession.Close
+  - ServerCore.EDMO.EDMOSession.CreateContext(System.String)
+  - ServerCore.EDMO.EDMOSession.HasDevice
+  - ServerCore.EDMO.EDMOSession.Identifier
+  - ServerCore.EDMO.EDMOSession.IsClosed
+  - ServerCore.EDMO.EDMOSession.IsFull
+  - ServerCore.EDMO.EDMOSession.RelativeSessionStorageDirectory
+  - ServerCore.EDMO.EDMOSession.SessionStorageDirectory
+  - ServerCore.EDMO.EDMOSession.UnbindConnection
+  langs:
+  - csharp
+  - vb
+  name: EDMOSession
+  nameWithType: EDMOSession
+  fullName: ServerCore.EDMO.EDMOSession
+  type: Class
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession_ControlContext.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: EDMOSession
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession_ControlContext.cs
+    startLine: 9
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: >-
+    Represents a single EDMO study session, managing both the users and the device.
+
+
+    <br />
+
+    The session will run a background thread to update the connected robot.
+  example: []
+  syntax:
+    content: public class EDMOSession
+    content.vb: Public Class EDMOSession
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ServerCore.EDMO.EDMOSession.IsFull
+  commentId: P:ServerCore.EDMO.EDMOSession.IsFull
+  id: IsFull
+  parent: ServerCore.EDMO.EDMOSession
+  langs:
+  - csharp
+  - vb
+  name: IsFull
+  nameWithType: EDMOSession.IsFull
+  fullName: ServerCore.EDMO.EDMOSession.IsFull
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: IsFull
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession.cs
+    startLine: 35
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: Whether this session is full.
+  example: []
+  syntax:
+    content: public bool IsFull { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsFull As Boolean
+  overload: ServerCore.EDMO.EDMOSession.IsFull*
+- uid: ServerCore.EDMO.EDMOSession.IsClosed
+  commentId: P:ServerCore.EDMO.EDMOSession.IsClosed
+  id: IsClosed
+  parent: ServerCore.EDMO.EDMOSession
+  langs:
+  - csharp
+  - vb
+  name: IsClosed
+  nameWithType: EDMOSession.IsClosed
+  fullName: ServerCore.EDMO.EDMOSession.IsClosed
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: IsClosed
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession.cs
+    startLine: 40
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: Whether this session is ending/ended.
+  example: []
+  syntax:
+    content: public bool IsClosed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsClosed As Boolean
+  overload: ServerCore.EDMO.EDMOSession.IsClosed*
+- uid: ServerCore.EDMO.EDMOSession.HasDevice
+  commentId: P:ServerCore.EDMO.EDMOSession.HasDevice
+  id: HasDevice
+  parent: ServerCore.EDMO.EDMOSession
+  langs:
+  - csharp
+  - vb
+  name: HasDevice
+  nameWithType: EDMOSession.HasDevice
+  fullName: ServerCore.EDMO.EDMOSession.HasDevice
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: HasDevice
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession.cs
+    startLine: 45
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: Whether there is an active connection to an EDMO robot
+  example: []
+  syntax:
+    content: public bool HasDevice { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasDevice As Boolean
+  overload: ServerCore.EDMO.EDMOSession.HasDevice*
+- uid: ServerCore.EDMO.EDMOSession.Identifier
+  commentId: F:ServerCore.EDMO.EDMOSession.Identifier
+  id: Identifier
+  parent: ServerCore.EDMO.EDMOSession
+  langs:
+  - csharp
+  - vb
+  name: Identifier
+  nameWithType: EDMOSession.Identifier
+  fullName: ServerCore.EDMO.EDMOSession.Identifier
+  type: Field
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Identifier
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession.cs
+    startLine: 55
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: The Identifier associated with this session, usually the same as <xref href="ServerCore.EDMO.Communication.EDMOConnection.Identifier" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public readonly string Identifier
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Identifier As String
+- uid: ServerCore.EDMO.EDMOSession.SessionStorageDirectory
+  commentId: F:ServerCore.EDMO.EDMOSession.SessionStorageDirectory
+  id: SessionStorageDirectory
+  parent: ServerCore.EDMO.EDMOSession
+  langs:
+  - csharp
+  - vb
+  name: SessionStorageDirectory
+  nameWithType: EDMOSession.SessionStorageDirectory
+  fullName: ServerCore.EDMO.EDMOSession.SessionStorageDirectory
+  type: Field
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: SessionStorageDirectory
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession.cs
+    startLine: 66
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: The canonical storage directory of the session. Can be used by plugins to store their own data related to the session
+  remarks: This <xref href="System.IO.DirectoryInfo" data-throw-if-not-resolved="false"></xref> always represents the full <i>local</i> directory. If only a relative path is requested (perhaps for storage mirroring), use <xref href="ServerCore.EDMO.EDMOSession.RelativeSessionStorageDirectory" data-throw-if-not-resolved="false"></xref> instead.
+  example: []
+  syntax:
+    content: public readonly DirectoryInfo SessionStorageDirectory
+    return:
+      type: System.IO.DirectoryInfo
+    content.vb: Public ReadOnly SessionStorageDirectory As DirectoryInfo
+- uid: ServerCore.EDMO.EDMOSession.RelativeSessionStorageDirectory
+  commentId: F:ServerCore.EDMO.EDMOSession.RelativeSessionStorageDirectory
+  id: RelativeSessionStorageDirectory
+  parent: ServerCore.EDMO.EDMOSession
+  langs:
+  - csharp
+  - vb
+  name: RelativeSessionStorageDirectory
+  nameWithType: EDMOSession.RelativeSessionStorageDirectory
+  fullName: ServerCore.EDMO.EDMOSession.RelativeSessionStorageDirectory
+  type: Field
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: RelativeSessionStorageDirectory
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession.cs
+    startLine: 71
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: The relative path of the storage directory.
+  example: []
+  syntax:
+    content: public readonly string RelativeSessionStorageDirectory
+    return:
+      type: System.String
+    content.vb: Public ReadOnly RelativeSessionStorageDirectory As String
+- uid: ServerCore.EDMO.EDMOSession.#ctor(ServerCore.EDMO.EDMOSessionManager,System.String,ServerCore.EDMO.Plugins.Loaders.IPluginLoader,ServerCore.EDMO.Communication.FusedEDMOConnection)
+  commentId: M:ServerCore.EDMO.EDMOSession.#ctor(ServerCore.EDMO.EDMOSessionManager,System.String,ServerCore.EDMO.Plugins.Loaders.IPluginLoader,ServerCore.EDMO.Communication.FusedEDMOConnection)
+  id: '#ctor(ServerCore.EDMO.EDMOSessionManager,System.String,ServerCore.EDMO.Plugins.Loaders.IPluginLoader,ServerCore.EDMO.Communication.FusedEDMOConnection)'
+  parent: ServerCore.EDMO.EDMOSession
+  langs:
+  - csharp
+  - vb
+  name: EDMOSession(EDMOSessionManager, string, IPluginLoader?, FusedEDMOConnection?)
+  nameWithType: EDMOSession.EDMOSession(EDMOSessionManager, string, IPluginLoader?, FusedEDMOConnection?)
+  fullName: ServerCore.EDMO.EDMOSession.EDMOSession(ServerCore.EDMO.EDMOSessionManager, string, ServerCore.EDMO.Plugins.Loaders.IPluginLoader?, ServerCore.EDMO.Communication.FusedEDMOConnection?)
+  type: Constructor
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: .ctor
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession.cs
+    startLine: 78
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: >-
+    Represents a single EDMO study session, managing both the users and the device.
+
+
+    <br />
+
+    The session will run a background thread to update the connected robot.
+  example: []
+  syntax:
+    content: public EDMOSession(EDMOSessionManager manager, string identifier, IPluginLoader? pluginLoader = null, FusedEDMOConnection? connection = null)
+    parameters:
+    - id: manager
+      type: ServerCore.EDMO.EDMOSessionManager
+      description: The hosting session manager, used internally
+    - id: identifier
+      type: System.String
+      description: The identifier to be associated with this session
+    - id: pluginLoader
+      type: ServerCore.EDMO.Plugins.Loaders.IPluginLoader
+      description: The plugin loader to be used to create plugins. If null, no plugins will be loaded
+    - id: connection
+      type: ServerCore.EDMO.Communication.FusedEDMOConnection
+      description: The connection to the device. If provided, will call <xref href="ServerCore.EDMO.EDMOSession.BindConnection(ServerCore.EDMO.Communication.FusedEDMOConnection)" data-throw-if-not-resolved="false"></xref> after plugin loads.
+    content.vb: Public Sub New(manager As EDMOSessionManager, identifier As String, pluginLoader As IPluginLoader = Nothing, connection As FusedEDMOConnection = Nothing)
+  overload: ServerCore.EDMO.EDMOSession.#ctor*
+  nameWithType.vb: EDMOSession.New(EDMOSessionManager, String, IPluginLoader, FusedEDMOConnection)
+  fullName.vb: ServerCore.EDMO.EDMOSession.New(ServerCore.EDMO.EDMOSessionManager, String, ServerCore.EDMO.Plugins.Loaders.IPluginLoader, ServerCore.EDMO.Communication.FusedEDMOConnection)
+  name.vb: New(EDMOSessionManager, String, IPluginLoader, FusedEDMOConnection)
+- uid: ServerCore.EDMO.EDMOSession.BindConnection(ServerCore.EDMO.Communication.FusedEDMOConnection)
+  commentId: M:ServerCore.EDMO.EDMOSession.BindConnection(ServerCore.EDMO.Communication.FusedEDMOConnection)
+  id: BindConnection(ServerCore.EDMO.Communication.FusedEDMOConnection)
+  parent: ServerCore.EDMO.EDMOSession
+  langs:
+  - csharp
+  - vb
+  name: BindConnection(FusedEDMOConnection)
+  nameWithType: EDMOSession.BindConnection(FusedEDMOConnection)
+  fullName: ServerCore.EDMO.EDMOSession.BindConnection(ServerCore.EDMO.Communication.FusedEDMOConnection)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: BindConnection
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession.cs
+    startLine: 106
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: Binds a connection to this session, and registers the event handlers.
+  example: []
+  syntax:
+    content: public void BindConnection(FusedEDMOConnection connection)
+    parameters:
+    - id: connection
+      type: ServerCore.EDMO.Communication.FusedEDMOConnection
+      description: The session to be bound
+    content.vb: Public Sub BindConnection(connection As FusedEDMOConnection)
+  overload: ServerCore.EDMO.EDMOSession.BindConnection*
+- uid: ServerCore.EDMO.EDMOSession.UnbindConnection
+  commentId: M:ServerCore.EDMO.EDMOSession.UnbindConnection
+  id: UnbindConnection
+  parent: ServerCore.EDMO.EDMOSession
+  langs:
+  - csharp
+  - vb
+  name: UnbindConnection()
+  nameWithType: EDMOSession.UnbindConnection()
+  fullName: ServerCore.EDMO.EDMOSession.UnbindConnection()
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: UnbindConnection
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession.cs
+    startLine: 145
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: Unregisters event handlers, and unbinds the currently bound connection.
+  example: []
+  syntax:
+    content: public void UnbindConnection()
+    content.vb: Public Sub UnbindConnection()
+  overload: ServerCore.EDMO.EDMOSession.UnbindConnection*
+- uid: ServerCore.EDMO.EDMOSession.CreateContext(System.String)
+  commentId: M:ServerCore.EDMO.EDMOSession.CreateContext(System.String)
+  id: CreateContext(System.String)
+  parent: ServerCore.EDMO.EDMOSession
+  langs:
+  - csharp
+  - vb
+  name: CreateContext(string)
+  nameWithType: EDMOSession.CreateContext(string)
+  fullName: ServerCore.EDMO.EDMOSession.CreateContext(string)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: CreateContext
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession.cs
+    startLine: 209
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: >-
+    Creates a context that exposes control functionality, providing a control ID, methods to manipulate the assigned oscillator, and methods to get information about the session.
+
+    <br />
+
+    Plugins and other users will be notified.
+  example: []
+  syntax:
+    content: public EDMOSession.ControlContext CreateContext(string userName)
+    parameters:
+    - id: userName
+      type: System.String
+      description: The name of the controller
+    return:
+      type: ServerCore.EDMO.EDMOSession.ControlContext
+      description: A control context
+    content.vb: Public Function CreateContext(userName As String) As EDMOSession.ControlContext
+  overload: ServerCore.EDMO.EDMOSession.CreateContext*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: >-
+      Session has been closed.
+
+      <br />
+
+      -- or --
+
+      <br />
+
+      The session is full.
+  nameWithType.vb: EDMOSession.CreateContext(String)
+  fullName.vb: ServerCore.EDMO.EDMOSession.CreateContext(String)
+  name.vb: CreateContext(String)
+- uid: ServerCore.EDMO.EDMOSession.Close
+  commentId: M:ServerCore.EDMO.EDMOSession.Close
+  id: Close
+  parent: ServerCore.EDMO.EDMOSession
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: EDMOSession.Close()
+  fullName: ServerCore.EDMO.EDMOSession.Close()
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/EDMOSession.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Close
+    path: ../ServerVNext/ServerCore/EDMO/EDMOSession.cs
+    startLine: 298
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO
+  summary: Closes this session, resetting the robot's state, cleans up plugins, and informs <xref href="ServerCore.EDMO.EDMOSessionManager" data-throw-if-not-resolved="false"></xref> of the closure.
+  example: []
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close()
+  overload: ServerCore.EDMO.EDMOSession.Close*
+references:
+- uid: ServerCore.EDMO
+  commentId: N:ServerCore.EDMO
+  href: ServerCore.html
+  name: ServerCore.EDMO
+  nameWithType: ServerCore.EDMO
+  fullName: ServerCore.EDMO
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ServerCore.EDMO.EDMOSession.IsFull*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.IsFull
+  href: ServerCore.EDMO.EDMOSession.html#ServerCore_EDMO_EDMOSession_IsFull
+  name: IsFull
+  nameWithType: EDMOSession.IsFull
+  fullName: ServerCore.EDMO.EDMOSession.IsFull
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ServerCore.EDMO.EDMOSession.IsClosed*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.IsClosed
+  href: ServerCore.EDMO.EDMOSession.html#ServerCore_EDMO_EDMOSession_IsClosed
+  name: IsClosed
+  nameWithType: EDMOSession.IsClosed
+  fullName: ServerCore.EDMO.EDMOSession.IsClosed
+- uid: ServerCore.EDMO.EDMOSession.HasDevice*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.HasDevice
+  href: ServerCore.EDMO.EDMOSession.html#ServerCore_EDMO_EDMOSession_HasDevice
+  name: HasDevice
+  nameWithType: EDMOSession.HasDevice
+  fullName: ServerCore.EDMO.EDMOSession.HasDevice
+- uid: ServerCore.EDMO.Communication.EDMOConnection.Identifier
+  commentId: P:ServerCore.EDMO.Communication.EDMOConnection.Identifier
+  href: ServerCore.EDMO.Communication.EDMOConnection.html#ServerCore_EDMO_Communication_EDMOConnection_Identifier
+  name: Identifier
+  nameWithType: EDMOConnection.Identifier
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.Identifier
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.IO.DirectoryInfo
+  commentId: T:System.IO.DirectoryInfo
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.directoryinfo
+  name: DirectoryInfo
+  nameWithType: DirectoryInfo
+  fullName: System.IO.DirectoryInfo
+- uid: ServerCore.EDMO.EDMOSession.RelativeSessionStorageDirectory
+  commentId: F:ServerCore.EDMO.EDMOSession.RelativeSessionStorageDirectory
+  href: ServerCore.EDMO.EDMOSession.html#ServerCore_EDMO_EDMOSession_RelativeSessionStorageDirectory
+  name: RelativeSessionStorageDirectory
+  nameWithType: EDMOSession.RelativeSessionStorageDirectory
+  fullName: ServerCore.EDMO.EDMOSession.RelativeSessionStorageDirectory
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: ServerCore.EDMO.EDMOSession.BindConnection(ServerCore.EDMO.Communication.FusedEDMOConnection)
+  commentId: M:ServerCore.EDMO.EDMOSession.BindConnection(ServerCore.EDMO.Communication.FusedEDMOConnection)
+  href: ServerCore.EDMO.EDMOSession.html#ServerCore_EDMO_EDMOSession_BindConnection_ServerCore_EDMO_Communication_FusedEDMOConnection_
+  name: BindConnection(FusedEDMOConnection)
+  nameWithType: EDMOSession.BindConnection(FusedEDMOConnection)
+  fullName: ServerCore.EDMO.EDMOSession.BindConnection(ServerCore.EDMO.Communication.FusedEDMOConnection)
+  spec.csharp:
+  - uid: ServerCore.EDMO.EDMOSession.BindConnection(ServerCore.EDMO.Communication.FusedEDMOConnection)
+    name: BindConnection
+    href: ServerCore.EDMO.EDMOSession.html#ServerCore_EDMO_EDMOSession_BindConnection_ServerCore_EDMO_Communication_FusedEDMOConnection_
+  - name: (
+  - uid: ServerCore.EDMO.Communication.FusedEDMOConnection
+    name: FusedEDMOConnection
+    href: ServerCore.EDMO.Communication.FusedEDMOConnection.html
+  - name: )
+  spec.vb:
+  - uid: ServerCore.EDMO.EDMOSession.BindConnection(ServerCore.EDMO.Communication.FusedEDMOConnection)
+    name: BindConnection
+    href: ServerCore.EDMO.EDMOSession.html#ServerCore_EDMO_EDMOSession_BindConnection_ServerCore_EDMO_Communication_FusedEDMOConnection_
+  - name: (
+  - uid: ServerCore.EDMO.Communication.FusedEDMOConnection
+    name: FusedEDMOConnection
+    href: ServerCore.EDMO.Communication.FusedEDMOConnection.html
+  - name: )
+- uid: ServerCore.EDMO.EDMOSession.#ctor*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.#ctor
+  href: ServerCore.EDMO.EDMOSession.html#ServerCore_EDMO_EDMOSession__ctor_ServerCore_EDMO_EDMOSessionManager_System_String_ServerCore_EDMO_Plugins_Loaders_IPluginLoader_ServerCore_EDMO_Communication_FusedEDMOConnection_
+  name: EDMOSession
+  nameWithType: EDMOSession.EDMOSession
+  fullName: ServerCore.EDMO.EDMOSession.EDMOSession
+  nameWithType.vb: EDMOSession.New
+  fullName.vb: ServerCore.EDMO.EDMOSession.New
+  name.vb: New
+- uid: ServerCore.EDMO.EDMOSessionManager
+  commentId: T:ServerCore.EDMO.EDMOSessionManager
+  parent: ServerCore.EDMO
+  href: ServerCore.EDMO.EDMOSessionManager.html
+  name: EDMOSessionManager
+  nameWithType: EDMOSessionManager
+  fullName: ServerCore.EDMO.EDMOSessionManager
+- uid: ServerCore.EDMO.Plugins.Loaders.IPluginLoader
+  commentId: T:ServerCore.EDMO.Plugins.Loaders.IPluginLoader
+  parent: ServerCore.EDMO.Plugins.Loaders
+  href: ServerCore.EDMO.Plugins.Loaders.IPluginLoader.html
+  name: IPluginLoader
+  nameWithType: IPluginLoader
+  fullName: ServerCore.EDMO.Plugins.Loaders.IPluginLoader
+- uid: ServerCore.EDMO.Communication.FusedEDMOConnection
+  commentId: T:ServerCore.EDMO.Communication.FusedEDMOConnection
+  parent: ServerCore.EDMO.Communication
+  href: ServerCore.EDMO.Communication.FusedEDMOConnection.html
+  name: FusedEDMOConnection
+  nameWithType: FusedEDMOConnection
+  fullName: ServerCore.EDMO.Communication.FusedEDMOConnection
+- uid: ServerCore.EDMO.Plugins.Loaders
+  commentId: N:ServerCore.EDMO.Plugins.Loaders
+  href: ServerCore.html
+  name: ServerCore.EDMO.Plugins.Loaders
+  nameWithType: ServerCore.EDMO.Plugins.Loaders
+  fullName: ServerCore.EDMO.Plugins.Loaders
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Plugins
+    name: Plugins
+    href: ServerCore.EDMO.Plugins.html
+  - name: .
+  - uid: ServerCore.EDMO.Plugins.Loaders
+    name: Loaders
+    href: ServerCore.EDMO.Plugins.Loaders.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Plugins
+    name: Plugins
+    href: ServerCore.EDMO.Plugins.html
+  - name: .
+  - uid: ServerCore.EDMO.Plugins.Loaders
+    name: Loaders
+    href: ServerCore.EDMO.Plugins.Loaders.html
+- uid: ServerCore.EDMO.Communication
+  commentId: N:ServerCore.EDMO.Communication
+  href: ServerCore.html
+  name: ServerCore.EDMO.Communication
+  nameWithType: ServerCore.EDMO.Communication
+  fullName: ServerCore.EDMO.Communication
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+- uid: ServerCore.EDMO.EDMOSession.BindConnection*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.BindConnection
+  href: ServerCore.EDMO.EDMOSession.html#ServerCore_EDMO_EDMOSession_BindConnection_ServerCore_EDMO_Communication_FusedEDMOConnection_
+  name: BindConnection
+  nameWithType: EDMOSession.BindConnection
+  fullName: ServerCore.EDMO.EDMOSession.BindConnection
+- uid: ServerCore.EDMO.EDMOSession.UnbindConnection*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.UnbindConnection
+  href: ServerCore.EDMO.EDMOSession.html#ServerCore_EDMO_EDMOSession_UnbindConnection
+  name: UnbindConnection
+  nameWithType: EDMOSession.UnbindConnection
+  fullName: ServerCore.EDMO.EDMOSession.UnbindConnection
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: ServerCore.EDMO.EDMOSession.CreateContext*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.CreateContext
+  href: ServerCore.EDMO.EDMOSession.html#ServerCore_EDMO_EDMOSession_CreateContext_System_String_
+  name: CreateContext
+  nameWithType: EDMOSession.CreateContext
+  fullName: ServerCore.EDMO.EDMOSession.CreateContext
+- uid: ServerCore.EDMO.EDMOSession.ControlContext
+  commentId: T:ServerCore.EDMO.EDMOSession.ControlContext
+  parent: ServerCore.EDMO
+  href: ServerCore.EDMO.EDMOSession.html
+  name: EDMOSession.ControlContext
+  nameWithType: EDMOSession.ControlContext
+  fullName: ServerCore.EDMO.EDMOSession.ControlContext
+  spec.csharp:
+  - uid: ServerCore.EDMO.EDMOSession
+    name: EDMOSession
+    href: ServerCore.EDMO.EDMOSession.html
+  - name: .
+  - uid: ServerCore.EDMO.EDMOSession.ControlContext
+    name: ControlContext
+    href: ServerCore.EDMO.EDMOSession.ControlContext.html
+  spec.vb:
+  - uid: ServerCore.EDMO.EDMOSession
+    name: EDMOSession
+    href: ServerCore.EDMO.EDMOSession.html
+  - name: .
+  - uid: ServerCore.EDMO.EDMOSession.ControlContext
+    name: ControlContext
+    href: ServerCore.EDMO.EDMOSession.ControlContext.html
+- uid: ServerCore.EDMO.EDMOSession.Close*
+  commentId: Overload:ServerCore.EDMO.EDMOSession.Close
+  href: ServerCore.EDMO.EDMOSession.html#ServerCore_EDMO_EDMOSession_Close
+  name: Close
+  nameWithType: EDMOSession.Close
+  fullName: ServerCore.EDMO.EDMOSession.Close

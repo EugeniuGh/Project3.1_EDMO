@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.Logging
+  commentId: N:ServerCore.Logging
+  id: ServerCore.Logging
+  children:
+  - ServerCore.Logging.CompositeLogger
+  - ServerCore.Logging.CompositeLogger`1
+  - ServerCore.Logging.ConsoleLogger
+  - ServerCore.Logging.FileLogger
+  - ServerCore.Logging.ILogger
+  - ServerCore.Logging.LogLevel
+  - ServerCore.Logging.StandardLogs
+  langs:
+  - csharp
+  - vb
+  name: ServerCore.Logging
+  nameWithType: ServerCore.Logging
+  fullName: ServerCore.Logging
+  type: Namespace
+  assemblies:
+  - ServerCore
+references:
+- uid: ServerCore.Logging.CompositeLogger
+  commentId: T:ServerCore.Logging.CompositeLogger
+  href: ServerCore.Logging.CompositeLogger.html
+  name: CompositeLogger
+  nameWithType: CompositeLogger
+  fullName: ServerCore.Logging.CompositeLogger
+- uid: ServerCore.Logging.CompositeLogger`1
+  commentId: T:ServerCore.Logging.CompositeLogger`1
+  href: ServerCore.Logging.CompositeLogger-1.html
+  name: CompositeLogger<TLogger>
+  nameWithType: CompositeLogger<TLogger>
+  fullName: ServerCore.Logging.CompositeLogger<TLogger>
+  nameWithType.vb: CompositeLogger(Of TLogger)
+  fullName.vb: ServerCore.Logging.CompositeLogger(Of TLogger)
+  name.vb: CompositeLogger(Of TLogger)
+  spec.csharp:
+  - uid: ServerCore.Logging.CompositeLogger`1
+    name: CompositeLogger
+    href: ServerCore.Logging.CompositeLogger-1.html
+  - name: <
+  - name: TLogger
+  - name: '>'
+  spec.vb:
+  - uid: ServerCore.Logging.CompositeLogger`1
+    name: CompositeLogger
+    href: ServerCore.Logging.CompositeLogger-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TLogger
+  - name: )
+- uid: ServerCore.Logging.ConsoleLogger
+  commentId: T:ServerCore.Logging.ConsoleLogger
+  href: ServerCore.Logging.ConsoleLogger.html
+  name: ConsoleLogger
+  nameWithType: ConsoleLogger
+  fullName: ServerCore.Logging.ConsoleLogger
+- uid: ServerCore.Logging.FileLogger
+  commentId: T:ServerCore.Logging.FileLogger
+  href: ServerCore.Logging.FileLogger.html
+  name: FileLogger
+  nameWithType: FileLogger
+  fullName: ServerCore.Logging.FileLogger
+- uid: ServerCore.Logging.ILogger
+  commentId: T:ServerCore.Logging.ILogger
+  parent: ServerCore.Logging
+  href: ServerCore.Logging.ILogger.html
+  name: ILogger
+  nameWithType: ILogger
+  fullName: ServerCore.Logging.ILogger
+- uid: ServerCore.Logging.LogLevel
+  commentId: T:ServerCore.Logging.LogLevel
+  parent: ServerCore.Logging
+  href: ServerCore.Logging.LogLevel.html
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: ServerCore.Logging.LogLevel
+- uid: ServerCore.Logging.StandardLogs
+  commentId: T:ServerCore.Logging.StandardLogs
+  href: ServerCore.Logging.StandardLogs.html
+  name: StandardLogs
+  nameWithType: StandardLogs
+  fullName: ServerCore.Logging.StandardLogs
+- uid: ServerCore.Logging
+  commentId: N:ServerCore.Logging
+  href: ServerCore.html
+  name: ServerCore.Logging
+  nameWithType: ServerCore.Logging
+  fullName: ServerCore.Logging
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Logging
+    name: Logging
+    href: ServerCore.Logging.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Logging
+    name: Logging
+    href: ServerCore.Logging.html

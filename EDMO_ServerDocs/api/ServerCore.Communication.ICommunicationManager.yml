@@ -1,0 +1,330 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.Communication.ICommunicationManager
+  commentId: T:ServerCore.Communication.ICommunicationManager
+  id: ICommunicationManager
+  parent: ServerCore.Communication
+  children:
+  - ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablished
+  - ServerCore.Communication.ICommunicationManager.CommunicationChannelLost
+  - ServerCore.Communication.ICommunicationManager.Start
+  - ServerCore.Communication.ICommunicationManager.Stop
+  langs:
+  - csharp
+  - vb
+  name: ICommunicationManager
+  nameWithType: ICommunicationManager
+  fullName: ServerCore.Communication.ICommunicationManager
+  type: Interface
+  source:
+    remote:
+      path: ServerCore/Communication/ICommunicationManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: ICommunicationManager
+    path: ../ServerVNext/ServerCore/Communication/ICommunicationManager.cs
+    startLine: 12
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication
+  summary: >-
+    A abstraction for searching and keeping track of <xref href="ServerCore.Communication.ICommunicationChannel" data-throw-if-not-resolved="false"></xref>s.
+
+    <br />
+
+    Searching and management happens in the background, parallel to existing code.
+  remarks: In order to ensure all channels are received properly, it is essential that users of this class assigns <xref href="ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablished" data-throw-if-not-resolved="false"></xref> <i>before</i> calling <xref href="ServerCore.Communication.ICommunicationManager.Start" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public interface ICommunicationManager : IDisposable'
+    content.vb: Public Interface ICommunicationManager Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+- uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablished
+  commentId: P:ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablished
+  id: CommunicationChannelEstablished
+  parent: ServerCore.Communication.ICommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: CommunicationChannelEstablished
+  nameWithType: ICommunicationManager.CommunicationChannelEstablished
+  fullName: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablished
+  type: Property
+  source:
+    remote:
+      path: ServerCore/Communication/ICommunicationManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: CommunicationChannelEstablished
+    path: ../ServerVNext/ServerCore/Communication/ICommunicationManager.cs
+    startLine: 17
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication
+  summary: An event which is raised when a communication channel is established
+  example: []
+  syntax:
+    content: ICommunicationManager.CommunicationChannelEstablishedAction? CommunicationChannelEstablished { get; set; }
+    parameters: []
+    return:
+      type: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+    content.vb: Property CommunicationChannelEstablished As ICommunicationManager.CommunicationChannelEstablishedAction
+  overload: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablished*
+- uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelLost
+  commentId: P:ServerCore.Communication.ICommunicationManager.CommunicationChannelLost
+  id: CommunicationChannelLost
+  parent: ServerCore.Communication.ICommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: CommunicationChannelLost
+  nameWithType: ICommunicationManager.CommunicationChannelLost
+  fullName: ServerCore.Communication.ICommunicationManager.CommunicationChannelLost
+  type: Property
+  source:
+    remote:
+      path: ServerCore/Communication/ICommunicationManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: CommunicationChannelLost
+    path: ../ServerVNext/ServerCore/Communication/ICommunicationManager.cs
+    startLine: 22
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication
+  summary: An event which is raised when a communication channel is lost.
+  example: []
+  syntax:
+    content: ICommunicationManager.CommunicationChannelLostAction? CommunicationChannelLost { get; set; }
+    parameters: []
+    return:
+      type: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+    content.vb: Property CommunicationChannelLost As ICommunicationManager.CommunicationChannelLostAction
+  overload: ServerCore.Communication.ICommunicationManager.CommunicationChannelLost*
+- uid: ServerCore.Communication.ICommunicationManager.Start
+  commentId: M:ServerCore.Communication.ICommunicationManager.Start
+  id: Start
+  parent: ServerCore.Communication.ICommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: ICommunicationManager.Start()
+  fullName: ServerCore.Communication.ICommunicationManager.Start()
+  type: Method
+  source:
+    remote:
+      path: ServerCore/Communication/ICommunicationManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Start
+    path: ../ServerVNext/ServerCore/Communication/ICommunicationManager.cs
+    startLine: 27
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication
+  summary: Starts this communication manager. This communication manager will search for and attempt connections asynchronously.
+  example: []
+  syntax:
+    content: void Start()
+    content.vb: Sub Start()
+  overload: ServerCore.Communication.ICommunicationManager.Start*
+- uid: ServerCore.Communication.ICommunicationManager.Stop
+  commentId: M:ServerCore.Communication.ICommunicationManager.Stop
+  id: Stop
+  parent: ServerCore.Communication.ICommunicationManager
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: ICommunicationManager.Stop()
+  fullName: ServerCore.Communication.ICommunicationManager.Stop()
+  type: Method
+  source:
+    remote:
+      path: ServerCore/Communication/ICommunicationManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Stop
+    path: ../ServerVNext/ServerCore/Communication/ICommunicationManager.cs
+    startLine: 32
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication
+  summary: Stops this communication manager. This communication manager will no longer search for communication channels.
+  example: []
+  syntax:
+    content: void Stop()
+    content.vb: Sub [Stop]()
+  overload: ServerCore.Communication.ICommunicationManager.Stop*
+references:
+- uid: ServerCore.Communication.ICommunicationChannel
+  commentId: T:ServerCore.Communication.ICommunicationChannel
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationChannel.html
+  name: ICommunicationChannel
+  nameWithType: ICommunicationChannel
+  fullName: ServerCore.Communication.ICommunicationChannel
+- uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablished
+  commentId: P:ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablished
+  parent: ServerCore.Communication.ICommunicationManager
+  href: ServerCore.Communication.ICommunicationManager.html#ServerCore_Communication_ICommunicationManager_CommunicationChannelEstablished
+  name: CommunicationChannelEstablished
+  nameWithType: ICommunicationManager.CommunicationChannelEstablished
+  fullName: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablished
+- uid: ServerCore.Communication.ICommunicationManager.Start
+  commentId: M:ServerCore.Communication.ICommunicationManager.Start
+  parent: ServerCore.Communication.ICommunicationManager
+  href: ServerCore.Communication.ICommunicationManager.html#ServerCore_Communication_ICommunicationManager_Start
+  name: Start()
+  nameWithType: ICommunicationManager.Start()
+  fullName: ServerCore.Communication.ICommunicationManager.Start()
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationManager.Start
+    name: Start
+    href: ServerCore.Communication.ICommunicationManager.html#ServerCore_Communication_ICommunicationManager_Start
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationManager.Start
+    name: Start
+    href: ServerCore.Communication.ICommunicationManager.html#ServerCore_Communication_ICommunicationManager_Start
+  - name: (
+  - name: )
+- uid: ServerCore.Communication
+  commentId: N:ServerCore.Communication
+  href: ServerCore.html
+  name: ServerCore.Communication
+  nameWithType: ServerCore.Communication
+  fullName: ServerCore.Communication
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: ServerCore.Communication.ICommunicationManager
+  commentId: T:ServerCore.Communication.ICommunicationManager
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationManager.html
+  name: ICommunicationManager
+  nameWithType: ICommunicationManager
+  fullName: ServerCore.Communication.ICommunicationManager
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablished*
+  commentId: Overload:ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablished
+  href: ServerCore.Communication.ICommunicationManager.html#ServerCore_Communication_ICommunicationManager_CommunicationChannelEstablished
+  name: CommunicationChannelEstablished
+  nameWithType: ICommunicationManager.CommunicationChannelEstablished
+  fullName: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablished
+- uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+  commentId: T:ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationManager.html
+  name: ICommunicationManager.CommunicationChannelEstablishedAction
+  nameWithType: ICommunicationManager.CommunicationChannelEstablishedAction
+  fullName: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationManager
+    name: ICommunicationManager
+    href: ServerCore.Communication.ICommunicationManager.html
+  - name: .
+  - uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+    name: CommunicationChannelEstablishedAction
+    href: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction.html
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationManager
+    name: ICommunicationManager
+    href: ServerCore.Communication.ICommunicationManager.html
+  - name: .
+  - uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction
+    name: CommunicationChannelEstablishedAction
+    href: ServerCore.Communication.ICommunicationManager.CommunicationChannelEstablishedAction.html
+- uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelLost*
+  commentId: Overload:ServerCore.Communication.ICommunicationManager.CommunicationChannelLost
+  href: ServerCore.Communication.ICommunicationManager.html#ServerCore_Communication_ICommunicationManager_CommunicationChannelLost
+  name: CommunicationChannelLost
+  nameWithType: ICommunicationManager.CommunicationChannelLost
+  fullName: ServerCore.Communication.ICommunicationManager.CommunicationChannelLost
+- uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+  commentId: T:ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationManager.html
+  name: ICommunicationManager.CommunicationChannelLostAction
+  nameWithType: ICommunicationManager.CommunicationChannelLostAction
+  fullName: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+  spec.csharp:
+  - uid: ServerCore.Communication.ICommunicationManager
+    name: ICommunicationManager
+    href: ServerCore.Communication.ICommunicationManager.html
+  - name: .
+  - uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+    name: CommunicationChannelLostAction
+    href: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction.html
+  spec.vb:
+  - uid: ServerCore.Communication.ICommunicationManager
+    name: ICommunicationManager
+    href: ServerCore.Communication.ICommunicationManager.html
+  - name: .
+  - uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+    name: CommunicationChannelLostAction
+    href: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction.html
+- uid: ServerCore.Communication.ICommunicationManager.Start*
+  commentId: Overload:ServerCore.Communication.ICommunicationManager.Start
+  href: ServerCore.Communication.ICommunicationManager.html#ServerCore_Communication_ICommunicationManager_Start
+  name: Start
+  nameWithType: ICommunicationManager.Start
+  fullName: ServerCore.Communication.ICommunicationManager.Start
+- uid: ServerCore.Communication.ICommunicationManager.Stop*
+  commentId: Overload:ServerCore.Communication.ICommunicationManager.Stop
+  href: ServerCore.Communication.ICommunicationManager.html#ServerCore_Communication_ICommunicationManager_Stop
+  name: Stop
+  nameWithType: ICommunicationManager.Stop
+  fullName: ServerCore.Communication.ICommunicationManager.Stop

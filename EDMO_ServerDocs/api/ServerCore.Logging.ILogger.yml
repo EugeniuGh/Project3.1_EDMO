@@ -1,0 +1,293 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.Logging.ILogger
+  commentId: T:ServerCore.Logging.ILogger
+  id: ILogger
+  parent: ServerCore.Logging
+  children:
+  - ServerCore.Logging.ILogger.LogAsync``1(``0,ServerCore.Logging.LogLevel)
+  - ServerCore.Logging.ILogger.Log``1(``0,ServerCore.Logging.LogLevel)
+  langs:
+  - csharp
+  - vb
+  name: ILogger
+  nameWithType: ILogger
+  fullName: ServerCore.Logging.ILogger
+  type: Interface
+  source:
+    remote:
+      path: ServerCore/Logging/ILogger.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: ILogger
+    path: ../ServerVNext/ServerCore/Logging/ILogger.cs
+    startLine: 8
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Logging
+  summary: Represents an object that provides logging related functionality.
+  example: []
+  syntax:
+    content: 'public interface ILogger : IDisposable'
+    content.vb: Public Interface ILogger Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+- uid: ServerCore.Logging.ILogger.Log``1(``0,ServerCore.Logging.LogLevel)
+  commentId: M:ServerCore.Logging.ILogger.Log``1(``0,ServerCore.Logging.LogLevel)
+  id: Log``1(``0,ServerCore.Logging.LogLevel)
+  parent: ServerCore.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: Log<T>(T, LogLevel)
+  nameWithType: ILogger.Log<T>(T, LogLevel)
+  fullName: ServerCore.Logging.ILogger.Log<T>(T, ServerCore.Logging.LogLevel)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/Logging/ILogger.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Log
+    path: ../ServerVNext/ServerCore/Logging/ILogger.cs
+    startLine: 17
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Logging
+  summary: Log a message to the logging destination synchronously.
+  example: []
+  syntax:
+    content: void Log<T>(T message, LogLevel logLevel = LogLevel.Info)
+    parameters:
+    - id: message
+      type: '{T}'
+      description: The object to be logged
+    - id: logLevel
+      type: ServerCore.Logging.LogLevel
+      description: The important/severity of this message
+    typeParameters:
+    - id: T
+      description: A type that exposes <xref href="System.Object.ToString" data-throw-if-not-resolved="false"></xref> functionality.
+    content.vb: Sub Log(Of T)(message As T, logLevel As LogLevel = LogLevel.Info)
+  overload: ServerCore.Logging.ILogger.Log*
+  seealso:
+  - linkId: ServerCore.Logging.LogLevel
+    commentId: T:ServerCore.Logging.LogLevel
+  nameWithType.vb: ILogger.Log(Of T)(T, LogLevel)
+  fullName.vb: ServerCore.Logging.ILogger.Log(Of T)(T, ServerCore.Logging.LogLevel)
+  name.vb: Log(Of T)(T, LogLevel)
+- uid: ServerCore.Logging.ILogger.LogAsync``1(``0,ServerCore.Logging.LogLevel)
+  commentId: M:ServerCore.Logging.ILogger.LogAsync``1(``0,ServerCore.Logging.LogLevel)
+  id: LogAsync``1(``0,ServerCore.Logging.LogLevel)
+  parent: ServerCore.Logging.ILogger
+  langs:
+  - csharp
+  - vb
+  name: LogAsync<T>(T, LogLevel)
+  nameWithType: ILogger.LogAsync<T>(T, LogLevel)
+  fullName: ServerCore.Logging.ILogger.LogAsync<T>(T, ServerCore.Logging.LogLevel)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/Logging/ILogger.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: LogAsync
+    path: ../ServerVNext/ServerCore/Logging/ILogger.cs
+    startLine: 26
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Logging
+  summary: Log a message to the logging destination asynchronously.
+  example: []
+  syntax:
+    content: Task LogAsync<T>(T message, LogLevel logLevel = LogLevel.Info)
+    parameters:
+    - id: message
+      type: '{T}'
+      description: The object to be logged
+    - id: logLevel
+      type: ServerCore.Logging.LogLevel
+      description: The important/severity of this message
+    typeParameters:
+    - id: T
+      description: A type that exposes <xref href="System.Object.ToString" data-throw-if-not-resolved="false"></xref> functionality.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function LogAsync(Of T)(message As T, logLevel As LogLevel = LogLevel.Info) As Task
+  overload: ServerCore.Logging.ILogger.LogAsync*
+  seealso:
+  - linkId: ServerCore.Logging.LogLevel
+    commentId: T:ServerCore.Logging.LogLevel
+  nameWithType.vb: ILogger.LogAsync(Of T)(T, LogLevel)
+  fullName.vb: ServerCore.Logging.ILogger.LogAsync(Of T)(T, ServerCore.Logging.LogLevel)
+  name.vb: LogAsync(Of T)(T, LogLevel)
+references:
+- uid: ServerCore.Logging
+  commentId: N:ServerCore.Logging
+  href: ServerCore.html
+  name: ServerCore.Logging
+  nameWithType: ServerCore.Logging
+  fullName: ServerCore.Logging
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Logging
+    name: Logging
+    href: ServerCore.Logging.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Logging
+    name: Logging
+    href: ServerCore.Logging.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ServerCore.Logging.LogLevel
+  commentId: T:ServerCore.Logging.LogLevel
+  parent: ServerCore.Logging
+  href: ServerCore.Logging.LogLevel.html
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: ServerCore.Logging.LogLevel
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: ServerCore.Logging.ILogger.Log*
+  commentId: Overload:ServerCore.Logging.ILogger.Log
+  href: ServerCore.Logging.ILogger.html#ServerCore_Logging_ILogger_Log__1___0_ServerCore_Logging_LogLevel_
+  name: Log
+  nameWithType: ILogger.Log
+  fullName: ServerCore.Logging.ILogger.Log
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: ServerCore.Logging.ILogger.LogAsync*
+  commentId: Overload:ServerCore.Logging.ILogger.LogAsync
+  href: ServerCore.Logging.ILogger.html#ServerCore_Logging_ILogger_LogAsync__1___0_ServerCore_Logging_LogLevel_
+  name: LogAsync
+  nameWithType: ILogger.LogAsync
+  fullName: ServerCore.Logging.ILogger.LogAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

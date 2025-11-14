@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.EDMO.Objectives
+  commentId: N:ServerCore.EDMO.Objectives
+  id: ServerCore.EDMO.Objectives
+  children:
+  - ServerCore.EDMO.Objectives.EDMOObjective
+  - ServerCore.EDMO.Objectives.EDMOObjectiveGroup
+  langs:
+  - csharp
+  - vb
+  name: ServerCore.EDMO.Objectives
+  nameWithType: ServerCore.EDMO.Objectives
+  fullName: ServerCore.EDMO.Objectives
+  type: Namespace
+  assemblies:
+  - ServerCore
+references:
+- uid: ServerCore.EDMO.Objectives.EDMOObjective
+  commentId: T:ServerCore.EDMO.Objectives.EDMOObjective
+  href: ServerCore.EDMO.Objectives.EDMOObjective.html
+  name: EDMOObjective
+  nameWithType: EDMOObjective
+  fullName: ServerCore.EDMO.Objectives.EDMOObjective
+- uid: ServerCore.EDMO.Objectives.EDMOObjectiveGroup
+  commentId: T:ServerCore.EDMO.Objectives.EDMOObjectiveGroup
+  href: ServerCore.EDMO.Objectives.EDMOObjectiveGroup.html
+  name: EDMOObjectiveGroup
+  nameWithType: EDMOObjectiveGroup
+  fullName: ServerCore.EDMO.Objectives.EDMOObjectiveGroup

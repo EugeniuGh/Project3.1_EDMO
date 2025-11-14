@@ -1,0 +1,85 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.EDMO.Plugins.Loaders
+  commentId: N:ServerCore.EDMO.Plugins.Loaders
+  id: ServerCore.EDMO.Plugins.Loaders
+  children:
+  - ServerCore.EDMO.Plugins.Loaders.CompositePluginLoader
+  - ServerCore.EDMO.Plugins.Loaders.DotnetPluginLoader
+  - ServerCore.EDMO.Plugins.Loaders.IPluginLoader
+  - ServerCore.EDMO.Plugins.Loaders.PythonPluginLoader
+  langs:
+  - csharp
+  - vb
+  name: ServerCore.EDMO.Plugins.Loaders
+  nameWithType: ServerCore.EDMO.Plugins.Loaders
+  fullName: ServerCore.EDMO.Plugins.Loaders
+  type: Namespace
+  assemblies:
+  - ServerCore
+references:
+- uid: ServerCore.EDMO.Plugins.Loaders.CompositePluginLoader
+  commentId: T:ServerCore.EDMO.Plugins.Loaders.CompositePluginLoader
+  href: ServerCore.EDMO.Plugins.Loaders.CompositePluginLoader.html
+  name: CompositePluginLoader
+  nameWithType: CompositePluginLoader
+  fullName: ServerCore.EDMO.Plugins.Loaders.CompositePluginLoader
+- uid: ServerCore.EDMO.Plugins.Loaders.DotnetPluginLoader
+  commentId: T:ServerCore.EDMO.Plugins.Loaders.DotnetPluginLoader
+  parent: ServerCore.EDMO.Plugins.Loaders
+  href: ServerCore.EDMO.Plugins.Loaders.DotnetPluginLoader.html
+  name: DotnetPluginLoader
+  nameWithType: DotnetPluginLoader
+  fullName: ServerCore.EDMO.Plugins.Loaders.DotnetPluginLoader
+- uid: ServerCore.EDMO.Plugins.Loaders.IPluginLoader
+  commentId: T:ServerCore.EDMO.Plugins.Loaders.IPluginLoader
+  parent: ServerCore.EDMO.Plugins.Loaders
+  href: ServerCore.EDMO.Plugins.Loaders.IPluginLoader.html
+  name: IPluginLoader
+  nameWithType: IPluginLoader
+  fullName: ServerCore.EDMO.Plugins.Loaders.IPluginLoader
+- uid: ServerCore.EDMO.Plugins.Loaders.PythonPluginLoader
+  commentId: T:ServerCore.EDMO.Plugins.Loaders.PythonPluginLoader
+  parent: ServerCore.EDMO.Plugins.Loaders
+  href: ServerCore.EDMO.Plugins.Loaders.PythonPluginLoader.html
+  name: PythonPluginLoader
+  nameWithType: PythonPluginLoader
+  fullName: ServerCore.EDMO.Plugins.Loaders.PythonPluginLoader
+- uid: ServerCore.EDMO.Plugins.Loaders
+  commentId: N:ServerCore.EDMO.Plugins.Loaders
+  href: ServerCore.html
+  name: ServerCore.EDMO.Plugins.Loaders
+  nameWithType: ServerCore.EDMO.Plugins.Loaders
+  fullName: ServerCore.EDMO.Plugins.Loaders
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Plugins
+    name: Plugins
+    href: ServerCore.EDMO.Plugins.html
+  - name: .
+  - uid: ServerCore.EDMO.Plugins.Loaders
+    name: Loaders
+    href: ServerCore.EDMO.Plugins.Loaders.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Plugins
+    name: Plugins
+    href: ServerCore.EDMO.Plugins.html
+  - name: .
+  - uid: ServerCore.EDMO.Plugins.Loaders
+    name: Loaders
+    href: ServerCore.EDMO.Plugins.Loaders.html

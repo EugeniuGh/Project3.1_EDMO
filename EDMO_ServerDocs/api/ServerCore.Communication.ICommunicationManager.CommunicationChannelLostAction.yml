@@ -1,0 +1,64 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+  commentId: T:ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+  id: ICommunicationManager.CommunicationChannelLostAction
+  parent: ServerCore.Communication
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ICommunicationManager.CommunicationChannelLostAction
+  nameWithType: ICommunicationManager.CommunicationChannelLostAction
+  fullName: ServerCore.Communication.ICommunicationManager.CommunicationChannelLostAction
+  type: Delegate
+  source:
+    remote:
+      path: ServerCore/Communication/ICommunicationManager.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: CommunicationChannelLostAction
+    path: ../ServerVNext/ServerCore/Communication/ICommunicationManager.cs
+    startLine: 44
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.Communication
+  summary: Represents a handler that respond to an <xref href="ServerCore.Communication.ICommunicationChannel" data-throw-if-not-resolved="false"></xref> being disconnected/lost.
+  example: []
+  syntax:
+    content: public delegate void ICommunicationManager.CommunicationChannelLostAction(ICommunicationChannel channel)
+    parameters:
+    - id: channel
+      type: ServerCore.Communication.ICommunicationChannel
+      description: The lost channel
+    content.vb: Public Delegate Sub ICommunicationManager.CommunicationChannelLostAction(channel As ICommunicationChannel)
+references:
+- uid: ServerCore.Communication.ICommunicationChannel
+  commentId: T:ServerCore.Communication.ICommunicationChannel
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationChannel.html
+  name: ICommunicationChannel
+  nameWithType: ICommunicationChannel
+  fullName: ServerCore.Communication.ICommunicationChannel
+- uid: ServerCore.Communication
+  commentId: N:ServerCore.Communication
+  href: ServerCore.html
+  name: ServerCore.Communication
+  nameWithType: ServerCore.Communication
+  fullName: ServerCore.Communication
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html

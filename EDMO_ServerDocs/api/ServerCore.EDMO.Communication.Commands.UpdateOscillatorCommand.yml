@@ -1,0 +1,482 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand
+  commentId: T:ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand
+  id: UpdateOscillatorCommand
+  parent: ServerCore.EDMO.Communication.Commands
+  children:
+  - ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.#ctor(System.Byte,ServerCore.EDMO.Communication.Commands.OscillatorParams)
+  - ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.OscillatorIndex
+  - ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.OscillatorParams
+  langs:
+  - csharp
+  - vb
+  name: UpdateOscillatorCommand
+  nameWithType: UpdateOscillatorCommand
+  fullName: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand
+  type: Struct
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/Commands/UpdateOscillatorCommand.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: UpdateOscillatorCommand
+    path: ../ServerVNext/ServerCore/EDMO/Communication/Commands/UpdateOscillatorCommand.cs
+    startLine: 19
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication.Commands
+  summary: A struct describing the layout of the command to update individual oscillators as expected by EDMO firmware
+  example: []
+  syntax:
+    content: 'public readonly record struct UpdateOscillatorCommand : IEquatable<UpdateOscillatorCommand>'
+    content.vb: Public Structure UpdateOscillatorCommand Implements IEquatable(Of UpdateOscillatorCommand)
+  implements:
+  - System.IEquatable{ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand}
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.#ctor(System.Byte,ServerCore.EDMO.Communication.Commands.OscillatorParams)
+  commentId: M:ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.#ctor(System.Byte,ServerCore.EDMO.Communication.Commands.OscillatorParams)
+  id: '#ctor(System.Byte,ServerCore.EDMO.Communication.Commands.OscillatorParams)'
+  parent: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand
+  langs:
+  - csharp
+  - vb
+  name: UpdateOscillatorCommand(byte, OscillatorParams)
+  nameWithType: UpdateOscillatorCommand.UpdateOscillatorCommand(byte, OscillatorParams)
+  fullName: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.UpdateOscillatorCommand(byte, ServerCore.EDMO.Communication.Commands.OscillatorParams)
+  type: Constructor
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/Commands/UpdateOscillatorCommand.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: .ctor
+    path: ../ServerVNext/ServerCore/EDMO/Communication/Commands/UpdateOscillatorCommand.cs
+    startLine: 19
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication.Commands
+  summary: A struct describing the layout of the command to update individual oscillators as expected by EDMO firmware
+  example: []
+  syntax:
+    content: public UpdateOscillatorCommand(byte OscillatorIndex, OscillatorParams OscillatorParams)
+    parameters:
+    - id: OscillatorIndex
+      type: System.Byte
+      description: The index of the oscillator
+    - id: OscillatorParams
+      type: ServerCore.EDMO.Communication.Commands.OscillatorParams
+      description: The parameters of the oscillator
+    content.vb: Public Sub New(OscillatorIndex As Byte, OscillatorParams As OscillatorParams)
+  overload: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.#ctor*
+  nameWithType.vb: UpdateOscillatorCommand.New(Byte, OscillatorParams)
+  fullName.vb: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.New(Byte, ServerCore.EDMO.Communication.Commands.OscillatorParams)
+  name.vb: New(Byte, OscillatorParams)
+- uid: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.OscillatorIndex
+  commentId: F:ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.OscillatorIndex
+  id: OscillatorIndex
+  parent: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand
+  langs:
+  - csharp
+  - vb
+  name: OscillatorIndex
+  nameWithType: UpdateOscillatorCommand.OscillatorIndex
+  fullName: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.OscillatorIndex
+  type: Field
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/Commands/UpdateOscillatorCommand.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: OscillatorIndex
+    path: ../ServerVNext/ServerCore/EDMO/Communication/Commands/UpdateOscillatorCommand.cs
+    startLine: 27
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication.Commands
+  summary: The target oscillator
+  example: []
+  syntax:
+    content: public readonly byte OscillatorIndex
+    return:
+      type: System.Byte
+    content.vb: Public ReadOnly OscillatorIndex As Byte
+- uid: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.OscillatorParams
+  commentId: F:ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.OscillatorParams
+  id: OscillatorParams
+  parent: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand
+  langs:
+  - csharp
+  - vb
+  name: OscillatorParams
+  nameWithType: UpdateOscillatorCommand.OscillatorParams
+  fullName: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.OscillatorParams
+  type: Field
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/Commands/UpdateOscillatorCommand.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: OscillatorParams
+    path: ../ServerVNext/ServerCore/EDMO/Communication/Commands/UpdateOscillatorCommand.cs
+    startLine: 32
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication.Commands
+  summary: <inheritdoc cref="F:ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.OscillatorParams"></inheritdoc>
+  example: []
+  syntax:
+    content: public readonly OscillatorParams OscillatorParams
+    return:
+      type: ServerCore.EDMO.Communication.Commands.OscillatorParams
+    content.vb: Public ReadOnly OscillatorParams As OscillatorParams
+references:
+- uid: ServerCore.EDMO.Communication.Commands
+  commentId: N:ServerCore.EDMO.Communication.Commands
+  href: ServerCore.html
+  name: ServerCore.EDMO.Communication.Commands
+  nameWithType: ServerCore.EDMO.Communication.Commands
+  fullName: ServerCore.EDMO.Communication.Commands
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.Commands
+    name: Commands
+    href: ServerCore.EDMO.Communication.Commands.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.Commands
+    name: Commands
+    href: ServerCore.EDMO.Communication.Commands.html
+- uid: System.IEquatable{ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand}
+  commentId: T:System.IEquatable{ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<UpdateOscillatorCommand>
+  nameWithType: IEquatable<UpdateOscillatorCommand>
+  fullName: System.IEquatable<ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand>
+  nameWithType.vb: IEquatable(Of UpdateOscillatorCommand)
+  fullName.vb: System.IEquatable(Of ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand)
+  name.vb: IEquatable(Of UpdateOscillatorCommand)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand
+    name: UpdateOscillatorCommand
+    href: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand
+    name: UpdateOscillatorCommand
+    href: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.html
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.#ctor*
+  commentId: Overload:ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.#ctor
+  href: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.html#ServerCore_EDMO_Communication_Commands_UpdateOscillatorCommand__ctor_System_Byte_ServerCore_EDMO_Communication_Commands_OscillatorParams_
+  name: UpdateOscillatorCommand
+  nameWithType: UpdateOscillatorCommand.UpdateOscillatorCommand
+  fullName: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.UpdateOscillatorCommand
+  nameWithType.vb: UpdateOscillatorCommand.New
+  fullName.vb: ServerCore.EDMO.Communication.Commands.UpdateOscillatorCommand.New
+  name.vb: New
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: ServerCore.EDMO.Communication.Commands.OscillatorParams
+  commentId: T:ServerCore.EDMO.Communication.Commands.OscillatorParams
+  parent: ServerCore.EDMO.Communication.Commands
+  href: ServerCore.EDMO.Communication.Commands.OscillatorParams.html
+  name: OscillatorParams
+  nameWithType: OscillatorParams
+  fullName: ServerCore.EDMO.Communication.Commands.OscillatorParams

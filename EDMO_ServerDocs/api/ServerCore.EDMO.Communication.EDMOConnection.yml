@@ -1,0 +1,1127 @@
+### YamlMime:ManagedReference
+items:
+- uid: ServerCore.EDMO.Communication.EDMOConnection
+  commentId: T:ServerCore.EDMO.Communication.EDMOConnection
+  id: EDMOConnection
+  parent: ServerCore.EDMO.Communication
+  children:
+  - ServerCore.EDMO.Communication.EDMOConnection.#ctor(ServerCore.Communication.ICommunicationChannel)
+  - ServerCore.EDMO.Communication.EDMOConnection.ArmColourHues
+  - ServerCore.EDMO.Communication.EDMOConnection.Identifier
+  - ServerCore.EDMO.Communication.EDMOConnection.ImuDataReceived
+  - ServerCore.EDMO.Communication.EDMOConnection.IsLocked
+  - ServerCore.EDMO.Communication.EDMOConnection.LockStateChanged
+  - ServerCore.EDMO.Communication.EDMOConnection.OscillationDataReceived
+  - ServerCore.EDMO.Communication.EDMOConnection.OscillatorCount
+  - ServerCore.EDMO.Communication.EDMOConnection.Status
+  - ServerCore.EDMO.Communication.EDMOConnection.TimeReceived
+  - ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketReceived
+  - ServerCore.EDMO.Communication.EDMOConnection.WriteAsync``1(``0)
+  - ServerCore.EDMO.Communication.EDMOConnection.Write``1(``0)
+  langs:
+  - csharp
+  - vb
+  name: EDMOConnection
+  nameWithType: EDMOConnection
+  fullName: ServerCore.EDMO.Communication.EDMOConnection
+  type: Class
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOConnection.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: EDMOConnection
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOConnection.cs
+    startLine: 19
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: Describes a connection to specifically an EDMO device.
+  remarks: Once constructed. A validation attempt is perform to validate whether the communication channel is connected to an EDMO robot.
+  example: []
+  syntax:
+    content: public sealed class EDMOConnection
+    content.vb: Public NotInheritable Class EDMOConnection
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ServerCore.EDMO.Communication.EDMOConnection.Status
+  commentId: P:ServerCore.EDMO.Communication.EDMOConnection.Status
+  id: Status
+  parent: ServerCore.EDMO.Communication.EDMOConnection
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: EDMOConnection.Status
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.Status
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOConnection.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Status
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOConnection.cs
+    startLine: 32
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: Provides information about the state of the underlying connection.
+  remarks: This is an aggregate status also takes into account the underlying communication channel
+  example: []
+  syntax:
+    content: public ConnectionStatus Status { get; }
+    parameters: []
+    return:
+      type: ServerCore.Communication.ConnectionStatus
+    content.vb: Public ReadOnly Property Status As ConnectionStatus
+  overload: ServerCore.EDMO.Communication.EDMOConnection.Status*
+- uid: ServerCore.EDMO.Communication.EDMOConnection.Identifier
+  commentId: P:ServerCore.EDMO.Communication.EDMOConnection.Identifier
+  id: Identifier
+  parent: ServerCore.EDMO.Communication.EDMOConnection
+  langs:
+  - csharp
+  - vb
+  name: Identifier
+  nameWithType: EDMOConnection.Identifier
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.Identifier
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOConnection.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Identifier
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOConnection.cs
+    startLine: 43
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: The identifier of this EDMOConnection.
+  remarks: In practice, this should always be non-null. If the value is <code>null</code>, then the connection is not establish, or the target is not a compliant EDMO robot.
+  example: []
+  syntax:
+    content: public string? Identifier { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Identifier As String
+  overload: ServerCore.EDMO.Communication.EDMOConnection.Identifier*
+- uid: ServerCore.EDMO.Communication.EDMOConnection.OscillatorCount
+  commentId: P:ServerCore.EDMO.Communication.EDMOConnection.OscillatorCount
+  id: OscillatorCount
+  parent: ServerCore.EDMO.Communication.EDMOConnection
+  langs:
+  - csharp
+  - vb
+  name: OscillatorCount
+  nameWithType: EDMOConnection.OscillatorCount
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.OscillatorCount
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOConnection.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: OscillatorCount
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOConnection.cs
+    startLine: 51
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: The number of oscillators reported by the EDMO robot
+  remarks: If this is not given in the identification packet, then it is assumed to be 4.
+  example: []
+  syntax:
+    content: public ushort OscillatorCount { get; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Public Property OscillatorCount As UShort
+  overload: ServerCore.EDMO.Communication.EDMOConnection.OscillatorCount*
+- uid: ServerCore.EDMO.Communication.EDMOConnection.ArmColourHues
+  commentId: P:ServerCore.EDMO.Communication.EDMOConnection.ArmColourHues
+  id: ArmColourHues
+  parent: ServerCore.EDMO.Communication.EDMOConnection
+  langs:
+  - csharp
+  - vb
+  name: ArmColourHues
+  nameWithType: EDMOConnection.ArmColourHues
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.ArmColourHues
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOConnection.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: ArmColourHues
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOConnection.cs
+    startLine: 58
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: The colours of each arm of the EDMO robot. The length of this array is expected to match <xref href="ServerCore.EDMO.Communication.EDMOConnection.OscillatorCount" data-throw-if-not-resolved="false"></xref>.
+  remarks: If this is not given in the identification packet. This will be defaulted to an array of zeros with length <xref href="ServerCore.EDMO.Communication.EDMOConnection.OscillatorCount" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public ushort[] ArmColourHues { get; }
+    parameters: []
+    return:
+      type: System.UInt16[]
+    content.vb: Public Property ArmColourHues As UShort()
+  overload: ServerCore.EDMO.Communication.EDMOConnection.ArmColourHues*
+- uid: ServerCore.EDMO.Communication.EDMOConnection.IsLocked
+  commentId: P:ServerCore.EDMO.Communication.EDMOConnection.IsLocked
+  id: IsLocked
+  parent: ServerCore.EDMO.Communication.EDMOConnection
+  langs:
+  - csharp
+  - vb
+  name: IsLocked
+  nameWithType: EDMOConnection.IsLocked
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.IsLocked
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOConnection.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: IsLocked
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOConnection.cs
+    startLine: 63
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: Whether the edmo robot is actively being controlled by another server.
+  example: []
+  syntax:
+    content: public bool IsLocked { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsLocked As Boolean
+  overload: ServerCore.EDMO.Communication.EDMOConnection.IsLocked*
+- uid: ServerCore.EDMO.Communication.EDMOConnection.LockStateChanged
+  commentId: P:ServerCore.EDMO.Communication.EDMOConnection.LockStateChanged
+  id: LockStateChanged
+  parent: ServerCore.EDMO.Communication.EDMOConnection
+  langs:
+  - csharp
+  - vb
+  name: LockStateChanged
+  nameWithType: EDMOConnection.LockStateChanged
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.LockStateChanged
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOConnection.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: LockStateChanged
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOConnection.cs
+    startLine: 69
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: An event raised when the robot lock state has changed.
+  example: []
+  syntax:
+    content: public Action? LockStateChanged { get; set; }
+    parameters: []
+    return:
+      type: System.Action
+    content.vb: Public Property LockStateChanged As Action
+  overload: ServerCore.EDMO.Communication.EDMOConnection.LockStateChanged*
+  seealso:
+  - linkId: ServerCore.EDMO.Communication.EDMOConnection.IsLocked
+    commentId: P:ServerCore.EDMO.Communication.EDMOConnection.IsLocked
+- uid: ServerCore.EDMO.Communication.EDMOConnection.#ctor(ServerCore.Communication.ICommunicationChannel)
+  commentId: M:ServerCore.EDMO.Communication.EDMOConnection.#ctor(ServerCore.Communication.ICommunicationChannel)
+  id: '#ctor(ServerCore.Communication.ICommunicationChannel)'
+  parent: ServerCore.EDMO.Communication.EDMOConnection
+  langs:
+  - csharp
+  - vb
+  name: EDMOConnection(ICommunicationChannel)
+  nameWithType: EDMOConnection.EDMOConnection(ICommunicationChannel)
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.EDMOConnection(ServerCore.Communication.ICommunicationChannel)
+  type: Constructor
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOConnection.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: .ctor
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOConnection.cs
+    startLine: 73
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: Describes a connection to specifically an EDMO device.
+  remarks: Once constructed. A validation attempt is perform to validate whether the communication channel is connected to an EDMO robot.
+  example: []
+  syntax:
+    content: public EDMOConnection(ICommunicationChannel channel)
+    parameters:
+    - id: channel
+      type: ServerCore.Communication.ICommunicationChannel
+      description: The underlying communication channel
+    content.vb: Public Sub New(channel As ICommunicationChannel)
+  overload: ServerCore.EDMO.Communication.EDMOConnection.#ctor*
+  nameWithType.vb: EDMOConnection.New(ICommunicationChannel)
+  fullName.vb: ServerCore.EDMO.Communication.EDMOConnection.New(ServerCore.Communication.ICommunicationChannel)
+  name.vb: New(ICommunicationChannel)
+- uid: ServerCore.EDMO.Communication.EDMOConnection.OscillationDataReceived
+  commentId: P:ServerCore.EDMO.Communication.EDMOConnection.OscillationDataReceived
+  id: OscillationDataReceived
+  parent: ServerCore.EDMO.Communication.EDMOConnection
+  langs:
+  - csharp
+  - vb
+  name: OscillationDataReceived
+  nameWithType: EDMOConnection.OscillationDataReceived
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.OscillationDataReceived
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOConnection.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: OscillationDataReceived
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOConnection.cs
+    startLine: 150
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: An event which is raised when this connection receives any <xref href="ServerCore.EDMO.Communication.Packets.OscillatorDataPacket" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public EDMOConnection.OscillatorDataPacketHandler? OscillationDataReceived { get; set; }
+    parameters: []
+    return:
+      type: ServerCore.EDMO.Communication.EDMOConnection.OscillatorDataPacketHandler
+    content.vb: Public Property OscillationDataReceived As EDMOConnection.OscillatorDataPacketHandler
+  overload: ServerCore.EDMO.Communication.EDMOConnection.OscillationDataReceived*
+- uid: ServerCore.EDMO.Communication.EDMOConnection.ImuDataReceived
+  commentId: P:ServerCore.EDMO.Communication.EDMOConnection.ImuDataReceived
+  id: ImuDataReceived
+  parent: ServerCore.EDMO.Communication.EDMOConnection
+  langs:
+  - csharp
+  - vb
+  name: ImuDataReceived
+  nameWithType: EDMOConnection.ImuDataReceived
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.ImuDataReceived
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOConnection.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: ImuDataReceived
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOConnection.cs
+    startLine: 155
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: An event which is raised when this connection receives any <xref href="ServerCore.EDMO.Communication.Packets.IMUDataPacket" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public EDMOConnection.ImuDataPacketHandler? ImuDataReceived { get; set; }
+    parameters: []
+    return:
+      type: ServerCore.EDMO.Communication.EDMOConnection.ImuDataPacketHandler
+    content.vb: Public Property ImuDataReceived As EDMOConnection.ImuDataPacketHandler
+  overload: ServerCore.EDMO.Communication.EDMOConnection.ImuDataReceived*
+- uid: ServerCore.EDMO.Communication.EDMOConnection.TimeReceived
+  commentId: P:ServerCore.EDMO.Communication.EDMOConnection.TimeReceived
+  id: TimeReceived
+  parent: ServerCore.EDMO.Communication.EDMOConnection
+  langs:
+  - csharp
+  - vb
+  name: TimeReceived
+  nameWithType: EDMOConnection.TimeReceived
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.TimeReceived
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOConnection.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: TimeReceived
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOConnection.cs
+    startLine: 160
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: An event which is raised when this connection receives any <xref href="ServerCore.EDMO.Communication.Packets.TimePacket" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public EDMOConnection.TimePacketHandler? TimeReceived { get; set; }
+    parameters: []
+    return:
+      type: ServerCore.EDMO.Communication.EDMOConnection.TimePacketHandler
+    content.vb: Public Property TimeReceived As EDMOConnection.TimePacketHandler
+  overload: ServerCore.EDMO.Communication.EDMOConnection.TimeReceived*
+- uid: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketReceived
+  commentId: P:ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketReceived
+  id: UnknownPacketReceived
+  parent: ServerCore.EDMO.Communication.EDMOConnection
+  langs:
+  - csharp
+  - vb
+  name: UnknownPacketReceived
+  nameWithType: EDMOConnection.UnknownPacketReceived
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketReceived
+  type: Property
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOConnection.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: UnknownPacketReceived
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOConnection.cs
+    startLine: 165
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: An event which is raised when this connection receives any unknown packet.
+  example: []
+  syntax:
+    content: public EDMOConnection.UnknownPacketHandler? UnknownPacketReceived { get; set; }
+    parameters: []
+    return:
+      type: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketHandler
+    content.vb: Public Property UnknownPacketReceived As EDMOConnection.UnknownPacketHandler
+  overload: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketReceived*
+- uid: ServerCore.EDMO.Communication.EDMOConnection.WriteAsync``1(``0)
+  commentId: M:ServerCore.EDMO.Communication.EDMOConnection.WriteAsync``1(``0)
+  id: WriteAsync``1(``0)
+  parent: ServerCore.EDMO.Communication.EDMOConnection
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync<T>(T)
+  nameWithType: EDMOConnection.WriteAsync<T>(T)
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.WriteAsync<T>(T)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOConnection.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: WriteAsync
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOConnection.cs
+    startLine: 273
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: Send a packet to the connected EDMO robot asynchronously.
+  example: []
+  syntax:
+    content: 'public Task WriteAsync<T>(T packet) where T : unmanaged'
+    parameters:
+    - id: packet
+      type: '{T}'
+      description: The packet to be sent.
+    typeParameters:
+    - id: T
+      description: The unmanaged type that represents the layout of the packet
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function WriteAsync(Of T As Structure)(packet As T) As Task
+  overload: ServerCore.EDMO.Communication.EDMOConnection.WriteAsync*
+  nameWithType.vb: EDMOConnection.WriteAsync(Of T)(T)
+  fullName.vb: ServerCore.EDMO.Communication.EDMOConnection.WriteAsync(Of T)(T)
+  name.vb: WriteAsync(Of T)(T)
+- uid: ServerCore.EDMO.Communication.EDMOConnection.Write``1(``0)
+  commentId: M:ServerCore.EDMO.Communication.EDMOConnection.Write``1(``0)
+  id: Write``1(``0)
+  parent: ServerCore.EDMO.Communication.EDMOConnection
+  langs:
+  - csharp
+  - vb
+  name: Write<T>(T)
+  nameWithType: EDMOConnection.Write<T>(T)
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.Write<T>(T)
+  type: Method
+  source:
+    remote:
+      path: ServerCore/EDMO/Communication/EDMOConnection.cs
+      branch: master
+      repo: https://github.com/TeamEDMO/ServerVNext.git
+    id: Write
+    path: ../ServerVNext/ServerCore/EDMO/Communication/EDMOConnection.cs
+    startLine: 288
+  assemblies:
+  - ServerCore
+  namespace: ServerCore.EDMO.Communication
+  summary: Send a packet to the connected EDMO robot.
+  example: []
+  syntax:
+    content: 'public void Write<T>(T packet) where T : unmanaged'
+    parameters:
+    - id: packet
+      type: '{T}'
+      description: The packet to be sent.
+    typeParameters:
+    - id: T
+      description: The unmanaged type that represents the layout of the packet
+    content.vb: Public Sub Write(Of T As Structure)(packet As T)
+  overload: ServerCore.EDMO.Communication.EDMOConnection.Write*
+  nameWithType.vb: EDMOConnection.Write(Of T)(T)
+  fullName.vb: ServerCore.EDMO.Communication.EDMOConnection.Write(Of T)(T)
+  name.vb: Write(Of T)(T)
+references:
+- uid: ServerCore.EDMO.Communication
+  commentId: N:ServerCore.EDMO.Communication
+  href: ServerCore.html
+  name: ServerCore.EDMO.Communication
+  nameWithType: ServerCore.EDMO.Communication
+  fullName: ServerCore.EDMO.Communication
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ServerCore.EDMO.Communication.EDMOConnection.Status*
+  commentId: Overload:ServerCore.EDMO.Communication.EDMOConnection.Status
+  href: ServerCore.EDMO.Communication.EDMOConnection.html#ServerCore_EDMO_Communication_EDMOConnection_Status
+  name: Status
+  nameWithType: EDMOConnection.Status
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.Status
+- uid: ServerCore.Communication.ConnectionStatus
+  commentId: T:ServerCore.Communication.ConnectionStatus
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ConnectionStatus.html
+  name: ConnectionStatus
+  nameWithType: ConnectionStatus
+  fullName: ServerCore.Communication.ConnectionStatus
+- uid: ServerCore.Communication
+  commentId: N:ServerCore.Communication
+  href: ServerCore.html
+  name: ServerCore.Communication
+  nameWithType: ServerCore.Communication
+  fullName: ServerCore.Communication
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.Communication
+    name: Communication
+    href: ServerCore.Communication.html
+- uid: ServerCore.EDMO.Communication.EDMOConnection.Identifier*
+  commentId: Overload:ServerCore.EDMO.Communication.EDMOConnection.Identifier
+  href: ServerCore.EDMO.Communication.EDMOConnection.html#ServerCore_EDMO_Communication_EDMOConnection_Identifier
+  name: Identifier
+  nameWithType: EDMOConnection.Identifier
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.Identifier
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ServerCore.EDMO.Communication.EDMOConnection.OscillatorCount*
+  commentId: Overload:ServerCore.EDMO.Communication.EDMOConnection.OscillatorCount
+  href: ServerCore.EDMO.Communication.EDMOConnection.html#ServerCore_EDMO_Communication_EDMOConnection_OscillatorCount
+  name: OscillatorCount
+  nameWithType: EDMOConnection.OscillatorCount
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.OscillatorCount
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort
+  nameWithType: ushort
+  fullName: ushort
+  nameWithType.vb: UShort
+  fullName.vb: UShort
+  name.vb: UShort
+- uid: ServerCore.EDMO.Communication.EDMOConnection.OscillatorCount
+  commentId: P:ServerCore.EDMO.Communication.EDMOConnection.OscillatorCount
+  href: ServerCore.EDMO.Communication.EDMOConnection.html#ServerCore_EDMO_Communication_EDMOConnection_OscillatorCount
+  name: OscillatorCount
+  nameWithType: EDMOConnection.OscillatorCount
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.OscillatorCount
+- uid: ServerCore.EDMO.Communication.EDMOConnection.ArmColourHues*
+  commentId: Overload:ServerCore.EDMO.Communication.EDMOConnection.ArmColourHues
+  href: ServerCore.EDMO.Communication.EDMOConnection.html#ServerCore_EDMO_Communication_EDMOConnection_ArmColourHues
+  name: ArmColourHues
+  nameWithType: EDMOConnection.ArmColourHues
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.ArmColourHues
+- uid: System.UInt16[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort[]
+  nameWithType: ushort[]
+  fullName: ushort[]
+  nameWithType.vb: UShort()
+  fullName.vb: UShort()
+  name.vb: UShort()
+  spec.csharp:
+  - uid: System.UInt16
+    name: ushort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint16
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.UInt16
+    name: UShort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint16
+  - name: (
+  - name: )
+- uid: ServerCore.EDMO.Communication.EDMOConnection.IsLocked*
+  commentId: Overload:ServerCore.EDMO.Communication.EDMOConnection.IsLocked
+  href: ServerCore.EDMO.Communication.EDMOConnection.html#ServerCore_EDMO_Communication_EDMOConnection_IsLocked
+  name: IsLocked
+  nameWithType: EDMOConnection.IsLocked
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.IsLocked
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ServerCore.EDMO.Communication.EDMOConnection.IsLocked
+  commentId: P:ServerCore.EDMO.Communication.EDMOConnection.IsLocked
+  href: ServerCore.EDMO.Communication.EDMOConnection.html#ServerCore_EDMO_Communication_EDMOConnection_IsLocked
+  name: IsLocked
+  nameWithType: EDMOConnection.IsLocked
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.IsLocked
+- uid: ServerCore.EDMO.Communication.EDMOConnection.LockStateChanged*
+  commentId: Overload:ServerCore.EDMO.Communication.EDMOConnection.LockStateChanged
+  href: ServerCore.EDMO.Communication.EDMOConnection.html#ServerCore_EDMO_Communication_EDMOConnection_LockStateChanged
+  name: LockStateChanged
+  nameWithType: EDMOConnection.LockStateChanged
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.LockStateChanged
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: ServerCore.EDMO.Communication.EDMOConnection.#ctor*
+  commentId: Overload:ServerCore.EDMO.Communication.EDMOConnection.#ctor
+  href: ServerCore.EDMO.Communication.EDMOConnection.html#ServerCore_EDMO_Communication_EDMOConnection__ctor_ServerCore_Communication_ICommunicationChannel_
+  name: EDMOConnection
+  nameWithType: EDMOConnection.EDMOConnection
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.EDMOConnection
+  nameWithType.vb: EDMOConnection.New
+  fullName.vb: ServerCore.EDMO.Communication.EDMOConnection.New
+  name.vb: New
+- uid: ServerCore.Communication.ICommunicationChannel
+  commentId: T:ServerCore.Communication.ICommunicationChannel
+  parent: ServerCore.Communication
+  href: ServerCore.Communication.ICommunicationChannel.html
+  name: ICommunicationChannel
+  nameWithType: ICommunicationChannel
+  fullName: ServerCore.Communication.ICommunicationChannel
+- uid: ServerCore.EDMO.Communication.Packets.OscillatorDataPacket
+  commentId: T:ServerCore.EDMO.Communication.Packets.OscillatorDataPacket
+  parent: ServerCore.EDMO.Communication.Packets
+  href: ServerCore.EDMO.Communication.Packets.OscillatorDataPacket.html
+  name: OscillatorDataPacket
+  nameWithType: OscillatorDataPacket
+  fullName: ServerCore.EDMO.Communication.Packets.OscillatorDataPacket
+- uid: ServerCore.EDMO.Communication.EDMOConnection.OscillationDataReceived*
+  commentId: Overload:ServerCore.EDMO.Communication.EDMOConnection.OscillationDataReceived
+  href: ServerCore.EDMO.Communication.EDMOConnection.html#ServerCore_EDMO_Communication_EDMOConnection_OscillationDataReceived
+  name: OscillationDataReceived
+  nameWithType: EDMOConnection.OscillationDataReceived
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.OscillationDataReceived
+- uid: ServerCore.EDMO.Communication.EDMOConnection.OscillatorDataPacketHandler
+  commentId: T:ServerCore.EDMO.Communication.EDMOConnection.OscillatorDataPacketHandler
+  parent: ServerCore.EDMO.Communication
+  href: ServerCore.EDMO.Communication.EDMOConnection.html
+  name: EDMOConnection.OscillatorDataPacketHandler
+  nameWithType: EDMOConnection.OscillatorDataPacketHandler
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.OscillatorDataPacketHandler
+  spec.csharp:
+  - uid: ServerCore.EDMO.Communication.EDMOConnection
+    name: EDMOConnection
+    href: ServerCore.EDMO.Communication.EDMOConnection.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.EDMOConnection.OscillatorDataPacketHandler
+    name: OscillatorDataPacketHandler
+    href: ServerCore.EDMO.Communication.EDMOConnection.OscillatorDataPacketHandler.html
+  spec.vb:
+  - uid: ServerCore.EDMO.Communication.EDMOConnection
+    name: EDMOConnection
+    href: ServerCore.EDMO.Communication.EDMOConnection.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.EDMOConnection.OscillatorDataPacketHandler
+    name: OscillatorDataPacketHandler
+    href: ServerCore.EDMO.Communication.EDMOConnection.OscillatorDataPacketHandler.html
+- uid: ServerCore.EDMO.Communication.Packets
+  commentId: N:ServerCore.EDMO.Communication.Packets
+  href: ServerCore.html
+  name: ServerCore.EDMO.Communication.Packets
+  nameWithType: ServerCore.EDMO.Communication.Packets
+  fullName: ServerCore.EDMO.Communication.Packets
+  spec.csharp:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.Packets
+    name: Packets
+    href: ServerCore.EDMO.Communication.Packets.html
+  spec.vb:
+  - uid: ServerCore
+    name: ServerCore
+    href: ServerCore.html
+  - name: .
+  - uid: ServerCore.EDMO
+    name: EDMO
+    href: ServerCore.EDMO.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication
+    name: Communication
+    href: ServerCore.EDMO.Communication.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.Packets
+    name: Packets
+    href: ServerCore.EDMO.Communication.Packets.html
+- uid: ServerCore.EDMO.Communication.Packets.IMUDataPacket
+  commentId: T:ServerCore.EDMO.Communication.Packets.IMUDataPacket
+  parent: ServerCore.EDMO.Communication.Packets
+  href: ServerCore.EDMO.Communication.Packets.IMUDataPacket.html
+  name: IMUDataPacket
+  nameWithType: IMUDataPacket
+  fullName: ServerCore.EDMO.Communication.Packets.IMUDataPacket
+- uid: ServerCore.EDMO.Communication.EDMOConnection.ImuDataReceived*
+  commentId: Overload:ServerCore.EDMO.Communication.EDMOConnection.ImuDataReceived
+  href: ServerCore.EDMO.Communication.EDMOConnection.html#ServerCore_EDMO_Communication_EDMOConnection_ImuDataReceived
+  name: ImuDataReceived
+  nameWithType: EDMOConnection.ImuDataReceived
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.ImuDataReceived
+- uid: ServerCore.EDMO.Communication.EDMOConnection.ImuDataPacketHandler
+  commentId: T:ServerCore.EDMO.Communication.EDMOConnection.ImuDataPacketHandler
+  parent: ServerCore.EDMO.Communication
+  href: ServerCore.EDMO.Communication.EDMOConnection.html
+  name: EDMOConnection.ImuDataPacketHandler
+  nameWithType: EDMOConnection.ImuDataPacketHandler
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.ImuDataPacketHandler
+  spec.csharp:
+  - uid: ServerCore.EDMO.Communication.EDMOConnection
+    name: EDMOConnection
+    href: ServerCore.EDMO.Communication.EDMOConnection.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.EDMOConnection.ImuDataPacketHandler
+    name: ImuDataPacketHandler
+    href: ServerCore.EDMO.Communication.EDMOConnection.ImuDataPacketHandler.html
+  spec.vb:
+  - uid: ServerCore.EDMO.Communication.EDMOConnection
+    name: EDMOConnection
+    href: ServerCore.EDMO.Communication.EDMOConnection.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.EDMOConnection.ImuDataPacketHandler
+    name: ImuDataPacketHandler
+    href: ServerCore.EDMO.Communication.EDMOConnection.ImuDataPacketHandler.html
+- uid: ServerCore.EDMO.Communication.Packets.TimePacket
+  commentId: T:ServerCore.EDMO.Communication.Packets.TimePacket
+  parent: ServerCore.EDMO.Communication.Packets
+  href: ServerCore.EDMO.Communication.Packets.TimePacket.html
+  name: TimePacket
+  nameWithType: TimePacket
+  fullName: ServerCore.EDMO.Communication.Packets.TimePacket
+- uid: ServerCore.EDMO.Communication.EDMOConnection.TimeReceived*
+  commentId: Overload:ServerCore.EDMO.Communication.EDMOConnection.TimeReceived
+  href: ServerCore.EDMO.Communication.EDMOConnection.html#ServerCore_EDMO_Communication_EDMOConnection_TimeReceived
+  name: TimeReceived
+  nameWithType: EDMOConnection.TimeReceived
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.TimeReceived
+- uid: ServerCore.EDMO.Communication.EDMOConnection.TimePacketHandler
+  commentId: T:ServerCore.EDMO.Communication.EDMOConnection.TimePacketHandler
+  parent: ServerCore.EDMO.Communication
+  href: ServerCore.EDMO.Communication.EDMOConnection.html
+  name: EDMOConnection.TimePacketHandler
+  nameWithType: EDMOConnection.TimePacketHandler
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.TimePacketHandler
+  spec.csharp:
+  - uid: ServerCore.EDMO.Communication.EDMOConnection
+    name: EDMOConnection
+    href: ServerCore.EDMO.Communication.EDMOConnection.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.EDMOConnection.TimePacketHandler
+    name: TimePacketHandler
+    href: ServerCore.EDMO.Communication.EDMOConnection.TimePacketHandler.html
+  spec.vb:
+  - uid: ServerCore.EDMO.Communication.EDMOConnection
+    name: EDMOConnection
+    href: ServerCore.EDMO.Communication.EDMOConnection.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.EDMOConnection.TimePacketHandler
+    name: TimePacketHandler
+    href: ServerCore.EDMO.Communication.EDMOConnection.TimePacketHandler.html
+- uid: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketReceived*
+  commentId: Overload:ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketReceived
+  href: ServerCore.EDMO.Communication.EDMOConnection.html#ServerCore_EDMO_Communication_EDMOConnection_UnknownPacketReceived
+  name: UnknownPacketReceived
+  nameWithType: EDMOConnection.UnknownPacketReceived
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketReceived
+- uid: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketHandler
+  commentId: T:ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketHandler
+  parent: ServerCore.EDMO.Communication
+  href: ServerCore.EDMO.Communication.EDMOConnection.html
+  name: EDMOConnection.UnknownPacketHandler
+  nameWithType: EDMOConnection.UnknownPacketHandler
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketHandler
+  spec.csharp:
+  - uid: ServerCore.EDMO.Communication.EDMOConnection
+    name: EDMOConnection
+    href: ServerCore.EDMO.Communication.EDMOConnection.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketHandler
+    name: UnknownPacketHandler
+    href: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketHandler.html
+  spec.vb:
+  - uid: ServerCore.EDMO.Communication.EDMOConnection
+    name: EDMOConnection
+    href: ServerCore.EDMO.Communication.EDMOConnection.html
+  - name: .
+  - uid: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketHandler
+    name: UnknownPacketHandler
+    href: ServerCore.EDMO.Communication.EDMOConnection.UnknownPacketHandler.html
+- uid: ServerCore.EDMO.Communication.EDMOConnection.WriteAsync*
+  commentId: Overload:ServerCore.EDMO.Communication.EDMOConnection.WriteAsync
+  href: ServerCore.EDMO.Communication.EDMOConnection.html#ServerCore_EDMO_Communication_EDMOConnection_WriteAsync__1___0_
+  name: WriteAsync
+  nameWithType: EDMOConnection.WriteAsync
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.WriteAsync
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: ServerCore.EDMO.Communication.EDMOConnection.Write*
+  commentId: Overload:ServerCore.EDMO.Communication.EDMOConnection.Write
+  href: ServerCore.EDMO.Communication.EDMOConnection.html#ServerCore_EDMO_Communication_EDMOConnection_Write__1___0_
+  name: Write
+  nameWithType: EDMOConnection.Write
+  fullName: ServerCore.EDMO.Communication.EDMOConnection.Write
